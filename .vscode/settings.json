@@ -1,0 +1,31 @@
+{
+  "python.testing.pytestArgs": ["."],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.linting.mypyEnabled": true,
+  "python.linting.enabled": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "off", // Use MyPy instead
+  "python.formatting.provider": "none",
+  "python.formatting.blackArgs": ["--line-length", "90"],
+  "python.linting.mypyCategorySeverity.error": "Information",
+  "python.analysis.indexing": true,
+  "autoDocstring.docstringFormat": "pep257",
+  "autoDocstring.generateDocstringOnEnter": true,
+  "autoDocstring.guessTypes": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "bodil.prettier-toml"
+  },
+  "[jinja][jinja-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "html.format.templating": true,
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
+  },
+  "djlint.blankLineAfterTag": ["endmacro", "import", "from", "extends"],
+  "cSpell.words": []
+}

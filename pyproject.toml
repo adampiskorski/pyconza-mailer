@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "pyconza-mailer"
+version = "0.1.0"
+description = "Mass mailer for PyConZA using jinja2, mjml and mailtrap"
+authors = ["Adam Piskorski <adam@piskorski.me>"]
+license = "mit"
+readme = "README.md"
+packages = [{ include = "pyconza_mailer" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mailtrap = "^2.0.1"
+fire = "^0.5.0"
+gspread = "^5.10.0"
+jinja2 = "^3.1.2"
+httpx = "^0.24.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+black = "^23.7.0"
+pre-commit = "^3.3.3"
+ruff = "^0.0.278"
+rich = "^13.4.2"
+bpython = "^0.24"
+djlint = "^1.31.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+target-version = ['py311']
+
+[tool.pytest.ini_options]
+norecursedirs = [
+    ".git",
+    ".vscode",
+    ".pytest_cache",
+    ".mypy_cache",
+    "__pycache__",
+    "templates",
+]
+
+[tool.ruff]
+select = [
+    "A",
+    "B",
+    "BLE",
+    "C4",
+    "C90",
+    "D",
+    "DTZ",
+    "E",
+    "ERA",
+    "F",
+    "I",
+    "ICN",
+    "INP",
+    "ISC",
+    "N",
+    "PGH",
+    "PIE",
+    "Q",
+    "RET",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "T10",
+    "T20",
+    "TCH",
+    "TID",
+    "UP",
+    "W",
+]
+ignore = ["E501"]
+line-length = 90
+show-fixes = true
+target-version = "py311"
+extend-exclude = ["**/migrations/**", "athena/dynamics365crm/client.py"]
