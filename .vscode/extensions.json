@@ -1,10 +1,10 @@
 {
   "recommendations": [
-    "attilabuti.vscode-mjml",
     "ms-python.python",
     "monosans.djlint",
     "ms-python.black-formatter",
     "ms-python.vscode-pylance",
-    "charliermarsh.ruff"
+    "charliermarsh.ruff",
+    "mjmlio.vscode-mjml"
   ]
 }

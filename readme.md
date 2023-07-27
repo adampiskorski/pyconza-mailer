@@ -11,12 +11,19 @@ The valid emails are then sent with the given template and context using Mailtra
 
 Templates are created using the MJML markup language, and Jinja2. The templates are converted to HTML by using the free [MJML API](https://mjml.io/api/documentation/), in order to avoid a nodejs dependency to the project.
 
+There are 3 phases to a template:
+
+1.  Pre-MJML conversion
+    - These are templates that are to be rendered by Jinja2, such as with includes and macros, but with no personalization (such as names). Those parts of the templates wrapped with `{% raw %}` and `{% endraw %}`.
+    - These templates are stored in the `pre_mjml` directory.
+2.  MJML conversion
+    - These are single file MJML templates, that ready to be converted to HTML, and have Jinja2 templating syntax for personalization.
+    - These templates are stored in the `mjml` directory.
+3.  Post-MJML conversion
+    - These are HTML files, directly returned by the MJML to HTML conversion, and are ready for one more round of Jinja2 processing to personalize the emails, before being sent.
+    - These templates are stored in the `html` directory.
+
 ## Environmental variables
-
-### Overridable defaults
-
-- MAILTRAP_HOST: Host identifier for Mailtrap
-- MJML_ENDPOINT: URL for MJML API
 
 ### Secrets
 
@@ -39,3 +46,11 @@ The following environmental variables represents MJML secrets
 
 - MJML_APP_ID: MJML public API App ID (username)
 - MJML_SECRET_KEY: MJML public API Secret key (password)
+
+### Overridable defaults
+
+- MAILTRAP_HOST: Host identifier for Mailtrap (default: `send.api.mailtrap.io``)
+- MJML_ENDPOINT: URL for MJML API (default: `https://api.mjml.io/v1/render`)
+- PRE_MJML_PATH: Path where all pre-MJML templates are stored (default: `templates/pre_mjml/`)
+- MJML_PATH: Path where all templates ready for MJML conversion to HTML are stored (default: `templates/mjml/`)
+- HTML_PATH: Path where all HTML templates are stored (default: `templates/html/`)

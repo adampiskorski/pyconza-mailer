@@ -25,7 +25,13 @@ class Settings(BaseSettings):
     mjml_app_id: str
     mjml_secret_key: str
     google_key: GoogleKey
+    pre_mjml_path: str = "templates/pre_mjml/"
+    mjml_path: str = "templates/mjml/"
+    html_path: str = "templates/html/"
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", env_nested_delimiter="__"
     )
+
+
+settings = Settings()

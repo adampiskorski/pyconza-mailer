@@ -10,17 +10,22 @@
   "python.formatting.blackArgs": ["--line-length", "90"],
   "python.linting.mypyCategorySeverity.error": "Information",
   "python.analysis.indexing": true,
-  "autoDocstring.docstringFormat": "pep257",
+  "autoDocstring.docstringFormat": "google-notypes",
   "autoDocstring.generateDocstringOnEnter": true,
   "autoDocstring.guessTypes": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "[toml]": {
-    "editor.defaultFormatter": "bodil.prettier-toml"
+  "files.associations": {
+    "templates/html/**/*.html": "jinja-html",
+    "templates/pre_mjml/*.html": "jinja",
+    "templates/mjml/**/*.mjml": "mjml"
   },
   "[jinja][jinja-html]": {
     "editor.defaultFormatter": "monosans.djlint"
+  },
+  "[mjml]": {
+    "editor.defaultFormatter": "mjmlio.vscode-mjml"
   },
   "html.format.templating": true,
   "emmet.includeLanguages": {
