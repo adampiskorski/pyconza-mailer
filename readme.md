@@ -13,12 +13,12 @@ Templates are created using the MJML markup language, and Jinja2. The templates 
 
 ## Environmental variables
 
-### Overridable defaults:
+### Overridable defaults
 
 - MAILTRAP_HOST: Host identifier for Mailtrap
 - MJML_ENDPOINT: URL for MJML API
 
-### Secrets.
+### Secrets
 
 Put all secret environmental variables in a file called `.env` (which is ignored by git), or in your environment.
 
@@ -31,9 +31,11 @@ The following environmental variables represent the json key file of a Google se
 - GOOGLE_KEY\_\_CLIENT_ID: `client_id`
 - GOOGLE_KEY\_\_CLIENT_X509_CERT_URL: `client_x509_cert_url`
 
-The following environmental variables represents Mailtrap and MJML secrets
+The following environmental variables represents Mailtrap secrets
 
 - MAILTRAP_TOKEN: Token for Mailtrap
+
+The following environmental variables represents MJML secrets
 
 - MJML_APP_ID: MJML public API App ID (username)
 - MJML_SECRET_KEY: MJML public API Secret key (password)
