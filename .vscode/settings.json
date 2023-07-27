@@ -27,5 +27,5 @@
     "jinja-html": "html"
   },
   "djlint.blankLineAfterTag": ["endmacro", "import", "from", "extends"],
-  "cSpell.words": []
+  "cSpell.words": ["mjml"]
 }
