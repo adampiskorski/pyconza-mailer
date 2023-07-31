@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     mjml_path: str = "templates/mjml/"
     html_path: str = "templates/html/"
     txt_path: str = "templates/txt/"
+    media_path: str = "templates/media/"
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", env_nested_delimiter="__"

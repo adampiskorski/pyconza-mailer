@@ -30,6 +30,11 @@ Plain text templates are supported as a fallback in case the user's email client
 
 This pipeline is much simpler, where all plain text templates are stored in the `txt` directory, and rendered and sent directly from there.
 
+## Images
+
+Media files such as images can be sent inline, by saving them in the `media` folder, and referring to them by pre-fixing their filenames with `cid:`.
+For example: `src="cid:welcome.png"`
+
 ## Environmental variables
 
 ### Secrets
@@ -62,3 +67,4 @@ The following environmental variables represents MJML secrets
 - MJML_PATH: Path where all templates ready for MJML conversion to HTML are stored (default: `templates/mjml/`)
 - HTML_PATH: Path where all HTML templates are stored (default: `templates/html/`)
 - TXT_PATH: Path where all plain text templates are stored (default: `templates/txt/`)
+- MEDIA_PATH: Path where all media such as images are stored (default: `media/`)
