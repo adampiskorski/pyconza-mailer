@@ -24,6 +24,12 @@ There are 3 phases to a template:
     - These are HTML files, directly returned by the MJML to HTML conversion, and are ready for one more round of Jinja2 processing to personalize the emails, before being sent.
     - These templates are stored in the `html` directory.
 
+## Plain text templates
+
+Plain text templates are supported as a fallback in case the user's email client does not support HTML emails.
+
+This pipeline is much simpler, where all plain text templates are stored in the `txt` directory, and rendered and sent directly from there.
+
 ## Environmental variables
 
 ### Secrets
@@ -55,3 +61,4 @@ The following environmental variables represents MJML secrets
 - PRE_MJML_PATH: Path where all pre-MJML templates are stored (default: `templates/pre_mjml/`)
 - MJML_PATH: Path where all templates ready for MJML conversion to HTML are stored (default: `templates/mjml/`)
 - HTML_PATH: Path where all HTML templates are stored (default: `templates/html/`)
+- TXT_PATH: Path where all plain text templates are stored (default: `templates/txt/`)

@@ -18,7 +18,8 @@
   },
   "files.associations": {
     "**/*.html": "jinja-html",
-    "**/*.mjml": "mjml"
+    "**/*.mjml": "mjml",
+    "templates/**/*.txt": "jinja"
   },
   "[jinja][jinja-html]": {
     "editor.defaultFormatter": "monosans.djlint"

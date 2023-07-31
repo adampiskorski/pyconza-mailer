@@ -21,7 +21,7 @@
     <mj-section background-url="https://www.premierhotels.co.za/wp-content/uploads/2023/02/SIGNATURE-IMAGE-Premier-Splendid-Inn-Umhlanga-Conference-Centre-Rooftop_WEB.jpg" background-size="cover" background-repeat="no-repeat">
       <mj-column width="600px">
         <mj-text align="center" font-size="40px">
-          Umhlanga, Durban, 5-6 October 2023
+          UMhlanga, Durban, 5-6 October 2023
         </mj-text>
         <mj-image width="100px" src="https://za.pycon.org/static/img/logo_bottom.png" />
         <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
