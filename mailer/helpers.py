@@ -2,7 +2,7 @@
 
 from pathlib import Path, PosixPath
 
-from config import settings
+from mailer.config import settings
 
 
 def get_mjml_path() -> Path:

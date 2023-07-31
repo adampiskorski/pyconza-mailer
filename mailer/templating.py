@@ -2,8 +2,8 @@
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from config import settings
-from helpers import get_mjml_path, write_file
+from mailer.config import settings
+from mailer.helpers import get_mjml_path, write_file
 
 
 def get_pre_mjml_env() -> Environment:

@@ -4,8 +4,8 @@ from pathlib import Path
 
 import httpx
 
-from config import settings
-from helpers import get_html_path, get_mjml_path, read_file, write_file
+from mailer.config import settings
+from mailer.helpers import get_html_path, get_mjml_path, read_file, write_file
 
 
 class MJMLError(Exception):
