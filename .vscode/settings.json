@@ -18,7 +18,7 @@
   },
   "files.associations": {
     "templates/html/**/*.html": "jinja-html",
-    "templates/pre_mjml/*.html": "jinja",
+    "templates/pre_mjml/**/*.mjml": "mjml",
     "templates/mjml/**/*.mjml": "mjml"
   },
   "[jinja][jinja-html]": {

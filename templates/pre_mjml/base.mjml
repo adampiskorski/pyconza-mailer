@@ -1,0 +1,56 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Oswald"></mj-all>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+
+    <!-- title header -->
+    <mj-section background-color="#6a0f49">
+      <mj-column>
+        <mj-text align="center" font-size="40px" color="#fcf282">
+          PyConZA
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image header -->
+    <mj-section background-url="https://www.premierhotels.co.za/wp-content/uploads/2023/02/SIGNATURE-IMAGE-Premier-Splendid-Inn-Umhlanga-Conference-Centre-Rooftop_WEB.jpg" background-size="cover" background-repeat="no-repeat">
+      <mj-column width="600px">
+        <mj-text align="center" font-size="40px">
+          Umhlanga, Durban, 5-6 October 2023
+        </mj-text>
+        <mj-image width="100px" src="https://za.pycon.org/static/img/logo_bottom.png" />
+        <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
+          Register
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+    {% block content %}
+    {% endblock content %}
+
+    <!-- footer -->
+    <mj-section background-color="#237771">
+      <mj-column>
+        <mj-social>
+          <mj-social-element href="https://twitter.com/pyconza" src="https://za.pycon.org/static/img/twitter.svg">
+          </mj-social-element>
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://za.pycon.org/static/img/mastodon.svg">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button href="https://forms.gle/7gCZizA2MR8DGYBr7">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

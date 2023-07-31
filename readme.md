@@ -14,7 +14,8 @@ Templates are created using the MJML markup language, and Jinja2. The templates 
 There are 3 phases to a template:
 
 1.  Pre-MJML conversion
-    - These are templates that are to be rendered by Jinja2, such as with includes and macros, but with no personalization (such as names). Those parts of the templates wrapped with `{% raw %}` and `{% endraw %}`.
+    - These are templates that are to be rendered by Jinja2, with the intent of composing with base templates and enabling includes and macros, but with no personalization (such as names). Those parts of the templates wrapped with `{% raw %}` and `{% endraw %}`.
+    - It is necessary to end up with a single file for the next MJML conversion step, as the MJML converter needs the entire MJML template in one file.
     - These templates are stored in the `pre_mjml` directory.
 2.  MJML conversion
     - These are single file MJML templates, that ready to be converted to HTML, and have Jinja2 templating syntax for personalization.
