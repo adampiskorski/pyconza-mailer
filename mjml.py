@@ -5,7 +5,7 @@ from pathlib import Path
 import httpx
 
 from config import settings
-from helpers import read_file, write_file
+from helpers import get_html_path, get_mjml_path, read_file, write_file
 
 
 class MJMLError(Exception):
@@ -19,24 +19,6 @@ class MJMLError(Exception):
         """
         self.message = f"The following errors occurred while rendering MJML: {errors}"
         super().__init__(self.message)
-
-
-def _get_mjml_path() -> Path:
-    """Return the base path for the MJML templates directory.
-
-    Returns:
-        The base path for the MJML templates directory.
-    """
-    return Path(settings.mjml_path)
-
-
-def _get_html_path() -> Path:
-    """Return the base path for the HTML templates directory.
-
-    Returns:
-        The base path for the HTML templates directory.
-    """
-    return Path(settings.html_path)
 
 
 def _render_mjml_to_html(mjml: str) -> str:
@@ -76,9 +58,9 @@ def convert_file(path: str):
     Side effects:
         Saves output HTML to a file with the same path, but with an html extension, in the `templates/html/` directory.
     """
-    full_mjml_path = _get_mjml_path() / path
+    full_mjml_path = get_mjml_path() / path
     mjml = read_file(full_mjml_path)
     html = _render_mjml_to_html(mjml)
     new_path = Path(path).with_suffix(".html")
-    full_html_path = _get_html_path() / new_path
+    full_html_path = get_html_path() / new_path
     write_file(full_html_path, html)

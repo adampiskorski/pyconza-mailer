@@ -2,6 +2,35 @@
 
 from pathlib import Path, PosixPath
 
+from config import settings
+
+
+def get_mjml_path() -> Path:
+    """Return the base path for the MJML templates directory.
+
+    Returns:
+        The base path for the MJML templates directory.
+    """
+    return Path(settings.mjml_path)
+
+
+def get_html_path() -> Path:
+    """Return the base path for the HTML templates directory.
+
+    Returns:
+        The base path for the HTML templates directory.
+    """
+    return Path(settings.html_path)
+
+
+def get_pre_mjml_path() -> Path:
+    """Return the base path for the pre-MJML templates directory.
+
+    Returns:
+        The base path for the pre-MJML templates directory.
+    """
+    return Path(settings.pre_mjml_path)
+
 
 def read_file(path: Path | PosixPath) -> str:
     """Read the file at the given path and returns a string representation of it.

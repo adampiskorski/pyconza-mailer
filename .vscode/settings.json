@@ -17,9 +17,8 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "files.associations": {
-    "templates/html/**/*.html": "jinja-html",
-    "templates/pre_mjml/**/*.mjml": "mjml",
-    "templates/mjml/**/*.mjml": "mjml"
+    "**/*.html": "jinja-html",
+    "**/*.mjml": "mjml"
   },
   "[jinja][jinja-html]": {
     "editor.defaultFormatter": "monosans.djlint"
