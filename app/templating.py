@@ -1,6 +1,6 @@
 """Jinja2 template rendering functions."""
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import BaseLoader, Environment, FileSystemLoader, select_autoescape
 
 from app.helpers import (
     get_html_path,
@@ -42,6 +42,15 @@ def get_txt_env() -> Environment:
     return Environment(
         loader=FileSystemLoader(get_txt_path()), autoescape=select_autoescape()
     )
+
+
+def get_string_env() -> Environment:
+    """Return the Jinja2 environment for the string templates.
+
+    Returns:
+        The Jinja2 environment for the string templates.
+    """
+    return Environment(loader=BaseLoader(), autoescape=select_autoescape())
 
 
 def render_pre_mjml_file_to_mjml_file(path: str, context: dict | None = None):
@@ -88,4 +97,20 @@ def render_txt_file(path: str, context: dict | None = None) -> str:
     context = context or {}
     env = get_txt_env()
     template = env.get_template(path)
+    return template.render(**context)
+
+
+def render_string(string: str, context: dict | None = None) -> str:
+    """Render the given string as a Jinja2 template.
+
+    Args:
+        string: The string to render
+        context: Context dictionary to render the template with. Defaults to None.
+
+    Returns:
+        The rendered template as a string.
+    """
+    context = context or {}
+    env = get_string_env()
+    template = env.from_string(string)
     return template.render(**context)

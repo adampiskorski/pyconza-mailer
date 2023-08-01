@@ -9,7 +9,7 @@ from mailtrap import Address, Attachment, Disposition, Mail, MailtrapClient
 
 from app.config import settings
 from app.helpers import get_media_path
-from app.templating import render_html_file, render_txt_file
+from app.templating import render_html_file, render_string, render_txt_file
 
 
 class MimeTypeError(Exception):
@@ -126,12 +126,13 @@ def send_email(
 
     Args:
         recipients: List of tuples of recipients, where the first item is the email and the second their name.
-        subject: Subject of the email.
+        subject: Subject of the email. This can be a Jinja2 template string.
         html_path: Path to the HTML template.
         txt_path: Path to the Plain text template.
         context: Context to be used in the templates.
         category: Category of the email. Defaults to "Misc".
     """
+    subject = render_string(subject, context)
     html = render_html_file(html_path, context)
     txt = render_txt_file(txt_path, context)
     attachments = create_all_attachments(html)
