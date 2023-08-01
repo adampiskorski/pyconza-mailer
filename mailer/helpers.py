@@ -32,6 +32,24 @@ def get_pre_mjml_path() -> Path:
     return Path(settings.pre_mjml_path)
 
 
+def get_txt_path() -> Path:
+    """Return the base path for the TXT templates directory.
+
+    Returns:
+        The base path for the TXT templates directory.
+    """
+    return Path(settings.txt_path)
+
+
+def get_media_path() -> Path:
+    """Return the base path for the media directory.
+
+    Returns:
+        The base path for the media directory.
+    """
+    return Path(settings.media_path)
+
+
 def read_file(path: Path | PosixPath) -> str:
     """Read the file at the given path and returns a string representation of it.
 

@@ -39,5 +39,6 @@ repos:
             "fire",
             "gspread",
             "jinja2",
-            "httpx"
+            "httpx",
+            "types-requests"
           ]

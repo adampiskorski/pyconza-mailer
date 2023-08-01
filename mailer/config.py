@@ -19,8 +19,10 @@ class GoogleKey(BaseModel):
 class Settings(BaseSettings):
     """All settings."""
 
-    mailtrap_host: str = "send.api.mailtrap.io"
+    sending_email: EmailStr
+    sending_name: str
     mailtrap_token: str
+    mailtrap_test_inbox_id: int | None = None
     mjml_endpoint: HttpUrl = HttpUrl("https://api.mjml.io/v1/render")
     mjml_app_id: str
     mjml_secret_key: str
@@ -29,7 +31,7 @@ class Settings(BaseSettings):
     mjml_path: str = "templates/mjml/"
     html_path: str = "templates/html/"
     txt_path: str = "templates/txt/"
-    media_path: str = "templates/media/"
+    media_path: str = "media/"
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", env_nested_delimiter="__"

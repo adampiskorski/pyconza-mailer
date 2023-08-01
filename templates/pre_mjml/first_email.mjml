@@ -2,9 +2,8 @@
 {% block content %}
 <mj-section background-color="#ebcad8">
   <mj-column>
-    <mj-text font-size="20px" font-style="bold"> Heading 1 </mj-text>
+    <mj-text mj-class="heading-2"> Heading 1 </mj-text>
     <mj-text>
-      Dear {% raw %} {{ name }} {% endraw %},
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum enim
       eget magna efficitur, eu semper augue semper. Aliquam erat volutpat. Cras
       id dui lectus. Vestibulum sed finibus lectus, sit amet suscipit nibh.

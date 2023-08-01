@@ -3,7 +3,9 @@
     <mj-title>PyConZA</mj-title>
     <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
     <mj-attributes>
-      <mj-all font-family="Oswald"></mj-all>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
     </mj-attributes>
   </mj-head>
   <mj-body>
@@ -11,19 +13,19 @@
     <!-- title header -->
     <mj-section background-color="#6a0f49">
       <mj-column>
-        <mj-text align="center" font-size="40px" color="#fcf282">
+        <mj-text align="center" mj-class="heading-1" color="#fcf282">
           PyConZA
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Image header -->
-    <mj-section background-url="https://www.premierhotels.co.za/wp-content/uploads/2023/02/SIGNATURE-IMAGE-Premier-Splendid-Inn-Umhlanga-Conference-Centre-Rooftop_WEB.jpg" background-size="cover" background-repeat="no-repeat">
+    <mj-section background-url="https://d1p9k7qrmizowl.cloudfront.net/splendid-inn.jpg" background-size="cover" background-repeat="no-repeat">
       <mj-column width="600px">
-        <mj-text align="center" font-size="40px">
+        <mj-text align="center" mj-class="heading-1">
           UMhlanga, Durban, 5-6 October 2023
         </mj-text>
-        <mj-image width="100px" src="https://za.pycon.org/static/img/logo_bottom.png" />
+        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" />
         <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
           Register
         </mj-button>
@@ -38,9 +40,9 @@
     <mj-section background-color="#237771">
       <mj-column>
         <mj-social>
-          <mj-social-element href="https://twitter.com/pyconza" src="https://za.pycon.org/static/img/twitter.svg">
+          <mj-social-element href="https://twitter.com/pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/twitter.png">
           </mj-social-element>
-          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://za.pycon.org/static/img/mastodon.svg">
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/mastodon.png">
           </mj-social-element>
         </mj-social>
       </mj-column>

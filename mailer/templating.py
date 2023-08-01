@@ -2,8 +2,13 @@
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from mailer.config import settings
-from mailer.helpers import get_mjml_path, write_file
+from mailer.helpers import (
+    get_html_path,
+    get_mjml_path,
+    get_pre_mjml_path,
+    get_txt_path,
+    write_file,
+)
 
 
 def get_pre_mjml_env() -> Environment:
@@ -13,7 +18,7 @@ def get_pre_mjml_env() -> Environment:
         The Jinja2 environment for the pre-MJML templates.
     """
     return Environment(
-        loader=FileSystemLoader(settings.mjml_path), autoescape=select_autoescape()
+        loader=FileSystemLoader(get_pre_mjml_path()), autoescape=select_autoescape()
     )
 
 
@@ -24,7 +29,7 @@ def get_html_env() -> Environment:
         The Jinja2 environment for the HTML templates.
     """
     return Environment(
-        loader=FileSystemLoader(settings.html_path), autoescape=select_autoescape()
+        loader=FileSystemLoader(get_html_path()), autoescape=select_autoescape()
     )
 
 
@@ -35,11 +40,11 @@ def get_txt_env() -> Environment:
         The Jinja2 environment for the TXT templates.
     """
     return Environment(
-        loader=FileSystemLoader(settings.txt_path), autoescape=select_autoescape()
+        loader=FileSystemLoader(get_txt_path()), autoescape=select_autoescape()
     )
 
 
-def render_to_mjml_file(path: str, context: dict | None = None):
+def render_pre_mjml_file_to_mjml_file(path: str, context: dict | None = None):
     """Render a pre-MJML template to to the MJML folder, ready to be converted to HTML.
 
     Args:
