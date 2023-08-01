@@ -25,7 +25,7 @@
         <mj-text align="center" mj-class="heading-1">
           UMhlanga, Durban, 5-6 October 2023
         </mj-text>
-        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" />
+        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
         <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
           Register
         </mj-button>
@@ -45,6 +45,11 @@
           <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/mastodon.png">
           </mj-social-element>
         </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image width="150px" src="https://d1p9k7qrmizowl.cloudfront.net/thinkst_logo_footer.png" href="https://canary.tools/" alt="thinkst logo" />
       </mj-column>
     </mj-section>
     <mj-section>
