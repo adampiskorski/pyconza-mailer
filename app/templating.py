@@ -2,7 +2,7 @@
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from mailer.helpers import (
+from app.helpers import (
     get_html_path,
     get_mjml_path,
     get_pre_mjml_path,

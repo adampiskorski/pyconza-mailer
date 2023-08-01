@@ -7,9 +7,9 @@ from pathlib import Path
 
 from mailtrap import Address, Attachment, Disposition, Mail, MailtrapClient
 
-from mailer.config import settings
-from mailer.helpers import get_media_path
-from mailer.templating import render_html_file, render_txt_file
+from app.config import settings
+from app.helpers import get_media_path
+from app.templating import render_html_file, render_txt_file
 
 
 class MimeTypeError(Exception):
@@ -115,7 +115,7 @@ def create_all_attachments(html: str) -> list[Attachment]:
 
 
 def send_email(
-    recipients: list[str],
+    recipients: list[tuple[str, str]],
     subject: str,
     html_path: str,
     txt_path: str,
@@ -125,7 +125,7 @@ def send_email(
     """Send an email using Mailtrap.
 
     Args:
-        recipients: Email addresses of the recipients.
+        recipients: List of tuples of recipients, where the first item is the email and the second their name.
         subject: Subject of the email.
         html_path: Path to the HTML template.
         txt_path: Path to the Plain text template.
@@ -136,8 +136,8 @@ def send_email(
     txt = render_txt_file(txt_path, context)
     attachments = create_all_attachments(html)
     mail = Mail(
-        sender=Address(settings.sending_email, settings.sending_name),
-        to=[Address(email=to) for to in recipients],
+        sender=Address(email=settings.sending_email, name=settings.sending_name),
+        to=[Address(email=to, name=name) for to, name in recipients],
         subject=subject,
         text=txt,
         html=html,
