@@ -47,6 +47,9 @@
         </mj-social>
       </mj-column>
     </mj-section>
+
+    <!-- sub footer -->
+
     <mj-section>
       <mj-column>
         <mj-image width="150px" src="https://d1p9k7qrmizowl.cloudfront.net/thinkst_logo_footer.png" href="https://canary.tools/" alt="thinkst logo" />
