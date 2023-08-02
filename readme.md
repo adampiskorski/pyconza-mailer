@@ -41,6 +41,9 @@ This app will then automatically find the all filenames referred to in the templ
 
 - SENDING_EMAIL: Email address that you will be sending from.
 - SENDING_NAME: Human readable name representing the sender.
+- SHEET_KEY_TO_EMAIL: Key for Google sheet (can be found in URL) that contains all emails to send to
+- SHEET_KEY_TO_SKIP: Key for Google sheet (can be found in URL) that contains all emails to skip
+- SHEET_KEY_UNSUBSCRIBED: Key for Google sheet (can be found in URL) that contains all emails to also skip due to unsubscription
 
 ### Secrets
 
