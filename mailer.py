@@ -101,18 +101,17 @@ class Interface:
         self,
         template: str,
         subject: str,
-        category: str = "Misc",
         dry_run: bool = False,
         test_server: bool = False,
     ):
         """Send the given email template to all recipients in the configured sheet.
 
         Unsubscribe and skipped email addresses are not sent to.
+        The category for the emails given to Mailtrap is the name of the template.
 
         Args:
             template: Common part of filename shared between txt and HTML templates.
             subject: Subject of the email. This can be a Jinja2 template string, with `name` available.
-            category: Category of the email. Defaults to "Misc".
             dry_run: If True, do not send emails, just print what would be sent.
             test_server: If True, send emails to the Mailtrap test server instead of the real server.
 
@@ -143,7 +142,7 @@ class Interface:
                     subject,
                     str(html_path),
                     str(txt_path),
-                    category,
+                    template,
                     dry_run=dry_run,
                     test_server=test_server,
                 ),
