@@ -6,6 +6,8 @@
       <mj-text font-family="Verdana, Aerial"></mj-text>
       <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
       <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="action-button" background-color="#237771" color="#fcf282" />
+      <mj-class name="body-section" background-color="#ebcad8" />
     </mj-attributes>
   </mj-head>
   <mj-body>
@@ -23,7 +25,7 @@
     <mj-section background-url="https://d1p9k7qrmizowl.cloudfront.net/splendid-inn.jpg" background-size="cover" background-repeat="no-repeat">
       <mj-column width="600px">
         <mj-text align="center" mj-class="heading-1">
-          UMhlanga, Durban, 5-6 October 2023
+          uMhlanga, Durban, 5-6 October 2023
         </mj-text>
         <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
         <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
@@ -34,35 +36,55 @@
 
     <!-- body -->
 
-<mj-section background-color="#ebcad8">
+<mj-section mj-class="body-section">
   <mj-column>
-    <mj-text mj-class="heading-2"> Heading 1 </mj-text>
-
-    {% if name %}
+    <mj-text mj-class="heading-2">PyConZA 2023 returns to Durban!</mj-text>
     <mj-text>
-      Dear {{ name }},
+      PyConZA 2023 will be in Durban on 5 - 6 October 2023.
     </mj-text>
-    {% endif %}
-
     <mj-text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum enim
-      eget magna efficitur, eu semper augue semper. Aliquam erat volutpat. Cras
-      id dui lectus. Vestibulum sed finibus lectus, sit amet suscipit nibh.
-      Proin nec commodo purus. Sed eget nulla elit. Nulla aliquet mollis
-      faucibus.
+      It is a hybrid conference, with the in-person portion again held at the Premier Splendid Inn at uMhlanga, and the online part hosted on Discord.
     </mj-text>
-    <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/tickets/buy-tickets/">Buy tickets</mj-button>
+    <mj-spacer />
   </mj-column>
   <mj-column>
-    <mj-text mj-class="heading-2"> Heading 2 </mj-text>
+    <mj-text mj-class="heading-2">Tickets</mj-text>
     <mj-text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed aliquet est. Pellentesque a augue pretium, tempus urna nec, ultricies massa. Quisque tincidunt dignissim lorem, at auctor diam gravida sed. Curabitur faucibus sodales magna non scelerisque. Cras sed urna odio. Maecenas ac sapien et justo ornare dapibus et eu urna. Morbi eget pretium ex. Pellentesque mollis enim et lorem commodo, nec porta ipsum bibendum.
+      You can buy tickets right now <a href="https://za.pycon.org/tickets/buy-tickets/">here</a>.
     </mj-text>
     <mj-text>
-      Nulla eleifend luctus libero vel placerat. Fusce vel pretium mi. Nullam volutpat velit at commodo porta. Nullam commodo erat ac nunc gravida, eget porta est pellentesque.
+      We have different rates depending on your situation and needs. You can find out about these different rates <a href="https://za.pycon.org/tickets/ticket-prices/">here</a>.
     </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy Tickets</mj-button>
   </mj-column>
 </mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Talks</mj-text>
+    <mj-text>
+      We are still looking for and accepting talks from both remote and in-person speakers.
+    </mj-text>
+    <mj-text>
+      If you’d like to speak on any Python-related topic, we’d love to hear from you.
+      See how to submit talks <a href="https://za.pycon.org/talks/how-to-submit-a-talk/">here</a>.
+    </mj-text>
+    <mj-spacer />
+  </mj-column>
+
+  <mj-column>
+    <mj-text mj-class="heading-2">Sponsors</mj-text>
+    <mj-text>
+      Thinkst Canary has just signed on as a Patron sponsor!
+      Please check them out <a href="https://canary.tools/">here</a>.
+    </mj-text>
+    <mj-text>
+      We are still looking for sponsors to help us make PyConZA 2023 a success. You can check out our sponsorship packages <a href="https://za.pycon.org/sponsors/packages/">here</a>.
+      If you would like to sponsor, please contact us at <a href="mailto:sponsorship@za.pycon.org">sponsorship@za.pycon.org</a>.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">Sponsor</mj-button>
+  </mj-column>
+</mj-section>
+
 
 
     <!-- footer -->

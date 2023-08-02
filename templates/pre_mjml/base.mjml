@@ -6,6 +6,8 @@
       <mj-text font-family="Verdana, Aerial"></mj-text>
       <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
       <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="action-button" background-color="#237771" color="#fcf282" />
+      <mj-class name="body-section" background-color="#ebcad8" />
     </mj-attributes>
   </mj-head>
   <mj-body>
@@ -23,7 +25,7 @@
     <mj-section background-url="https://d1p9k7qrmizowl.cloudfront.net/splendid-inn.jpg" background-size="cover" background-repeat="no-repeat">
       <mj-column width="600px">
         <mj-text align="center" mj-class="heading-1">
-          UMhlanga, Durban, 5-6 October 2023
+          uMhlanga, Durban, 5-6 October 2023
         </mj-text>
         <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
         <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">

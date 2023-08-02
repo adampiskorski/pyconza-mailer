@@ -1,14 +1,10 @@
-PyConZA News Letter
-UMhlanga, Durban, 5-6 October 2023
-https://za.pycon.org/
-_____________________________________________________
-
 {% block content %}
 {% endblock content %}
-_____________________________________________________
 
+Socials
+=======
 Twitter: https://twitter.com/pyconza
 Mastodon: https://fosstodon.org/@pyconza
-_____________________________________________________
+
 
 Unsubscribe here: https://forms.gle/7gCZizA2MR8DGYBr7

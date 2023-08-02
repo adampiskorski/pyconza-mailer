@@ -1,7 +1,7 @@
 {% extends "base.txt" %}
 
 {% block content %}
-    Dear {{ name }},
+    {% if name %}Dear {{ name }},{% endif %}
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum enim
     eget magna efficitur, eu semper augue semper. Aliquam erat volutpat. Cras
     id dui lectus. Vestibulum sed finibus lectus, sit amet suscipit nibh.

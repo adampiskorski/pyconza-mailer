@@ -1,0 +1,52 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">PyConZA 2023 returns to Durban!</mj-text>
+    <mj-text>
+      PyConZA 2023 will be in Durban on 5 - 6 October 2023.
+    </mj-text>
+    <mj-text>
+      It is a hybrid conference, with the in-person portion again held at the Premier Splendid Inn at uMhlanga, and the online part hosted on Discord.
+    </mj-text>
+    <mj-spacer />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">Tickets</mj-text>
+    <mj-text>
+      You can buy tickets right now <a href="https://za.pycon.org/tickets/buy-tickets/">here</a>.
+    </mj-text>
+    <mj-text>
+      We have different rates depending on your situation and needs. You can find out about these different rates <a href="https://za.pycon.org/tickets/ticket-prices/">here</a>.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy Tickets</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Talks</mj-text>
+    <mj-text>
+      We are still looking for and accepting talks from both remote and in-person speakers.
+    </mj-text>
+    <mj-text>
+      If you’d like to speak on any Python-related topic, we’d love to hear from you.
+      See how to submit talks <a href="https://za.pycon.org/talks/how-to-submit-a-talk/">here</a>.
+    </mj-text>
+    <mj-spacer />
+  </mj-column>
+
+  <mj-column>
+    <mj-text mj-class="heading-2">Sponsors</mj-text>
+    <mj-text>
+      Thinkst Canary has just signed on as a Patron sponsor!
+      Please check them out <a href="https://canary.tools/">here</a>.
+    </mj-text>
+    <mj-text>
+      We are still looking for sponsors to help us make PyConZA 2023 a success. You can check out our sponsorship packages <a href="https://za.pycon.org/sponsors/packages/">here</a>.
+      If you would like to sponsor, please contact us at <a href="mailto:sponsorship@za.pycon.org">sponsorship@za.pycon.org</a>.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">Sponsor</mj-button>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}

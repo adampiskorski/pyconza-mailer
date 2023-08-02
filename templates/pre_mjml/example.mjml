@@ -1,6 +1,6 @@
 {% extends "base.mjml" %}
 {% block content %}
-<mj-section background-color="#ebcad8">
+<mj-section mj-class="body-section">
   <mj-column>
     <mj-text mj-class="heading-2"> Heading 1 </mj-text>
     {% raw %}
@@ -17,7 +17,7 @@
       Proin nec commodo purus. Sed eget nulla elit. Nulla aliquet mollis
       faucibus.
     </mj-text>
-    <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/tickets/buy-tickets/">Buy tickets</mj-button>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy tickets</mj-button>
   </mj-column>
   <mj-column>
     <mj-text mj-class="heading-2"> Heading 2 </mj-text>
