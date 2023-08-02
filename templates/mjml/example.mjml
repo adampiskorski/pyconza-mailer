@@ -25,7 +25,7 @@
         <mj-text align="center" mj-class="heading-1">
           UMhlanga, Durban, 5-6 October 2023
         </mj-text>
-        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" />
+        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
         <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
           Register
         </mj-button>
@@ -37,8 +37,14 @@
 <mj-section background-color="#ebcad8">
   <mj-column>
     <mj-text mj-class="heading-2"> Heading 1 </mj-text>
+
+    {% if name %}
     <mj-text>
       Dear {{ name }},
+    </mj-text>
+    {% endif %}
+
+    <mj-text>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum enim
       eget magna efficitur, eu semper augue semper. Aliquam erat volutpat. Cras
       id dui lectus. Vestibulum sed finibus lectus, sit amet suscipit nibh.
@@ -46,6 +52,15 @@
       faucibus.
     </mj-text>
     <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/tickets/buy-tickets/">Buy tickets</mj-button>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2"> Heading 2 </mj-text>
+    <mj-text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed aliquet est. Pellentesque a augue pretium, tempus urna nec, ultricies massa. Quisque tincidunt dignissim lorem, at auctor diam gravida sed. Curabitur faucibus sodales magna non scelerisque. Cras sed urna odio. Maecenas ac sapien et justo ornare dapibus et eu urna. Morbi eget pretium ex. Pellentesque mollis enim et lorem commodo, nec porta ipsum bibendum.
+    </mj-text>
+    <mj-text>
+      Nulla eleifend luctus libero vel placerat. Fusce vel pretium mi. Nullam volutpat velit at commodo porta. Nullam commodo erat ac nunc gravida, eget porta est pellentesque.
+    </mj-text>
   </mj-column>
 </mj-section>
 
@@ -59,6 +74,14 @@
           <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/mastodon.png">
           </mj-social-element>
         </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="150px" src="https://d1p9k7qrmizowl.cloudfront.net/thinkst_logo_footer.png" href="https://canary.tools/" alt="thinkst logo" />
       </mj-column>
     </mj-section>
     <mj-section>

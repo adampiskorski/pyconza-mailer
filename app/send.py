@@ -2,6 +2,7 @@
 
 import re
 from base64 import b64encode
+from collections.abc import Generator
 from mimetypes import guess_type
 from pathlib import Path
 
@@ -115,30 +116,28 @@ def create_all_attachments(html: str) -> list[Attachment]:
 
 
 def send_email(
-    recipients: list[tuple[str, str]],
+    recipient_email: str,
+    recipient_name: str,
     subject: str,
-    html_path: str,
-    txt_path: str,
-    context: dict,
-    category: str = "Misc",
+    html: str,
+    txt: str,
+    attachments: list[Attachment],
+    category: str,
 ):
     """Send an email using Mailtrap.
 
     Args:
-        recipients: List of tuples of recipients, where the first item is the email and the second their name.
-        subject: Subject of the email. This can be a Jinja2 template string.
-        html_path: Path to the HTML template.
-        txt_path: Path to the Plain text template.
-        context: Context to be used in the templates.
-        category: Category of the email. Defaults to "Misc".
+        recipient_email: Email address of the recipient.
+        recipient_name: Full name of the recipient.
+        subject: Subject of the email.
+        html: HTML body of the email.
+        txt: Plain text body of the email.
+        attachments: List of Mailtrap attachment objects.
+        category: Category of the email.
     """
-    subject = render_string(subject, context)
-    html = render_html_file(html_path, context)
-    txt = render_txt_file(txt_path, context)
-    attachments = create_all_attachments(html)
     mail = Mail(
         sender=Address(email=settings.sending_email, name=settings.sending_name),
-        to=[Address(email=to, name=name) for to, name in recipients],
+        to=[Address(email=recipient_email, name=recipient_name or None)],
         subject=subject,
         text=txt,
         html=html,
@@ -148,3 +147,81 @@ def send_email(
 
     client = MailtrapClient(token=settings.mailtrap_token)
     client.send(mail)
+
+
+def send_emails(
+    recipients: list[tuple[str, str]],
+    subject: str,
+    html_path: str,
+    txt_path: str,
+    category: str,
+) -> Generator[str, None, None]:
+    """Send an email using Mailtrap to each recipient.
+
+    All templates, including the subject, can include `name` as a template variable,
+    which will be replaced with the recipient's full name.
+
+    Args:
+        recipients: List of tuples of recipients, where the first item is the email and the second their full name.
+        subject: Subject of the email. This can be a Jinja2 template string.
+        html_path: Path to the HTML template.
+        txt_path: Path to the Plain text template.
+        category: Category of the email.
+
+    Yields:
+        A string for each email sent.
+    """
+    html_for_cid = render_html_file(html_path, {"name": "John Doe"})
+    attachments = create_all_attachments(html_for_cid)
+    for email, name in recipients:
+        context = {"name": name}
+        subject = render_string(subject, context)
+        html = render_html_file(html_path, context)
+        txt = render_txt_file(txt_path, context)
+        send_email(email, name, subject, html, txt, attachments, category)
+        yield f"{name} <{email}>"
+
+
+class EmailGenerator:
+    """Generator Wrapper to allow for better progress indication."""
+
+    def __init__(
+        self,
+        recipients: list[tuple[str, str]],
+        subject: str,
+        html_path: str,
+        txt_path: str,
+        category: str,
+    ):
+        """Initialize the generator with the same signature as `send_emails`.
+
+        Args:
+            recipients: List of tuples of recipients, where the first item is the email and the second their full name.
+            subject: Subject of the email. This can be a Jinja2 template string.
+            html_path: Path to the HTML template.
+            txt_path: Path to the Plain text template.
+            category: Category of the email.
+        """
+        self.recipients = recipients
+        self.subject = subject
+        self.html_path = html_path
+        self.txt_path = txt_path
+        self.category = category
+
+    def __iter__(self):
+        """Return the generator for `send_emails`.
+
+        Returns:
+            The `send_emails` generator.
+        """
+        return send_emails(
+            self.recipients,
+            self.subject,
+            self.html_path,
+            self.txt_path,
+            self.category,
+        )
+
+    def __len__(self):
+        """Return the length of the recipients list."""
+        return len(self.recipients)

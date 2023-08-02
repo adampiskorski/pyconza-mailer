@@ -38,6 +38,19 @@ class Email(BaseModel):
     first_name: str | None = None
     last_name: str | None = None
 
+    @property
+    def full_name(self) -> str:
+        """Get the full name of the email object.
+
+        Returns:
+            A full name, or an empty string.
+        """
+        if self.first_name:
+            if self.last_name:
+                return f"{self.first_name} {self.last_name}"
+            return self.first_name
+        return self.last_name or ""
+
 
 def unique_emails(v: list[Email]) -> list[Email]:
     """Validate that there are no duplicate email addresses.
@@ -76,9 +89,8 @@ class Emails(BaseModel):
 class CompositionReport:
     """Represents a report of various modifications to a list of emails when it was composed."""
 
-    total_skipped: int
     total_unsubscribed: int
-    total_to_send: int
+    total_skipped: int
 
 
 def get_client() -> Client:
@@ -191,17 +203,17 @@ def get_unsubscribed_emails() -> Emails:
     )
 
 
-def get_all_emails_to_send() -> tuple[Emails, CompositionReport]:
+def get_all_emails_to_send() -> tuple[list[tuple[str, str]], CompositionReport]:
     """Get all email addresses to send.
 
     Returns:
-        Emails: All email addresses to send.
+        Email tuples: List of tuples of recipients, where the first item is the email and the second their full name.
         CompositionReport: Report of various modifications to the list of emails when it was composed.
     """
     original: Emails = get_to_send_emails()
     to_skip: set[EmailStr] = get_to_skip_emails().emails_to_set()
     unsubscribed: set[EmailStr] = get_unsubscribed_emails().emails_to_set()
-    to_send = Emails(emails=[])
+    to_send: list[tuple[str, str]] = []
     removed_skipped: int = 0
     removed_unsubscribed: int = 0
     for email in original.emails:
@@ -210,9 +222,9 @@ def get_all_emails_to_send() -> tuple[Emails, CompositionReport]:
         elif email.email in to_skip:
             removed_skipped += 1
         else:
-            to_send.emails.append(email)
-    return to_send, CompositionReport(
+            to_send.append((str(email.email), email.full_name))
+    report = CompositionReport(
         total_skipped=removed_skipped,
         total_unsubscribed=removed_unsubscribed,
-        total_to_send=len(to_send.emails),
     )
+    return to_send, report
