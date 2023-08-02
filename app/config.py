@@ -62,6 +62,7 @@ class Settings(BaseSettings):
     sending_email: EmailStr
     sending_name: str
     mailtrap_token: str
+    mailtrap_test_token: str | None = None
     mailtrap_test_inbox_id: int | None = None
     sheet_to_email: SheetToEmail
     sheet_to_skip: SheetToSkip

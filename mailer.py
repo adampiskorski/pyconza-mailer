@@ -98,7 +98,12 @@ class Interface:
         self.render_mjml(template)
 
     def send_template(
-        self, template: str, subject: str, category: str = "Misc", dry_run: bool = False
+        self,
+        template: str,
+        subject: str,
+        category: str = "Misc",
+        dry_run: bool = False,
+        test_server: bool = False,
     ):
         """Send the given email template to all recipients in the configured sheet.
 
@@ -109,22 +114,26 @@ class Interface:
             subject: Subject of the email. This can be a Jinja2 template string, with `name` available.
             category: Category of the email. Defaults to "Misc".
             dry_run: If True, do not send emails, just print what would be sent.
+            test_server: If True, send emails to the Mailtrap test server instead of the real server.
 
         """
         if dry_run:
-            console.print("This is a dry run.", style="green")
+            mode_prefix = "[green]This is a dry run.[/]"
+        elif test_server:
+            mode_prefix = "[cyan]This is using the Mailtrap test server.[/]"
+        else:
+            mode_prefix = "[bold red]THIS WILL SEND EMAILS FOR REAL![/]"
 
         html_path, txt_path = self.__html_text_templates_from_name(template)
         recipients = self.__get_all_emails_to_send()
 
-        if not dry_run:
-            answer = console.input(
-                "[bold red]THIS IS NOT A DRY RUN![/][red] Do you wish to send emails? "
-                "Type [underline bold]yes[/] to proceed."
-            )
-            if answer != "yes":
-                console.print("Aborting.", style="red")
-                return
+        answer = console.input(
+            f"{mode_prefix} [red] Would you like to send these emails? "
+            "Type [underline bold]yes[/] to proceed."
+        )
+        if answer != "yes":
+            console.print("Aborting.", style="red")
+            return
 
         with open(settings.sent_emails_file, "a") as f:
             for sent_email in track(
@@ -135,6 +144,7 @@ class Interface:
                     str(txt_path),
                     category,
                     dry_run=dry_run,
+                    test_server=test_server,
                 ),
                 description="[cyan]Sending emails",
             ):

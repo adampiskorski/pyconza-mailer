@@ -6,7 +6,9 @@ from collections.abc import Generator
 from mimetypes import guess_type
 from pathlib import Path
 
+import httpx
 from mailtrap import Address, Attachment, Disposition, Mail, MailtrapClient
+from mailtrap.mail.base import BaseMail
 
 from app.config import settings
 from app.helpers import get_media_path
@@ -37,6 +39,37 @@ class CidFileNotFoundError(Exception):
         """
         self.message = f"Could not find CID file for {filename}"
         super().__init__(self.message)
+
+
+class MailtrapTestingClient(MailtrapClient):
+    """Mailtrap client that sends to the Mailtrap Testing API."""
+
+    def send(self, mail: BaseMail):
+        """Send the given mail to the given inbox.
+
+        Args:
+            mail: Mail to send.
+
+        Raises:
+            ValueError: If MAILTRAP_TEST_INBOX_ID is not set.
+        """
+        inbox_id = settings.mailtrap_test_inbox_id
+        if not inbox_id:
+            raise ValueError("MAILTRAP_TEST_INBOX_ID not set")
+        self.api_host = "sandbox.api.mailtrap.io"
+        url = f"{self.base_url}/api/send/{inbox_id}"
+        response = httpx.post(url, headers=self.headers, json=mail.api_data, timeout=30)
+        if response.status_code != httpx.codes.OK:
+            self._handle_failed_response(response)
+
+    @property
+    def base_url(self) -> str:
+        """Return the base URL for the Mailtrap API.
+
+        Returns:
+            The base URL for the Mailtrap API.
+        """
+        return f"https://{self.api_host.rstrip('/')}:{self.api_port}"
 
 
 def get_all_cid_filenames(html: str) -> set[str]:
@@ -123,6 +156,7 @@ def send_email(
     txt: str,
     attachments: list[Attachment],
     category: str,
+    test_server: bool = False,
 ):
     """Send an email using Mailtrap.
 
@@ -134,6 +168,7 @@ def send_email(
         txt: Plain text body of the email.
         attachments: List of Mailtrap attachment objects.
         category: Category of the email.
+        test_server: If True, send the email to the Mailtrap test server instead of the real server.
     """
     mail = Mail(
         sender=Address(email=settings.sending_email, name=settings.sending_name),
@@ -144,8 +179,10 @@ def send_email(
         attachments=attachments,
         category=category,
     )
-
-    client = MailtrapClient(token=settings.mailtrap_token)
+    if test_server:
+        client = MailtrapTestingClient(token=settings.mailtrap_test_token)
+    else:
+        client = MailtrapClient(token=settings.mailtrap_token)
     client.send(mail)
 
 
@@ -156,6 +193,7 @@ def send_emails(
     txt_path: str,
     category: str,
     dry_run: bool = False,
+    test_server: bool = False,
 ) -> Generator[str, None, None]:
     """Send an email using Mailtrap to each recipient.
 
@@ -169,6 +207,7 @@ def send_emails(
         txt_path: Path to the Plain text template.
         category: Category of the email.
         dry_run: Whether to actually send the emails or not.
+        test_server: If True, send emails to the Mailtrap test server instead of the real server.
 
     Yields:
         Each email address that gets sent to.
@@ -181,7 +220,16 @@ def send_emails(
             subject = render_string(subject, context)
             html = render_html_file(html_path, context)
             txt = render_txt_file(txt_path, context)
-            send_email(email, name, subject, html, txt, attachments, category)
+            send_email(
+                email,
+                name,
+                subject,
+                html,
+                txt,
+                attachments,
+                category,
+                test_server=test_server,
+            )
         yield email
 
 
@@ -196,6 +244,7 @@ class EmailGenerator:
         txt_path: str,
         category: str,
         dry_run: bool = False,
+        test_server: bool = False,
     ):
         """Initialize the generator with the same signature as `send_emails`.
 
@@ -206,6 +255,7 @@ class EmailGenerator:
             txt_path: Path to the Plain text template.
             category: Category of the email.
             dry_run: Whether to actually send the emails or not.
+            test_server: If True, send emails to the Mailtrap test server instead of the real server.
         """
         self.recipients = recipients
         self.subject = subject
@@ -213,6 +263,7 @@ class EmailGenerator:
         self.txt_path = txt_path
         self.category = category
         self.dry_run = dry_run
+        self.test_server = test_server
 
     def __iter__(self):
         """Return the generator for `send_emails`.
@@ -227,6 +278,7 @@ class EmailGenerator:
             self.txt_path,
             self.category,
             dry_run=self.dry_run,
+            test_server=self.test_server,
         )
 
     def __len__(self):
