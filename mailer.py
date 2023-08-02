@@ -136,6 +136,7 @@ class Interface:
             return
 
         with open(settings.sent_emails_file, "a") as f:
+            sent_emails = []
             for sent_email in track(
                 EmailGenerator(
                     recipients,
@@ -150,6 +151,11 @@ class Interface:
             ):
                 if not dry_run:
                     f.write(f"{template},{sent_email}\n")
+                else:
+                    sent_emails.append(sent_email)
+        if dry_run:
+            console.print("Would have sent emails to:")
+            console.print(sent_emails)
 
 
 if __name__ == "__main__":
