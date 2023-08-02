@@ -153,4 +153,5 @@ class Interface:
 
 
 if __name__ == "__main__":
-    fire.Fire(Interface)
+    interface = Interface()
+    fire.Fire(interface)
