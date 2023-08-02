@@ -2,19 +2,21 @@
 
 This is my version of a PyConZA mailer, which exists in order to work with a different stack, namely [Mailtrap](https://mailtrap.io), [jinja2](https://jinja.palletsprojects.com) and [MJML](https://mjml.io).
 
-## Data flow
-
-A mailing list is consumed via a Google drive sheet, which is compared against an unsubscribe sheet, and a skip sheet, and only email addresses that are not on the latter two lists selected to be sent to.
-The valid emails are then sent with the given template Mailtrap.
-There are dry run and Mailtrap test server modes.
-
 ## Installation
 
 Python 3.11 and [poetry](https://python-poetry.org/) is required, with the latter only required for installing dependencies and running the Python environment, so if you are familiar with managing those things yourself, then you can skip poetry.
 
 Run `poetry install` to install all dependencies.
 
+You will need 3 Google sheets (described below), a Google service account with access to all those sheets, a Mailtrap token and an MJML token and ID (all of these have generous free tiers).
+
 Then configure the environmental variables needed (see the _Environmental variables section_)
+
+### Google sheets
+
+A mailing list is consumed via a Google drive sheet, which is compared against an unsubscribe sheet, and a skip sheet, and only email addresses that are not on the latter two lists selected to be sent to.
+The valid emails are then sent with the given template Mailtrap.
+There are dry run and Mailtrap test server modes.
 
 ## Usage example
 
