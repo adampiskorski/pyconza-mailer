@@ -24,13 +24,4 @@ Please check them out at https://canary.tools/
 
 We are still looking for sponsors to help us make PyConZA 2023 a success. You can check out our sponsorship packages here: https://za.pycon.org/sponsors/packages/
 If you would like to sponsor, please contact us at sponsorship@za.pycon.org
-
-
-Socials
-=======
-Twitter: https://twitter.com/pyconza
-Mastodon: https://fosstodon.org/@pyconza
-
-
-Unsubscribe here: https://forms.gle/7gCZizA2MR8DGYBr7
 {% endblock content %}
