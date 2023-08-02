@@ -45,7 +45,7 @@
     <mj-text>
       It is a hybrid conference, with the in-person portion again held at the Premier Splendid Inn at uMhlanga, and the online part hosted on Discord.
     </mj-text>
-    <mj-spacer />
+    <mj-spacer height="45px" />
   </mj-column>
   <mj-column>
     <mj-text mj-class="heading-2">Tickets</mj-text>
@@ -68,7 +68,7 @@
       If you’d like to speak on any Python-related topic, we’d love to hear from you.
       See how to submit talks <a href="https://za.pycon.org/talks/how-to-submit-a-talk/">here</a>.
     </mj-text>
-    <mj-spacer />
+    <mj-spacer height="45px" />
   </mj-column>
 
   <mj-column>
