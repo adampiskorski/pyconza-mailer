@@ -38,8 +38,8 @@ class SheetToEmail(BaseModel):
 
     key: str
     email_heading: str = "Email"
-    first_name_heading: str = "First name"
-    last_name_heading: str = "Surname"
+    first_name_heading: str | None = "First name"
+    last_name_heading: str | None = "Surname"
 
 
 class SheetToSkip(BaseModel):

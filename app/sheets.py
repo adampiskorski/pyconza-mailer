@@ -1,5 +1,6 @@
 """Business logic for Google Sheets and preparing email addresses."""
 
+from dataclasses import dataclass
 from typing import Annotated
 
 import gspread
@@ -18,10 +19,22 @@ SCOPES = [
 ]
 
 
+def to_lower(v: str) -> str:
+    """Convert a string to lowercase.
+
+    Args:
+        v: String to convert to lowercase.
+
+    Returns:
+        The string converted to lowercase.
+    """
+    return v.lower()
+
+
 class Email(BaseModel):
     """Represents an email address and its associated name, if provided."""
 
-    email: EmailStr
+    email: Annotated[EmailStr, AfterValidator(to_lower)]
     first_name: str | None = None
     last_name: str | None = None
 
@@ -49,6 +62,23 @@ class Emails(BaseModel):
     """Represents many email addresses and their associated names."""
 
     emails: Annotated[list[Email], AfterValidator(unique_emails)]
+
+    def emails_to_set(self) -> set[EmailStr]:
+        """Convert the list of emails to a set of email address literals.
+
+        Returns:
+            set: Set of email addresses literals.
+        """
+        return {email.email for email in self.emails}
+
+
+@dataclass
+class CompositionReport:
+    """Represents a report of various modifications to a list of emails when it was composed."""
+
+    total_skipped: int
+    total_unsubscribed: int
+    total_to_send: int
 
 
 def get_client() -> Client:
@@ -89,7 +119,20 @@ def get_all_emails_from_worksheet(
         Emails: All email addresses from the worksheet.
     """
     list_of_dicts = worksheet.get_all_records()
+    if email_heading not in list_of_dicts[0]:
+        raise ValueError(
+            f"Email heading '{email_heading}' not found in worksheet {worksheet}."
+        )
     emails: list[Email] = []
+    if name_headings:
+        if name_headings[0] not in list_of_dicts[0]:
+            raise ValueError(
+                f"First name heading '{name_headings[0]}' not found in worksheet {worksheet}."
+            )
+        if name_headings[1] not in list_of_dicts[0]:
+            raise ValueError(
+                f"Last name heading '{name_headings[1]}' not found in worksheet {worksheet}."
+            )
     if name_headings:
         emails.extend(
             Email(
@@ -102,3 +145,74 @@ def get_all_emails_from_worksheet(
     else:
         emails.extend(Email(email=d[email_heading]) for d in list_of_dicts)
     return Emails(emails=emails)
+
+
+def get_to_send_emails() -> Emails:
+    """Get all email addresses to send.
+
+    Returns:
+        Emails: All email addresses to send.
+    """
+    worksheet = get_first_worksheet(settings.sheet_to_email.key)
+    if (
+        settings.sheet_to_email.first_name_heading
+        and settings.sheet_to_email.last_name_heading
+    ):
+        name_tuple = (
+            settings.sheet_to_email.first_name_heading,
+            settings.sheet_to_email.last_name_heading,
+        )
+    else:
+        name_tuple = None
+    return get_all_emails_from_worksheet(
+        worksheet, settings.sheet_to_email.email_heading, name_tuple
+    )
+
+
+def get_to_skip_emails() -> Emails:
+    """Get all email addresses to skip.
+
+    Returns:
+        Emails: All email addresses to skip.
+    """
+    worksheet = get_first_worksheet(settings.sheet_to_skip.key)
+    return get_all_emails_from_worksheet(worksheet, settings.sheet_to_skip.email_heading)
+
+
+def get_unsubscribed_emails() -> Emails:
+    """Get all email addresses to skip.
+
+    Returns:
+        Emails: All email addresses to skip.
+    """
+    worksheet = get_first_worksheet(settings.sheet_unsubscribed.key)
+    return get_all_emails_from_worksheet(
+        worksheet, settings.sheet_unsubscribed.email_heading
+    )
+
+
+def get_all_emails_to_send() -> tuple[Emails, CompositionReport]:
+    """Get all email addresses to send.
+
+    Returns:
+        Emails: All email addresses to send.
+        CompositionReport: Report of various modifications to the list of emails when it was composed.
+    """
+    original: Emails = get_to_send_emails()
+    to_skip: set[EmailStr] = get_to_skip_emails().emails_to_set()
+    unsubscribed: set[EmailStr] = get_unsubscribed_emails().emails_to_set()
+    to_send = Emails(emails=[])
+    removed_skipped: int = 0
+    removed_unsubscribed: int = 0
+    for email in original.emails:
+        if email.email in unsubscribed:
+            removed_unsubscribed += 1
+        elif email.email in to_skip:
+            removed_skipped += 1
+        else:
+            to_send.emails.append(email)
+    return to_send, CompositionReport(
+        total_skipped=removed_skipped,
+        total_unsubscribed=removed_unsubscribed,
+        total_to_send=len(to_send.emails),
+    )
