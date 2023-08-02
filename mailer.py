@@ -8,6 +8,7 @@ from rich.console import Console
 from rich.progress import track
 from rich.table import Table
 
+from app.config import settings
 from app.mjml import convert_file
 from app.send import EmailGenerator
 from app.sheets import get_all_emails_to_send
@@ -125,18 +126,20 @@ class Interface:
                 console.print("Aborting.", style="red")
                 return
 
-        for sent_email in track(
-            EmailGenerator(
-                recipients,
-                subject,
-                str(html_path),
-                str(txt_path),
-                category,
-                dry_run=dry_run,
-            ),
-            description="[cyan]Sending emails",
-        ):
-            console.print(f"  ->  {sent_email}.")
+        with open(settings.sent_emails_file, "a") as f:
+            for sent_email in track(
+                EmailGenerator(
+                    recipients,
+                    subject,
+                    str(html_path),
+                    str(txt_path),
+                    category,
+                    dry_run=dry_run,
+                ),
+                description="[cyan]Sending emails",
+            ):
+                if not dry_run:
+                    f.write(f"{template},{sent_email}\n")
 
 
 if __name__ == "__main__":

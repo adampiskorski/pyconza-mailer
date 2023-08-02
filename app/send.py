@@ -171,7 +171,7 @@ def send_emails(
         dry_run: Whether to actually send the emails or not.
 
     Yields:
-        A string for each email sent.
+        Each email address that gets sent to.
     """
     html_for_cid = render_html_file(html_path, {"name": "John Doe"})
     attachments = create_all_attachments(html_for_cid)
@@ -182,7 +182,7 @@ def send_emails(
             html = render_html_file(html_path, context)
             txt = render_txt_file(txt_path, context)
             send_email(email, name, subject, html, txt, attachments, category)
-        yield f"{name} <{email}>"
+        yield email
 
 
 class EmailGenerator:

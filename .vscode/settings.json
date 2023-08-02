@@ -32,5 +32,5 @@
     "jinja-html": "html"
   },
   "djlint.blankLineAfterTag": ["endmacro", "import", "from", "extends"],
-  "cSpell.words": ["mjml", "unsubscription"]
+  "cSpell.words": ["LOGURU", "mjml", "unsubscription"]
 }
