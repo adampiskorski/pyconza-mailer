@@ -131,6 +131,8 @@ def get_all_emails_from_worksheet(
         Emails: All email addresses from the worksheet.
     """
     list_of_dicts = worksheet.get_all_records()
+    if not list_of_dicts:
+        return Emails(emails=[])
     if email_heading not in list_of_dicts[0]:
         raise ValueError(
             f"Email heading '{email_heading}' not found in worksheet {worksheet}."
