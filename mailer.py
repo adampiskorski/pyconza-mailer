@@ -96,7 +96,9 @@ class Interface:
         self.render_pre_mjml(template)
         self.render_mjml(template)
 
-    def send_template(self, template: str, subject: str, category: str = "Misc"):
+    def send_template(
+        self, template: str, subject: str, category: str = "Misc", dry_run: bool = False
+    ):
         """Send the given email template to all recipients in the configured sheet.
 
         Unsubscribe and skipped email addresses are not sent to.
@@ -105,24 +107,36 @@ class Interface:
             template: Common part of filename shared between txt and HTML templates.
             subject: Subject of the email. This can be a Jinja2 template string, with `name` available.
             category: Category of the email. Defaults to "Misc".
+            dry_run: If True, do not send emails, just print what would be sent.
 
         """
+        if dry_run:
+            console.print("This is a dry run.", style="green")
+
         html_path, txt_path = self.__html_text_templates_from_name(template)
         recipients = self.__get_all_emails_to_send()
 
-        answer = console.input(
-            "[bold red]Do you wish to send emails? "
-            "Type [underline italic]yes[/] to proceed."
-        )
-        if answer != "yes":
-            console.print("Aborting.", style="bold red")
-            return
+        if not dry_run:
+            answer = console.input(
+                "[bold red]THIS IS NOT A DRY RUN![/][red] Do you wish to send emails? "
+                "Type [underline bold]yes[/] to proceed."
+            )
+            if answer != "yes":
+                console.print("Aborting.", style="red")
+                return
 
         for sent_email in track(
-            EmailGenerator(recipients, subject, str(html_path), str(txt_path), category),
+            EmailGenerator(
+                recipients,
+                subject,
+                str(html_path),
+                str(txt_path),
+                category,
+                dry_run=dry_run,
+            ),
             description="[cyan]Sending emails",
         ):
-            console.print(f"Sent email to {sent_email}.")
+            console.print(f"  ->  {sent_email}.")
 
 
 if __name__ == "__main__":

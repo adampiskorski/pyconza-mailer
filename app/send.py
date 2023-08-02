@@ -155,6 +155,7 @@ def send_emails(
     html_path: str,
     txt_path: str,
     category: str,
+    dry_run: bool = False,
 ) -> Generator[str, None, None]:
     """Send an email using Mailtrap to each recipient.
 
@@ -167,6 +168,7 @@ def send_emails(
         html_path: Path to the HTML template.
         txt_path: Path to the Plain text template.
         category: Category of the email.
+        dry_run: Whether to actually send the emails or not.
 
     Yields:
         A string for each email sent.
@@ -174,11 +176,12 @@ def send_emails(
     html_for_cid = render_html_file(html_path, {"name": "John Doe"})
     attachments = create_all_attachments(html_for_cid)
     for email, name in recipients:
-        context = {"name": name}
-        subject = render_string(subject, context)
-        html = render_html_file(html_path, context)
-        txt = render_txt_file(txt_path, context)
-        send_email(email, name, subject, html, txt, attachments, category)
+        if not dry_run:
+            context = {"name": name}
+            subject = render_string(subject, context)
+            html = render_html_file(html_path, context)
+            txt = render_txt_file(txt_path, context)
+            send_email(email, name, subject, html, txt, attachments, category)
         yield f"{name} <{email}>"
 
 
@@ -192,6 +195,7 @@ class EmailGenerator:
         html_path: str,
         txt_path: str,
         category: str,
+        dry_run: bool = False,
     ):
         """Initialize the generator with the same signature as `send_emails`.
 
@@ -201,12 +205,14 @@ class EmailGenerator:
             html_path: Path to the HTML template.
             txt_path: Path to the Plain text template.
             category: Category of the email.
+            dry_run: Whether to actually send the emails or not.
         """
         self.recipients = recipients
         self.subject = subject
         self.html_path = html_path
         self.txt_path = txt_path
         self.category = category
+        self.dry_run = dry_run
 
     def __iter__(self):
         """Return the generator for `send_emails`.
@@ -220,6 +226,7 @@ class EmailGenerator:
             self.html_path,
             self.txt_path,
             self.category,
+            dry_run=self.dry_run,
         )
 
     def __len__(self):
