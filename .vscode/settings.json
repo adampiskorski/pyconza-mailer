@@ -9,6 +9,7 @@
   "python.formatting.provider": "none",
   "python.formatting.blackArgs": ["--line-length", "90"],
   "python.linting.mypyCategorySeverity.error": "Information",
+  "mypy.runUsingActiveInterpreter": true,
   "python.analysis.indexing": true,
   "autoDocstring.docstringFormat": "google-notypes",
   "autoDocstring.generateDocstringOnEnter": true,

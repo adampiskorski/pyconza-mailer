@@ -5,6 +5,7 @@
     "ms-python.black-formatter",
     "ms-python.vscode-pylance",
     "charliermarsh.ruff",
-    "mjmlio.vscode-mjml"
+    "mjmlio.vscode-mjml",
+    "matangover.mypy"
   ]
 }
