@@ -152,6 +152,8 @@ class Interface:
                     f.write(f"{template},{sent_email}\n")
                 else:
                     sent_emails.append(sent_email)
+            console.print(f"[bold][green]Sent {len(sent_emails)} emails!")
+            console.print(f"Sent emails logged to {settings.sent_emails_file}")
         if dry_run:
             console.print("Would have sent emails to:")
             console.print(sent_emails)
