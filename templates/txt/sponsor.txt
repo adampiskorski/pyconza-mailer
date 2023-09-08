@@ -1,0 +1,86 @@
+{% extends "base.txt" %}
+
+{% block content %}
+Final call for sponsorship!
+===========================
+We are less than a month away from PyConZA, which will be held on the 5 - 6 October 2023 in Durban, and we would like to finalise sponsorships at least several weeks before the event.
+We also feel that our initial call for sponsorship email was not as detailed as it should have been.
+
+Why sponsor?
+============
+PyConZA is an excellent opportunity to connect and engage with some of the best minds in Africa and abroad. This will be the 12th year in a row, without fail, that we have held this conference, and it is the highlight of the year for the entire Python developer community in South Africa. By sponsoring PyConZA, you will contribute to its successful legacy and keep our community strong.
+
+Expected in-person numbers are 50 to 80, and online sales will be more than that, based on last year's event at the same time, place and setup, in which we sold 177 tickets of all types.
+
+This year, we are running a hybrid conference - in-person conferences are more engaging. However, given the successes of our remote conferences in recent years, we aim to support both remote and in-person participation. This will increase our participation footprint - and the visibility of your fine brand :)
+
+We will be hosting the in-person part of PyConZA 2023 in Durban, South Africa, at the Premier Splendid Inn in uMhlanga, and the remote portion will be hosted everywhere.
+
+By taking part as a sponsor, you will:
+======================================
+
+* Join a high-tech event with high visibility
+* Learn and share success cases
+* Connect your brand to open and collaborative free software initiatives
+* Train your team
+* Hire cutting-edge scientists, developers and tech-minded people
+* Offer your services and products
+* Get recognition for your brand in South Africa and abroad
+
+If you or your company are keen to sponsor or have any questions, please get in touch:
+sponsorship@za.pycon.org
+
+Sponsorship packages
+====================
+We have a few base packages, but these are not set in stone. We are happy to craft a package that suits your needs and budget.
+
+The following packages are available:
+
+PyConZA Platinum
+* Price: 75000
+* Total number available: 1
+PyConZA Gold
+* Price: 55000
+* Total number available: 4
+PyConZA Silver
+* Price: 30000
+* Total number available: 8
+PyConZA Patron
+* Price: 8000
+* Total number available: 7
+PyConZA Conference Dinner Addon
+* Price: 65000
+* Total number available: 1
+PyConZA Platinum Lounge Addon
+* Price: R20 000
+* Total number available: 1
+
+Our sponsorship packages provide many ways in which we can showcase you as sponsors and help you to engage with our attendees, including:
+
+* Regular tweets about your company
+* Your logo on our website, conference slides and all of our regular communications to attendees
+* Guaranteed conference tickets for your company
+* Logo placement between and/or during talks and/or on the platform PyConZA is presented on
+* Press releases announcing your sponsorship
+* Opportunities to host spot events during PyConZA
+* Opportunities for both remote and in-person engagements during the event
+
+
+See full package details: https://za.pycon.org/sponsors/packages/
+
+
+The plan
+========
+This is what our conference will look like:
+* A day of live workshops before the main event
+* Two days of talks
+* Sprints are held over the following weekend.
+* Live-streamed presentations, lightning talks and question/answer sessions.
+* Chat rooms for attendees to catch up with fellow attendees, break away into specialised discussion groups (which was very successful in 2020, 2021 and 2022), and receive live announcements
+* Live sponsor-interactive events like raffles and competitions
+
+To see the full event details, please visit our site: https://za.pycon.org/
+
+
+We hope you find this email compelling and decide to become a sponsor, in which case you will not only be sponsoring this event but be seen as a champion of the South African Python community champion!
+{% endblock content %}

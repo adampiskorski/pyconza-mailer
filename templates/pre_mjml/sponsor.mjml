@@ -1,0 +1,439 @@
+{% extends "base.mjml" %}
+{% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Final call for sponsorship!</mj-text>
+    <mj-text>
+      We are less than a month away from PyConZA, which will be held on the 5 - 6 October 2023 in Durban, and we would like to finalise sponsorships at least several weeks before the event.
+    </mj-text>
+    <mj-text>
+      We also feel that our initial call for sponsorship email was not as detailed as it should have been.
+    </mj-text>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">Why sponsor?</mj-text>
+    <mj-text>
+      PyConZA is an excellent opportunity to connect and engage with some of the best minds in Africa and abroad. This will be the 12th year in a row, without fail, that we have held this conference, and it is the highlight of the year for the entire Python developer community in South Africa. By sponsoring PyConZA, you will contribute to its successful legacy and keep our community strong.
+    </mj-text>
+    <mj-text>
+      Expected in-person numbers are 50 to 80, and online sales will be more than that, based on last year's event at the same time, place and setup, in which we sold 177 tickets of all types.
+    </mj-text>
+    <mj-text>
+      This year, we are running a hybrid conference - in-person conferences are more engaging. However, given the successes of our remote conferences in recent years, we aim to support both remote and in-person participation. This will increase our participation footprint - and the visibility of your fine brand :)
+    </mj-text>
+    <mj-text>
+      We will be hosting the in-person part of PyConZA 2023 in Durban, South Africa, at the Premier Splendid Inn in uMhlanga, and the remote portion will be hosted everywhere.
+    </mj-text>
+    <mj-spacer height="45px" />
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">By taking part as a sponsor, you will:</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Join a high-tech event with high visibility</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Learn and share success cases</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Connect your brand to open and collaborative free software initiatives</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Train your team</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Hire cutting-edge scientists, developers and tech-minded people</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Offer your services and products</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Get recognition for your brand in South Africa and abroad</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      If you or your company are keen to sponsor or have any questions, please get in touch:
+    </mj-text>
+    <mj-button mj-class="action-button" href="mailto:sponsorship@za.pycon.org">Get In Touch</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Sponsorship packages</mj-text>
+    <mj-text>
+      We have a few base packages, but these are not set in stone. We are happy to craft a package that suits your needs and budget.
+    </mj-text>
+    <mj-text>
+      The following packages are available:
+    </mj-text>
+    <mj-text mj-class="heading-3" padding-bottom="1px">PyConZA Platinum</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Price: 75 000</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Total number available: 1</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3" padding-bottom="1px">PyConZA Gold</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Price: 55 000</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Total number available: 4</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3" padding-bottom="1px">PyConZA Silver</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Price: 30 000</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Total number available: 8</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3" padding-bottom="1px">PyConZA Patron</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Price: 8 000</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Total number available: 7</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3" padding-bottom="1px">PyConZA Conference Dinner Addon</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Price: 65 000</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Total number available: 1</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3" padding-bottom="1px">PyConZA Platinum Lounge Addon</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Price: 20 000</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Total number available: 1</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      Our sponsorship packages provide many ways in which we can showcase you as sponsors and help you to engage with our attendees, including:
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Regular tweets about your company</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Your logo on our website, conference slides and all of our regular communications to attendees
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Guaranteed conference tickets for your company</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Logo placement between and/or during talks and/or on the platform PyConZA is presented on</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Press releases announcing your sponsorship</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Opportunities to host spot events during PyConZA</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Opportunities for both remote and in-person engagements during the event</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">See Full Package Details</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">The plan</mj-text>
+    <mj-text>
+      This is what our conference will look like:
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">A day of live workshops before the main event</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Two days of talks
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Sprints are held over the following weekend.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Live-streamed presentations, lightning talks and question/answer sessions.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Chat rooms for attendees to catch up with fellow attendees, break away into specialised discussion groups (which was very successful in 2020, 2021 and 2022), and receive live announcements
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Live sponsor-interactive events like raffles and competitions
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      To see the full event details, please visit our site:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/">Visit Our Site</mj-button>
+    <mj-text>
+    </mj-text>
+
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text>
+      We hope you find this email compelling and decide to become a sponsor, in which case you will not only be sponsoring this event but be seen as a champion of the South African Python community champion!
+    </mj-text>
+    <mj-spacer height="45px" />
+  </mj-column>
+</mj-section>
+
+{% endblock content %}

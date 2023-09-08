@@ -6,6 +6,7 @@
       <mj-text font-family="Verdana, Aerial"></mj-text>
       <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
       <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" font-style="bold" />
       <mj-class name="action-button" background-color="#237771" color="#fcf282" />
       <mj-class name="body-section" background-color="#ebcad8" />
     </mj-attributes>
