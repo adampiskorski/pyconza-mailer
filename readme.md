@@ -59,6 +59,11 @@ There is a dry run mode, enabled with the `--test_server=True` flag, which sends
 If neither of the above flags are specified, then all emails are sent for real through the Mailtrap production server.
 All emails that are sent in this mode, and only this mode are appended to the send emails log file (default file name is `send_emails.log`)
 
+### Rate limit
+
+Mailtrap has a limit on the number of emails that can be sent in an hour.
+You can honor this rate limit by automatically spreading out the sending of emails with the `--hourly_rate=50` flag, where 50 is the number of emails that you would like to send over the period of an hour.
+
 ## Templates
 
 Templates are created using the MJML markup language, and Jinja2. The templates are converted to HTML by using the free [MJML API](https://mjml.io/api/documentation/), in order to avoid a nodejs dependency to the project.

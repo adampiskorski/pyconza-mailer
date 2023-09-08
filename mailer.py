@@ -1,5 +1,7 @@
 """Interface for the mailer app."""
 
+import time
+from math import ceil
 from pathlib import Path
 
 import fire
@@ -17,6 +19,7 @@ from app.templating import render_pre_mjml_file_to_mjml_file
 pretty.install()
 traceback.install(show_locals=True)
 
+HOURLY_SECONDS = 3600
 
 console = Console()
 
@@ -68,6 +71,18 @@ class Interface:
 
         return emails
 
+    @staticmethod
+    def __get_seconds_delay_for_hourly_rate(hourly_rate: None | int) -> int:
+        """Return the number of seconds to delay between emails for the given hourly rate.
+
+        Args:
+            hourly_rate: Number of emails to send per hour.
+
+        Returns:
+            Number of seconds to delay between emails.
+        """
+        return ceil(HOURLY_SECONDS / hourly_rate) if hourly_rate else 0
+
     def render_pre_mjml(self, template: str):
         """Render a pre-MJML template to the MJML folder, ready to be converted to HTML.
 
@@ -103,6 +118,7 @@ class Interface:
         subject: str,
         dry_run: bool = False,
         test_server: bool = False,
+        hourly_rate: None | int = None,
     ):
         """Send the given email template to all recipients in the configured sheet.
 
@@ -114,6 +130,7 @@ class Interface:
             subject: Subject of the email. This can be a Jinja2 template string, with `name` available.
             dry_run: If True, do not send emails, just print what would be sent.
             test_server: If True, send emails to the Mailtrap test server instead of the real server.
+            hourly_rate: If > 0, spread out the sending of emails at the given `hourly_rate` per hour.
 
         """
         if dry_run:
@@ -123,11 +140,14 @@ class Interface:
         else:
             mode_prefix = "[bold red]THIS WILL SEND EMAILS FOR REAL![/]"
 
+        rate_note = f" at a rate of {hourly_rate} emails per hour" if hourly_rate else ""
         html_path, txt_path = self.__html_text_templates_from_name(template)
         recipients = self.__get_all_emails_to_send()
 
+        rate_delay = self.__get_seconds_delay_for_hourly_rate(hourly_rate)
+
         answer = console.input(
-            f"{mode_prefix} [red] Would you like to send these emails? "
+            f"{mode_prefix} [red] Would you like to send these emails{rate_note}? "
             "Type [underline bold]yes[/] to proceed."
         )
         if answer != "yes":
@@ -152,6 +172,8 @@ class Interface:
                     f.write(f"{template},{sent_email}\n")
                 else:
                     sent_emails.append(sent_email)
+                if rate_delay:
+                    time.sleep(rate_delay)
             console.print(f"[bold][green]Sent {len(sent_emails)} emails!")
             console.print(f"Sent emails logged to {settings.sent_emails_file}")
         if dry_run:
