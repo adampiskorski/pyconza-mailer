@@ -1,0 +1,26 @@
+{% extends "base.txt" %}
+
+{% block content %}
+New tutorial!
+=========
+We are excited to announce our first accepted PyConZA 2023 🐍 tutorial, 🍃 "Airflow - beyond the basics (and also some basics)" by Sheena O'Connell.
+
+Tutorial description
+==============
+"Apache Airflow is a platform that allows Pythonistas to programmatically author, schedule and monitor workflows. It was originally created by the nice folks at Airbnb because they had a lot of problems.
+Now Airflow is open source and pretty well documented. But it has a few gotchas and unexpected behaviours."
+
+Full description: https://za.pycon.org/talks/21-airflow-beyond-the-basics-and-also-some-basics/
+
+More information
+==========
+You can purchase a ticket for this tutorial at the bottom of our tickets page: https://za.pycon.org/tickets/buy-tickets/
+
+The tutorial will take place on the 4th of October at 09:00 in the tutorial room.
+
+
+
+Tutorials will happen the day before the conference (Wednesday, the 4th of October) and are available only to in-person attendees. Tickets 🎟 for each tutorial are sold separately.
+
+You can find out more details about accepted talks and tutorials here: https://za.pycon.org/talks/
+{% endblock content %}

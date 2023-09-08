@@ -37,8 +37,53 @@
     </mj-section>
 
     <!-- body -->
-    {% block content %}
-    {% endblock content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New tutorial!</mj-text>
+    <mj-text>
+      We are excited to announce our first accepted PyConZA 2023 🐍 tutorial, 🍃 "Airflow - beyond the basics (and also some basics)" by Sheena O'Connell.
+    </mj-text>
+
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Tutorial description</mj-text>
+    <mj-text mj-class="blurb">
+      Apache Airflow is a platform that allows Pythonistas to programmatically author, schedule and monitor workflows. It was originally created by the nice folks at Airbnb because they had a lot of problems.
+    </mj-text>
+    <mj-image mj-class="blurb" fluid-on-mobile="true" src="https://d1p9k7qrmizowl.cloudfront.net/data_pipeline.png" alt="xkcd data pipeline comic" />
+    <mj-text mj-class="blurb">
+      Now Airflow is open source and pretty well documented. But it has a few gotchas and unexpected behaviours.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/21-airflow-beyond-the-basics-and-also-some-basics/">Full Description</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">More information</mj-text>
+    <mj-text>
+      You can purchase a ticket for this tutorial at the bottom of our tickets page.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy Tickets</mj-button>
+    <mj-text>
+      The tutorial will take place on the 4th of October at 09:00 in the tutorial room.
+    </mj-text>
+    <mj-spacer height="45px" />
+  </mj-column>
+
+  <mj-column>
+    <mj-text>
+      Tutorials will happen the day before the conference (Wednesday, the 4th of October) and are available only to in-person attendees. Tickets 🎟 for each tutorial are sold separately.
+    </mj-text>
+    <mj-text>
+      You can find out more details about accepted talks and tutorials on our talks page.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/">Talks</mj-button>
+  </mj-column>
+</mj-section>
+
 
     <!-- footer -->
     <mj-section background-color="#237771">
