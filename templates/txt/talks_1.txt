@@ -1,0 +1,51 @@
+{% extends "base.txt" %}
+
+{% block content %}
+Our Keynote!
+============
+We are happy to announce our keynote for PyConZA 2023 🐍, “Green coding with Python”, by Rudi Giesler.
+
+Keynote description
+===================
+"Green coding is an environmentally sustainable computing practice.
+
+In this talk we'll be discussing how to put this into practice in our Python applications, practical advice for improving the efficiency of our code, and common pitfalls to avoid. We'll also look at the larger picture and environmental impact of everything that goes into creating and running software."
+
+Full description: https://za.pycon.org/talks/19-green-coding-with-python/
+
+The first batch of accepted talks
+=================================
+We have many more talks that are going through the approval process, but the following are 100% approved and confirmed:
+
+In-person talks
+—--------------
+“Reaching New Heights in Python Education: Success of the 2023 Coding Summer School”
+ * https://za.pycon.org/talks/5-reaching-new-heights-in-python-education-success-of-the-2023-coding-summer-school/
+“Packaging for your database schema, schema migration.”
+* https://za.pycon.org/talks/7-packaging-for-your-database-schema-schema-migration/
+“Toolsmithing: convenience through code”
+* https://za.pycon.org/talks/18-toolsmithing-convenience-through-code/
+
+Remote talks
+—-----------
+The Art of Code Refactoring in Python
+https://za.pycon.org/talks/33-the-art-of-code-refactoring-in-python/
+
+Talks and schedule pages
+========================
+Please keep an eye on our talks page to see all other talks as they get approved here: https://za.pycon.org/talks/
+
+You can see our talks schedule here: https://za.pycon.org/schedule/
+
+Tickets
+=======
+Tickets for the main PyConZA 2023 🐍 conference and for our first tutorial are still available. You can find them here: https://za.pycon.org/tickets/buy-tickets/
+
+Confused about the different ticket types? We have an explanation here: https://za.pycon.org/tickets/ticket-prices/
+
+Please remember that tutorial tickets are in-person only, and must be purchased separately.
+
+Financial Assistance
+====================
+We have a limited number of complimentary tickets available. Please check our financial assistance page for more information: https://za.pycon.org/tickets/financial-assistance/
+{% endblock content %}

@@ -1,6 +1,10 @@
 {% block content %}
 {% endblock content %}
 
+Sponsors
+========
+Thinkst Canary: https://canary.tools/
+
 Socials
 =======
 Twitter: https://twitter.com/pyconza

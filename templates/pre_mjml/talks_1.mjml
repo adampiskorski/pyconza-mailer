@@ -1,0 +1,132 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Our Keynote!</mj-text>
+    <mj-text>
+      We are happy to announce our keynote for <b>PyConZA 2023</b> 🐍, <b>“Green coding with Python”</b>, by <b>Rudi Giesler</b>.
+    </mj-text>
+
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Keynote description</mj-text>
+    <mj-text mj-class="blurb">
+      Green coding is an environmentally sustainable computing practice.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      In this talk we'll be discussing how to put this into practice in our Python applications, practical advice for improving the efficiency of our code, and common pitfalls to avoid. We'll also look at the larger picture and environmental impact of everything that goes into creating and running software.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/19-green-coding-with-python/">Full Description</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">
+      The first batch of accepted talks
+    </mj-text>
+    <mj-text>
+      We have many more talks that are going through the approval process, but the following are 100% approved and confirmed:
+    </mj-text>
+    <mj-text mj-class="heading-3">
+      In-person talks
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><a href="https://za.pycon.org/talks/5-reaching-new-heights-in-python-education-success-of-the-2023-coding-summer-school/">“Reaching New Heights in Python Education: Success of the 2023 Coding Summer School”</a>
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><a href="https://za.pycon.org/talks/7-packaging-for-your-database-schema-schema-migration/">“Packaging for your database schema, schema migration.”</a></span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><a href="https://za.pycon.org/talks/18-toolsmithing-convenience-through-code/">“Toolsmithing: convenience through code”</a></span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3">
+      Remote talks
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><a href="https://za.pycon.org/talks/33-the-art-of-code-refactoring-in-python/">“The Art of Code Refactoring in Python”</a>
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Talks and schedule pages</mj-text>
+    <mj-text>
+      Please keep an eye on our talks page to see all other talks as they get approved here:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/">Talks</mj-button>
+    <mj-text>
+      You can see our talks schedule here:
+    </mj-text>
+    <mj-button mj-class=" action-button" href="https://za.pycon.org/schedule/">Schedule</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">Tickets</mj-text>
+    <mj-text>
+      Tickets for the main PyConZA 2023 🐍 conference and for our first tutorial are still available. You can find them here:
+    </mj-text>
+    <mj-button mj-class=" action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy Tickets</mj-button>
+    <mj-text>
+      Confused about the different ticket types? We have an explanation here:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/ticket-prices/">Ticket Prices</mj-button>
+    <mj-text>
+      Please remember that tutorial tickets are in-person only, and must be purchased separately.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Financial Assistance</mj-text>
+    <mj-text>
+      We have a limited number of complimentary tickets available. Please check our financial assistance page for more information:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/financial-assistance/">Financial Assistance</mj-button>
+  </mj-column>
+</mj-section>
+{% endblock content %}
