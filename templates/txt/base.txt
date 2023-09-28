@@ -3,7 +3,9 @@
 
 Sponsors
 ========
+Python Software Foundation: https://www.python.org/psf/membership/
 Thinkst Canary: https://canary.tools/
+Afrolabs: https://www.afrolabs.co.za/
 
 Socials
 =======

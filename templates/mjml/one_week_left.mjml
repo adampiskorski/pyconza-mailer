@@ -1,0 +1,121 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" font-style="bold" />
+      <mj-class name="action-button" background-color="#237771" color="#fcf282" />
+      <mj-class name="body-section" background-color="#ebcad8" />
+      <mj-class name="blurb" container-background-color="#f9eff3" font-style="italic" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+
+    <!-- title header -->
+    <mj-section background-color="#6a0f49">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1" color="#fcf282">
+          PyConZA
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image header -->
+    <mj-section background-url="https://d1p9k7qrmizowl.cloudfront.net/splendid-inn.jpg" background-size="cover" background-repeat="no-repeat">
+      <mj-column width="600px">
+        <mj-text align="center" mj-class="heading-1">
+          uMhlanga, Durban, 5-6 October 2023
+        </mj-text>
+        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
+        <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
+          Register
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">PyConZA is less than a week away!</mj-text>
+    <mj-text>
+      The main conference starts on Thursday, the 5th of October.
+    </mj-text>
+    <mj-text>
+      If you haven't yet bought your ticket, be sure to do so soon!
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy Tickets</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">Many confirmed talks!</mj-text>
+    <mj-text>
+      So far, we have 18 fully confirmed talks, and more in the process of being finalized!
+      We have talks ranging from the successes of the 2023 Coding Summer School, prompt engineering for Python engineers, best practices for making APIs, optimizing Django, and many more!
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/">Currently accepted talks</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New Platinum Sponsor!</mj-text>
+    <mj-text>
+      We would like to welcome the Python Software Foundation (PSF) aboard as our headline sponsor for this year!
+    </mj-text>
+    <mj-image fluid-on-mobile="true" href="https://www.python.org/psf/membership." src="https://d1p9k7qrmizowl.cloudfront.net/psf_main_logo.png" alt="PSF logo" />
+    <mj-text mj-class="blurb">
+      The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. The majority of the PSF's work is focused on empowering and supporting people within the Python community.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      The PSF has active grant programs that support sprints, conferences, meet ups, user groups, and Python development efforts all over the world. In addition, the PSF underwrites and runs PyCon US, the primary Python community conference. Being part of the PSF means being part of the Python community. Recently we changed the PSF to an open membership organization, so that everyone who uses and supports Python can join.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://www.python.org/psf/membership./">Learn more</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+
+  <mj-column>
+    <mj-text mj-class="heading-2">New Patron Sponsor!</mj-text>
+
+    <mj-text>
+      We would also like to welcome aboard returning sponsor Afrolabs, who have consistently supported PyConZA over the years!
+    </mj-text>
+    <mj-image width="90px" src="https://d1p9k7qrmizowl.cloudfront.net/afrolabs_logo.png" href="http://www.afrolabs.co.za/" alt="Afrolabs logo" />
+    <mj-button mj-class="action-button" href=" http://www.afrolabs.co.za/">Learn more</mj-button>
+  </mj-column>
+</mj-section>
+
+
+
+    <!-- footer -->
+    <mj-section background-color="#237771">
+      <mj-column>
+        <mj-social>
+          <mj-social-element href="https://twitter.com/pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/twitter.png">
+          </mj-social-element>
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/mastodon.png">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="250px" src="https://d1p9k7qrmizowl.cloudfront.net/psf_main_logo_wide.png" href="https://www.python.org/psf/membership/" alt="PSF logo" />
+        <mj-image width="150px" src="https://d1p9k7qrmizowl.cloudfront.net/thinkst_logo_footer.png" href="https://canary.tools/" alt="thinkst logo" />
+        <mj-image width="90px" src="https://d1p9k7qrmizowl.cloudfront.net/afrolabs_logo.png" href="http://www.afrolabs.co.za/" alt="Afrolabs logo" />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button href="https://forms.gle/7gCZizA2MR8DGYBr7">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

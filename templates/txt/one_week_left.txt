@@ -1,0 +1,42 @@
+{% extends "base.txt" %}
+
+{% block content %}
+PyConZA is less than a week away!
+=================================
+The main conference starts on Thursday, the 5th of October.
+
+If you haven't yet bought your ticket, be sure to do so here: https://za.pycon.org/tickets/buy-tickets/
+
+
+Many confirmed talks!
+=====================
+So far, we have 18 fully confirmed talks, and more in the process of being finalized!
+We have talks ranging from the successes of the 2023 Coding Summer School, prompt engineering for Python engineers, best practices for making APIs, optimizing Django, and many more!
+
+See all the currently accepted talks here: https://za.pycon.org/talks/
+
+
+Conference and Tutorial tickets are still available
+===================================================
+We have online and in-person tickets for the conference available here: https://za.pycon.org/tickets/buy-tickets/
+
+We still have spaces available in the tutorial "Airflow - beyond the basics (and also some basics)", which you can purchase on the same page.
+Full description: https://za.pycon.org/talks/21-airflow-beyond-the-basics-and-also-some-basics/
+
+
+New Platinum Sponsor!
+=====================
+We would like to welcome the Python Software Foundation (PSF) aboard as our headline sponsor for this year!
+
+"The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. The majority of the PSF's work is focused on empowering and supporting people within the Python community.
+
+The PSF has active grant programs that support sprints, conferences, meet ups, user groups, and Python development efforts all over the world. In addition, the PSF underwrites and runs PyCon US, the primary Python community conference. Being part of the PSF means being part of the Python community. Recently we changed the PSF to an open membership organization, so that everyone who uses and supports Python can join."
+
+To learn more, visit: https://www.python.org/psf/membership.
+
+
+New Patron Sponsor!
+===================
+We would also like to welcome aboard returning sponsor Afrolabs, who have consistently supported PyConZA over the years! You can check them out here: http://www.afrolabs.co.za/
+
+{% endblock content %}

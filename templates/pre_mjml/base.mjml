@@ -56,7 +56,9 @@
 
     <mj-section>
       <mj-column>
+        <mj-image width="250px" src="https://d1p9k7qrmizowl.cloudfront.net/psf_main_logo_wide.png" href="https://www.python.org/psf/membership/" alt="PSF logo" />
         <mj-image width="150px" src="https://d1p9k7qrmizowl.cloudfront.net/thinkst_logo_footer.png" href="https://canary.tools/" alt="thinkst logo" />
+        <mj-image width="90px" src="https://d1p9k7qrmizowl.cloudfront.net/afrolabs_logo.png" href="http://www.afrolabs.co.za/" alt="Afrolabs logo" />
       </mj-column>
     </mj-section>
     <mj-section>
