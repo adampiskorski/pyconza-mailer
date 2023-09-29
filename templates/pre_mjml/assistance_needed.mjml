@@ -1,0 +1,33 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Assistance needed!</mj-text>
+    <mj-text>
+      PyConZA is made possible by volunteers made up of attendees such as yourself.
+      We need MCs (masters of ceremonies) and video assistants to help the conference run smoothly.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">MCs</mj-text>
+    <mj-text>
+      A master of ceremonies (MC) will manage a talk room, making sure that talks start and end as scheduled and go smoothly and respectfully, and fielding questions from the in-person and online audience.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://forms.gle/sktgNsKukqGSC2d77">Sign up to assist</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">Video assistants</mj-text>
+    <mj-text>
+      A video assistant will manage the streaming and recording PCs and the camera, making sure that the speaker is in the frame and the correct scene is chosen for recording and streaming.
+    </mj-text>
+    <mj-text>
+      We also need some hands to help us set up our video system on Wednesday.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://forms.gle/1z2WRzYmbDBYKBMG7">Sign up to assist</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+</mj-section>
+{% endblock content %}

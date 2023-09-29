@@ -1,0 +1,25 @@
+{% extends "base.txt" %}
+
+{% block content %}
+Assistance needed!
+==================
+PyConZA is made possible by volunteers made up of attendees such as yourself.
+We need MCs (masters of ceremonies) and video assistants to help the conference run smoothly.
+
+
+MCs
+===
+A master of ceremonies (MC) will manage a talk room, making sure that talks start and end as scheduled and go smoothly and respectfully, and fielding questions from the in-person and online audience.
+
+Sign up here to assist: https://forms.gle/sktgNsKukqGSC2d77
+
+
+Video assistants
+================
+A video assistant will manage the streaming and recording PCs and the camera, making sure that the speaker is in the frame and the correct scene is chosen for recording and streaming.
+
+We also need some hands to help us set up our video system on Wednesday.
+
+Sign up here to assist: https://forms.gle/1z2WRzYmbDBYKBMG7
+
+{% endblock content %}
