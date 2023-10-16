@@ -1,0 +1,28 @@
+{% extends "base.txt" %}
+
+{% block content %}
+PyConZA post-conference feedback
+================================
+We hope you had a great time this year at PyConZA 2023. Thanks to you, our conference was a success!
+To gauge the impact of their sponsorship, the PSF would like to learn more about our community and your experience with the conference.
+Please help us out by responding to this brief survey: https://forms.gle/jRNmcsEUzRD8yFcQ6
+
+
+We are working on talk videos
+=============================
+We are busy editing our stream footage from the conference, cleaning up audio, and getting feedback from the speakers of the talks. This process is likely to take several weeks, but we'll be adding videos to this playlist as we complete them: https://www.youtube.com/playlist?list=PLGjWYNrNnSuetv-rL_k4sZUGjvDXWULjA
+
+
+Next, PyConZA in Cape Town
+==========================
+We have decided to host PyConZA 2024 in Cape Town and we're looking for organisers to help us out. While we need local organisers to fill certain roles on the ground, there are also many tasks which can be done remotely. We welcome volunteers from anywhere! Please contact us via email at team@za.pycon.org, or reach out to anyone with the #organiser tag on our Discord.
+
+We will announce the exact venue early next year, once we have scouted out the options.
+
+
+Photos and Talk slides
+======================
+You can now see all of our in-person photos taken at PyConZA 2023  in our new Flickr album: https://www.flickr.com/photos/pyconza/albums/72177720311937050
+
+We are currently collecting talk slides and adding them to their respective talk pages, which you can see here: https://za.pycon.org/talks/
+{% endblock content %}

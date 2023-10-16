@@ -1,0 +1,69 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" font-style="bold" />
+      <mj-class name="action-button" background-color="#237771" color="#fcf282" />
+      <mj-class name="body-section" background-color="#ebcad8" />
+      <mj-class name="blurb" container-background-color="#f9eff3" font-style="italic" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+
+    <!-- title header -->
+    <mj-section background-color="#6a0f49">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1" color="#fcf282">
+          PyConZA
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image header -->
+    <mj-section background-url="https://d1p9k7qrmizowl.cloudfront.net/splendid-inn.jpg" background-size="cover" background-repeat="no-repeat">
+      <mj-column width="600px">
+        <mj-text align="center" mj-class="heading-1">
+          uMhlanga, Durban, 5-6 October 2023
+        </mj-text>
+        <mj-image width="100px" src="https://d1p9k7qrmizowl.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+    {% block content %}
+    {% endblock content %}
+
+    <!-- footer -->
+    <mj-section background-color="#237771">
+      <mj-column>
+        <mj-social>
+          <mj-social-element href="https://twitter.com/pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/twitter.png">
+          </mj-social-element>
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d1p9k7qrmizowl.cloudfront.net/mastodon.png">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="250px" src="https://d1p9k7qrmizowl.cloudfront.net/psf_main_logo_wide.png" href="https://www.python.org/psf/membership/" alt="PSF logo" />
+        <mj-image width="150px" src="https://d1p9k7qrmizowl.cloudfront.net/thinkst_logo_footer.png" href="https://canary.tools/" alt="thinkst logo" />
+        <mj-image width="90px" src="https://d1p9k7qrmizowl.cloudfront.net/afrolabs_logo.png" href="http://www.afrolabs.co.za/" alt="Afrolabs logo" />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button href="https://forms.gle/7gCZizA2MR8DGYBr7">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,60 @@
+{% extends "base_post.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">PyConZA post-conference feedback</mj-text>
+    <mj-text>
+      We hope you had a great time this year at PyConZA 2023. Thanks to you, our conference was a success!
+    </mj-text>
+    <mj-text>
+      To gauge the impact of their sponsorship, the PSF would like to learn more about our community and your experience with the conference.
+    </mj-text>
+    <mj-text>
+      Please help us out by responding to this brief survey:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://forms.gle/jRNmcsEUzRD8yFcQ6">Survey</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">We are working on talk videos</mj-text>
+    <mj-text>
+      We are busy editing our stream footage from the conference, cleaning up audio, and getting feedback from the speakers of the talks.
+    </mj-text>
+    <mj-text>
+      This process is likely to take several weeks, but we'll be adding videos to this playlist as we complete them:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://www.youtube.com/playlist?list=PLGjWYNrNnSuetv-rL_k4sZUGjvDXWULjA ">PyConZA 2023 Playlist</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Next, PyConZA in Cape Town</mj-text>
+    <mj-text>
+      We have decided to host PyConZA 2024 in Cape Town and we're looking for organisers to help us out. While we need local organisers to fill certain roles on the ground, there are also many tasks which can be done remotely.
+    </mj-text>
+    <mj-text>
+      We welcome volunteers from anywhere! Please contact us via email at <a href="mailto:team@za.pycon.org">team@za.pycon.org</a>, or reach out to anyone with the #organiser tag on our Discord.
+    </mj-text>
+    <mj-text>
+      We will announce the exact venue early next year, once we have scouted out the options.
+    </mj-text>
+    <mj-button mj-class="action-button" href="mailto:team@za.pycon.org">Email us!</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+
+  <mj-column>
+    <mj-text mj-class="heading-2">Photos and Talk slides</mj-text>
+
+    <mj-text>
+      You can now see all of our in-person photos taken at PyConZA 2023 in our new Flickr album:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://www.flickr.com/photos/pyconza/albums/72177720311937050">Flickr album</mj-button>
+    <mj-text>
+      We are currently collecting talk slides and adding them to their respective talk pages, which you can see here:
+    </mj-text>
+
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/">Talk pages</mj-button>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}
