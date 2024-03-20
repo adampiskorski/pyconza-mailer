@@ -1,0 +1,10 @@
+{% block content %}
+{% endblock content %}
+
+Socials
+=======
+Twitter: https://twitter.com/pyconza
+Mastodon: https://fosstodon.org/@pyconza
+
+
+Unsubscribe here: https://forms.gle/wzRuqTGnFqq5U2yz7

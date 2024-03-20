@@ -1,0 +1,28 @@
+{% extends "base.txt" %}
+{% block content %}
+First call for sponsors for PyConZA 2024!
+=========================================
+
+South Africa's annual Python programming language conference, PyConZA, is taking place in October this year. We're inviting you to sponsor the event.
+
+This year's conference will be back in Cape Town, the original PyConZA birthplace. Cape Town is a Python developer hub, with historically vibrant, well-attended Python conferences.
+
+Why sponsor?
+===========
+Sponsorship gives your company exposure to 200+ Python developers at the conference itself, and to the wider Python developer community through conference advertising. Sponsorship gives you a way to build brand recognition in this community, and an opportunity to foster recruitment relationships.
+
+Packages
+========
+Our package details can be found here: https://za.pycon.org/sponsors/packages/
+This year we are introducing an Opportunity sponsorship, through which sponsors will directly fund attendees who would otherwise not be able to attend.
+All of our packages include: advertising through the conference social media channels, exposure at the conference, opportunities to interact with attendees, and a number of free conference tickets.
+
+If you have ideas for ways to sponsor that aren't in our package list - get in touch with us! We are open to new ideas.
+
+How to contact us
+=================
+Contact us at sponsorship@za.pycon.org to sign up as a sponsor, or if you have any questions. We would love to have you join us in growing the South African Python community!
+
+Best regards,
+The PyConZA committee
+{% endblock content %}

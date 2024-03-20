@@ -1,0 +1,45 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">First call for sponsors for PyConZA 2024!</mj-text>
+    <mj-text>
+      South Africa's annual Python programming language conference, PyConZA, is taking place in October this year. We're inviting you to sponsor the event.
+    </mj-text>
+    <mj-text>
+      This year's conference will be back in Cape Town, the original PyConZA birthplace. Cape Town is a Python developer hub, with historically vibrant, well-attended Python conferences.
+    </mj-text>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">Why sponsor?</mj-text>
+    <mj-text>
+      Sponsorship gives your company exposure to 200+ Python developers at the conference itself, and to the wider Python developer community through conference advertising. Sponsorship gives you a way to build brand recognition in this community, and an opportunity to foster recruitment relationships.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Packages</mj-text>
+    <mj-text>
+      This year we are introducing an Opportunity sponsorship, through which sponsors will directly fund attendees who would otherwise not be able to attend.
+      All of our packages include: advertising through the conference social media channels, exposure at the conference, opportunities to interact with attendees, and a number of free conference tickets.
+    </mj-text>
+    <mj-text>
+      If you have ideas for ways to sponsor that aren't in our package list - get in touch with us! We are open to new ideas.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">See our packages</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+
+  <mj-column>
+    <mj-text mj-class="heading-2">How to contact us</mj-text>
+
+    <mj-text>
+      Contact us at <a href="mailto:sponsorship@za.pycon.org">sponsorship@za.pycon.org</a> to sign up as a sponsor, or if you have any questions. We would love to have you join us in growing the South African Python community!
+    </mj-text>
+    <mj-button mj-class="action-button" href="mailto:sponsorship@za.pycon.org">Get in touch</mj-button>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}
