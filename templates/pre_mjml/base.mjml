@@ -11,6 +11,11 @@
       <mj-class name="body-section" background-color="#FFFFFF" />
       <mj-class name="blurb" container-background-color="#F9C784" font-style="italic" />
     </mj-attributes>
+    <mj-style>
+      a:hover {
+        color: #FF8C42;
+      }
+    </mj-style>
   </mj-head>
   <mj-body>
 
