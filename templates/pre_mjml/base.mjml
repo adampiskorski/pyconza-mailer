@@ -35,9 +35,9 @@
           Rondebosch, Cape Town, 2-4 October 2024
         </mj-text>
         <mj-image width="100px" src="https://d3q92ym5gvt1q6.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
-        <!-- <mj-button background-color="#237771" color="#fcf282" href="https://za.pycon.org/">
+        <mj-button mj-class="action-button" href="https://za.pycon.org/">
           Register
-        </mj-button> -->
+        </mj-button>
       </mj-column>
     </mj-section>
 

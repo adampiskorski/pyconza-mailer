@@ -1,6 +1,10 @@
 {% block content %}
 {% endblock content %}
 
+Register
+========
+https://za.pycon.org/
+
 Sponsors
 ========
 Thinkst Canary: https://canary.tools/

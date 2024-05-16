@@ -1,0 +1,177 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" font-style="bold" />
+      <mj-class name="action-button" background-color="#4E598C" color="#FF8C42" />
+      <mj-class name="body-section" background-color="#FFFFFF" />
+      <mj-class name="blurb" container-background-color="#F9C784" font-style="italic" />
+    </mj-attributes>
+    <mj-style>
+      a:hover {
+        color: #FF8C42;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+
+    <!-- title header -->
+    <mj-section background-color="#4E598C">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1" color="#F9C784">
+          PyConZA
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image header -->
+    <mj-section background-url="https://d3q92ym5gvt1q6.cloudfront.net/cape-town.jpg" background-size="cover" background-repeat="no-repeat">
+      <mj-column width="600px">
+        <mj-text align="center" mj-class="heading-1">
+          Rondebosch, Cape Town, 2-4 October 2024
+        </mj-text>
+        <mj-image width="100px" src="https://d3q92ym5gvt1q6.cloudfront.net/pyconza-icon.png" alt="PyConZA logo" href="https://za.pycon.org/" />
+        <mj-button mj-class="action-button" href="https://za.pycon.org/">
+          Register
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Ticket sales are open</mj-text>
+    <mj-text>
+      We have opened our early bird in-person and online ticket sales.
+    </mj-text>
+    <mj-text>
+      Below are our in-person ticket prices:
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Student (Cape Town, Early Bird): R350</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Individual (Cape Town, Early Bird): R900</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Corporate (Cape Town, Early Bird): R1,300</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Pensioner (Cape Town, Early Bird): R350</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      Below are our online ticket prices:
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Student (Online, Early Bird): R100</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Individual (Online, Early Bird): R200</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Corporate (Online, Early Bird): R400</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Pensioner (Online, Early Bird): R100</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      Our early bird rates won't last forever, so please don't delay.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy your ticket now!</mj-button>
+  </mj-column>
+</mj-section>
+
+
+
+    <!-- footer -->
+    <mj-section background-color="#FF8C42">
+      <mj-column>
+        <mj-social>
+          <mj-social-element href="https://twitter.com/pyconza" src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png">
+          </mj-social-element>
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+    <mj-section>
+      <mj-column>
+        <mj-image width="250px" src="https://d3q92ym5gvt1q6.cloudfront.net/thinkst_logo_main.png" href="https://canary.tools/" alt="Thinkst Canary" />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button href="https://forms.gle/wzRuqTGnFqq5U2yz7">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

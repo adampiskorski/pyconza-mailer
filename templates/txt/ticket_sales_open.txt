@@ -1,0 +1,24 @@
+{% extends "base.txt" %}
+{% block content %}
+PyConZA 2024 Ticket sales are open!
+
+Ticket sales are open
+=====================
+We have opened our early bird in-person and online ticket sales.
+
+Below are our in-person ticket prices:
+* Student (Cape Town, Early Bird): R350
+* Individual (Cape Town, Early Bird): R900
+* Corporate (Cape Town, Early Bird): R1,300
+* Pensioner (Cape Town, Early Bird): R350
+
+Below are our online ticket prices:
+* Student (Online, Early Bird): R100
+* Individual (Online, Early Bird): R200
+* Corporate (Online, Early Bird): R400
+* Pensioner (Online, Early Bird): R100
+
+Our early bird rates won't last forever, so please don't delay.
+
+Click here to buy your ticket now!: https://za.pycon.org/tickets/buy-tickets/
+{% endblock content %}
