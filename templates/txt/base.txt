@@ -8,6 +8,7 @@ https://za.pycon.org/
 Sponsors
 ========
 Thinkst Canary: https://canary.tools/
+SARAO: https://www.sarao.ac.za/
 
 Socials
 =======

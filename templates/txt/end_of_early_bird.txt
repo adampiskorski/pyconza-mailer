@@ -1,0 +1,20 @@
+{% extends "base.txt" %}
+{% block content %}
+Early Bird ticket sales end soon!
+=================================
+Unfortunately, all good things must come to an end, and our Early Bird ticket sales are no exception. They will end on July 31st, 2024.
+Grab them while you still can here: https://za.pycon.org/tickets/buy-tickets/
+
+Submissions are still open
+==========================
+We are still looking for speakers for PyConZA 2024. If you would like to give a presentation, please register at https://za.pycon.org/ and submit your proposal following the instructions at https://za.pycon.org/talks/how-to-submit-a-talk. We have a number of tracks available: Data Science, Teaching and Learning with Python, Web, Scientific Computing, Testing, and Others (which includes all talks that don't fall under the mentioned tracks). We hope to notify accepted presenters by no later than the 31st of August, 2024.
+
+New Gold Sponsor!
+=================
+SARAO (https://www.sarao.ac.za/) has signed up to be our gold sponsor! We would like to thank them for being our sponsor for 2024 and look forward to working with them. Please check them out!
+
+We still have plenty of other packages available that you can see here: https://za.pycon.org/sponsors/packages/
+If you are interested, please reach out to us at sponsorship@za.pycon.org.
+
+We have two more sponsors to announce soon, so keep an eye out for our next email!
+{% endblock content %}

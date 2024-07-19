@@ -1,0 +1,40 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Early Bird ticket sales end soon!</mj-text>
+    <mj-text>
+      Unfortunately, all good things must come to an end, and our Early Bird ticket sales are no exception. They will end on July 31st, 2024.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Grab them while you still can</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Submissions are still open</mj-text>
+    <mj-text>
+      We are still looking for speakers for PyConZA 2024. If you would like to give a presentation, please register at <a href="https://za.pycon.org/">https://za.pycon.org/</a> and submit your proposal following the instructions at <a href="https://za.pycon.org/talks/how-to-submit-a-talk">https://za.pycon.org/talks/how-to-submit-a-talk</a>.
+    </mj-text>
+    <mj-text>
+      We have a number of tracks available: Data Science, Teaching and Learning with Python, Web, Scientific Computing, Testing, and Others (which includes all talks that don't fall under the mentioned tracks). We hope to notify accepted presenters by no later than the 31st of August, 2024.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New Gold Sponsor!</mj-text>
+    <mj-text>
+      <a href="https://www.sarao.ac.za/">SARAO</a> has signed up to be our gold sponsor! We would like to thank them for being our sponsor for 2024 and look forward to working with them. Please check them out!
+    </mj-text>
+    <mj-image fluid-on-mobile="true" href="https://www.sarao.ac.za/" src="https://d3q92ym5gvt1q6.cloudfront.net/SARAO_LOGO_NEW.png" alt="SARAO" />
+    <mj-text>
+      We still have plenty of other packages available.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">See our packages</mj-button>
+    <mj-button mj-class="action-button" href="mailto:sponsorship@za.pycon.org">Get in touch</mj-button>
+    <mj-text>
+      We have two more sponsors to announce soon, so keep an eye out for our next email!
+    </mj-text>
+  </mj-column>
+</mj-section>
+{% endblock content %}
