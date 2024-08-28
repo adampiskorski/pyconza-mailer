@@ -9,6 +9,7 @@ Sponsors
 ========
 Thinkst Canary: https://canary.tools/
 SARAO: https://www.sarao.ac.za/
+AWS: https://aws.amazon.com/
 
 Socials
 =======

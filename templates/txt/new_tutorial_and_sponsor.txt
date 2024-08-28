@@ -1,0 +1,32 @@
+{% extends "base.txt" %}
+{% block content %}
+
+New tutorial available!
+=======================
+The reputable Sheena O'Connell will be running a tutorial on HTMX "Modern web frontend development with Python, HTMX and friends"!
+
+"””Once upon a time, if you wanted to build a modern web experience using a Python based web framework, an obvious choice was to expose a bunch of APIs and build your frontend in something else entirely (eg React).
+
+Times have changed.
+
+Tools like HTMX and AlpineJS have made HTML great again.
+"””
+
+Full description: https://za.pycon.org/talks/26-modern-web-frontend-development-with-python-htmx-and-friends/
+
+New Silver sponsor!
+===================
+We are excited to announce that AWS (https://aws.amazon.com/) has signed up to be a silver sponsor! We thank them for being our sponsor for 2024 and look forward to working with them. Please check them out!
+
+We still have plenty of other packages available that you can see here: https://za.pycon.org/sponsors/packages/
+If you are interested, please reach out to us at sponsorship@za.pycon.org.
+
+New ticket type for grant donations
+===================================
+We have added a new ticket type that is actually a donation that anyone can make to enable more people to attend PyConZA. It is called the **Angel Ticket**, and if you are interested in donating, please visit our tickets page and look for it at the bottom: https://za.pycon.org/tickets/buy-tickets/
+
+Volunteers needed!
+=================
+If you would like to volunteer during the conference, for example, by being an MC, helping out the video team, Swag packing or Venue Setup and Teardown, please join our Discord server and let us know in the #volunteers-request channel: https://discord.gg/wjc4K9NUaX
+
+{% endblock content %}

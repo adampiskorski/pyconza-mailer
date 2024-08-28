@@ -1,0 +1,55 @@
+{% extends "base.mjml" %}
+{% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New tutorial available!</mj-text>
+    <mj-text>
+      The reputable Sheena O'Connell will be running a tutorial on HTMX <b>"Modern web frontend development with Python, HTMX and friends"</b>!
+    </mj-text>
+    <mj-text mj-class="blurb">
+      Once upon a time, if you wanted to build a modern web experience using a Python based web framework, an obvious choice was to expose a bunch of APIs and build your frontend in something else entirely (eg React).
+    </mj-text>
+    <mj-text mj-class="blurb">
+      Times have changed.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      Tools like HTMX and AlpineJS have made HTML great again.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/26-modern-web-frontend-development-with-python-htmx-and-friends/">Full description</mj-button>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/tickets/buy-tickets/">Buy ticket</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New Silver sponsor!</mj-text>
+    <mj-text>
+      We are excited to announce that <a href="https://aws.amazon.com/">AWS</a> has signed up to be a silver sponsor! We thank them for being our sponsor for 2024 and look forward to working with them. Please check them out!
+    </mj-text>
+    <mj-image fluid-on-mobile="true" href="https://aws.amazon.com/" src="https://d3q92ym5gvt1q6.cloudfront.net/aws_logo.png" alt="AWS" />
+    <mj-text>
+      We still have plenty of other packages available.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">See our packages</mj-button>
+    <mj-button mj-class="action-button" href="mailto:sponsorship@za.pycon.org">Get in touch</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New ticket type for grant donations</mj-text>
+    <mj-text>
+      We have added a new ticket type that is actually a donation that anyone can make to enable more people to attend PyConZA. It is called the <b>Angel Ticket</b>, and if you are interested in donating, please visit our <a href="https://za.pycon.org/tickets/buy-tickets/">tickets page</a> and look for it at the bottom.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Volunteers needed!</mj-text>
+    <mj-text>
+      If you would like to volunteer during the conference, for example, by being an MC, helping out the video team, Swag packing or Venue Setup and Teardown, please join our Discord server and let us know in the <b>#volunteers-request</b> channel.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://discord.gg/wjc4K9NUaX">Join our Discord server</mj-button>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}
