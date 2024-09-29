@@ -1,0 +1,47 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" font-style="bold" />
+      <mj-class name="action-button" background-color="#4E598C" color="#FF8C42" />
+      <mj-class name="body-section" background-color="#FFFFFF" />
+      <mj-class name="blurb" container-background-color="#F9C784" font-style="italic" />
+    </mj-attributes>
+    <mj-style>
+      a:hover {
+        color: #FF8C42;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+
+    <mj-section mj-class="body-section">
+      <mj-column>
+        <mj-text mj-class="heading-2">Unfortunate sending error</mj-text>
+        <mj-text>
+          We would like to apologise for an error on our part.
+          When the PyConZA organising committee sent out our last mass mailer, we used a new bulk email feature from our mail-sending provider. We misunderstood one of the arguments in their API, exposing your email address to other recipients in our mailing list.
+        </mj-text>
+        <mj-text>
+          We apologise for exposing the personal information you entrusted us with and promise not to repeat this mistake in the future.
+        </mj-text>
+        <mj-text>
+          <p>Sincerely,</p>
+          <p>The PyConZA organising committee</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- <mj-section>
+      <mj-column>
+        <mj-button href="https://forms.gle/wzRuqTGnFqq5U2yz7">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section> -->
+  </mj-body>
+</mjml>

@@ -1,0 +1,9 @@
+Unfortunate sending error
+=========================
+We would like to apologise for an error on our part.
+When the PyConZA organising committee sent out our last mass mailer, we used a new bulk email feature from our mail-sending provider. We misunderstood one of the arguments in their API, exposing your email address to other recipients in our mailing list.
+
+We apologise for exposing the personal information you entrusted us with and promise not to repeat this mistake in the future.
+
+Sincerely,
+The PyConZA organising committee
