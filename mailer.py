@@ -174,7 +174,7 @@ class Interface:
                     sent_emails.append(sent_email)
                 if rate_delay:
                     time.sleep(rate_delay)
-            console.print(f"[bold][green]Sent {len(sent_emails)} emails!")
+            console.print("[bold][green]Done!")
             console.print(f"Sent emails logged to {settings.sent_emails_file}")
         if dry_run:
             console.print("Would have sent emails to:")
