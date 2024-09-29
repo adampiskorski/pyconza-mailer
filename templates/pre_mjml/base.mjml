@@ -75,10 +75,15 @@
     </mj-section>
     <mj-section>
       <mj-column>
+        <mj-image width="100px" src="https://d3q92ym5gvt1q6.cloudfront.net/afrolabs-logo-transparent.png" href="https://afrolabs.co.za/" alt="Afrolabs" />
+      </mj-column>
+    </mj-section>
+    <!-- <mj-section>
+      <mj-column>
         <mj-button href="https://forms.gle/wzRuqTGnFqq5U2yz7">
           Unsubscribe
         </mj-button>
       </mj-column>
-    </mj-section>
+    </mj-section> -->
   </mj-body>
 </mjml>

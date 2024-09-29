@@ -10,11 +10,9 @@ Sponsors
 Thinkst Canary: https://canary.tools/
 SARAO: https://www.sarao.ac.za/
 AWS: https://aws.amazon.com/
+Afrolabs: https://afrolabs.co.za/
 
 Socials
 =======
 Twitter: https://twitter.com/pyconza
 Mastodon: https://fosstodon.org/@pyconza
-
-
-Unsubscribe here: https://forms.gle/wzRuqTGnFqq5U2yz7
