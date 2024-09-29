@@ -1,0 +1,95 @@
+{% extends "base.mjml" %}
+{% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Twenty-six talks and counting!</mj-text>
+    <mj-text>
+      We have many fully accepted talks, with several more waiting on a few more loose ends before we can make them public and add them to the total.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/">Check out all the approved talks!</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New Patron sponsor!</mj-text>
+    <mj-text>
+      e are excited to announce that one of our long-running supporters, <a href="https://afrolabs.co.za/ ">Afrolabs</a> is now a Patron sponsor!
+      We thank them for being a consistent, long-term supporter and look forward to working with them!
+    </mj-text>
+    <mj-image width="200px" fluid-on-mobile="true" href="https://afrolabs.co.za/ " src="https://d3q92ym5gvt1q6.cloudfront.net/afrolabs-logo-transparent.png" alt="Afrolabs" />
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Dietary requirements</mj-text>
+    <mj-text>When we created the PyConZA tickets, we forgot to ask whether attendees had dietary requirements. We've now added a question for this, but if you have a special requirement and haven't entered it already, please follow the steps below:</mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ol role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><a href="https://www.quicket.co.za/account/authentication/login.aspx">Login to Quicket.</a></span>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ol role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Click on "My Tickets".</span>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ol role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Look for your PyConZA 2018 ticket and click on "Edit details".</span>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ol role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Fill in your dietary requirements.</span>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ol role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Receive food you can eat at the conference!</span>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      If your company booked your tickets for you, please ask them to enter your requirements on your behalf.
+      If you need help, please email <a href="mailto:team@za.pycon.org<">team@za.pycon.org</a>, and we'll help out!
+      Or you can see the official quicket support page <a href="https://help.quicket.com/portal/en/kb/articles/change-the-info-on-your-ticket">here</a>.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Volunteers needed!</mj-text>
+    <mj-text>
+      If you would like to volunteer during the conference, for example, by being an MC, helping out the video team, Swag packing or Venue Setup and Teardown, please join our Discord server and let us know in the <b>#volunteers-request</b> channel.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://discord.gg/wjc4K9NUaX">Join our Discord server</mj-button>
+  </mj-column>
+</mj-section>
+
+
+{% endblock content %}
