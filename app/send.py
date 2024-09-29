@@ -1,6 +1,7 @@
 """Use Mailtrap to send emails."""
 
 import re
+from abc import ABC, abstractmethod
 from base64 import b64encode
 from collections.abc import Generator
 from mimetypes import guess_type
@@ -41,7 +42,28 @@ class CidFileNotFoundError(Exception):
         super().__init__(self.message)
 
 
-class MailtrapTestingClient(MailtrapClient):
+class MailTrapClientABC(MailtrapClient, ABC):
+    """Abstract class for sending emails with custom endpoints."""
+
+    @abstractmethod
+    def send(self, mail: BaseMail):
+        """Send the given mail to the given inbox.
+
+        Args:
+            mail: Mail to send.
+        """
+
+    @property
+    def base_url(self) -> str:
+        """Return the base URL for the Mailtrap API.
+
+        Returns:
+            The base URL for the Mailtrap API.
+        """
+        return f"https://{self.api_host.rstrip('/')}:{self.api_port}"
+
+
+class MailtrapTestingClient(MailTrapClientABC):
     """Mailtrap client that sends to the Mailtrap Testing API."""
 
     def send(self, mail: BaseMail):
@@ -62,14 +84,24 @@ class MailtrapTestingClient(MailtrapClient):
         if response.status_code != httpx.codes.OK:
             self._handle_failed_response(response)
 
-    @property
-    def base_url(self) -> str:
-        """Return the base URL for the Mailtrap API.
 
-        Returns:
-            The base URL for the Mailtrap API.
+class MailtrapMarketingClient(MailTrapClientABC):
+    """Mailtrap client that sends through the marketing channel."""
+
+    def send(self, mail: BaseMail):
+        """Send the given mail to the given inbox.
+
+        Args:
+            mail: Mail to send.
+
+        Raises:
+            ValueError: If MAILTRAP_TEST_INBOX_ID is not set.
         """
-        return f"https://{self.api_host.rstrip('/')}:{self.api_port}"
+        self.api_host = "bulk.api.mailtrap.io"
+        url = f"{self.base_url}/api/send"
+        response = httpx.post(url, headers=self.headers, json=mail.api_data, timeout=30)
+        if response.status_code != httpx.codes.OK:
+            self._handle_failed_response(response)
 
 
 def get_all_cid_filenames(html: str) -> set[str]:
@@ -182,7 +214,7 @@ def send_email(
     if test_server:
         client = MailtrapTestingClient(token=settings.mailtrap_test_token)
     else:
-        client = MailtrapClient(token=settings.mailtrap_token)
+        client = MailtrapMarketingClient(token=settings.mailtrap_token)
     client.send(mail)
 
 
