@@ -9,8 +9,11 @@ Sponsors
 ========
 Thinkst Canary: https://canary.tools/
 SARAO: https://www.sarao.ac.za/
+Python Software Foundation: https://www.python.org/psf-landing/
 AWS: https://aws.amazon.com/
+CoCT:
 Afrolabs: https://afrolabs.co.za/
+CHPC: http://www.chpc.ac.za/
 
 Socials
 =======

@@ -1,0 +1,51 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Ticket sales are still open</mj-text>
+    <mj-text>
+      Yesterday, ticket sales were erroneously stopped as Quicket thought we had sold out. This has been corrected, and you still buy your tickets if you haven't done so aready, including during the conference.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Parking</mj-text>
+    <mj-text>
+      Belmont Square itself (where the J&J Conference Centre is inside) has very little parking, so parking will be located at the Rygersdal Sports Club nearby. J&J will provide a shuttle service to drive you to and from the venue.
+    </mj-text>
+    <mj-image fluid-on-mobile="true" href="https://www.sarao.ac.za/" src="https://d3q92ym5gvt1q6.cloudfront.net/parking_for_belmont_square.png" alt="SARAO" />
+    <mj-button mj-class="action-button" href="https://maps.app.goo.gl/fc3cXkvQoov7WGeV7">Google Maps</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Returning Gold Sponsor</mj-text>
+    <mj-text>
+      We are excited to announce that the Python Software Society (PSF), is once again sponsoring us this as a Gold sponsor!
+    </mj-text>
+    <mj-image src="https://d3q92ym5gvt1q6.cloudfront.net/psf-logo-372x84-alpha.png" href="https://www.python.org/psf-landing/" alt="Python Software Foundation" />
+    <mj-button mj-class="action-button" href="https://www.python.org/psf-landing/">Please check them out here</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">New Silver Sponsor</mj-text>
+    <mj-text>
+      We are also excited to announce that the City of Cape Town (CoCT) is a new, first time silver sponsor!
+    </mj-text>
+    <mj-image src="https://d3q92ym5gvt1q6.cloudfront.net/coct-logo@2x.png" href="https://www.capetown.gov.za/" alt="CoCT" />
+    <mj-button mj-class="action-button" href="hhttps://www.capetown.gov.za/">Please check them out here</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Returning Exhibitor</mj-text>
+    <mj-text>
+      The Centre for High Performance Computing (CHPC), is once again signed on to be an exhibitor!
+    </mj-text>
+    <mj-image src="https://d3q92ym5gvt1q6.cloudfront.net/NICIS_CHPC_logo_1_RGB_large.png" href="http://www.chpc.ac.za/" alt="CHPC" />
+    <mj-button mj-class="action-button" href="http://www.chpc.ac.za/">Please check them out here</mj-button>
+  </mj-column>
+</mj-section>
+{% endblock content %}
