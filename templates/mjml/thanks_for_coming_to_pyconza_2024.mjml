@@ -42,8 +42,71 @@
     </mj-section>
 
     <!-- body -->
-    {% block content %}
-    {% endblock content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">PyConZA post-conference feedback</mj-text>
+    <mj-text>
+      We are grateful to have hosted you at PyConZA 2024. Thanks to you, our conference was a success!
+    </mj-text>
+    <mj-text>
+      The Python Software Foundation would like to learn more about our community and your experience with the conference and gauge their sponsorship's impact.
+    </mj-text>
+    <mj-text>
+      Please help us out by responding to this brief survey:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://forms.gle/9r1RFD6ugMfwi81t7">Survey</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="heading-2">We are working on talk videos</mj-text>
+    <mj-text>
+      We are busy editing our stream footage from the conference, cleaning up audio, and getting feedback from the speakers of the talks.
+    </mj-text>
+    <mj-text>
+      This process is likely to take several weeks, but we'll be adding videos to this playlist as we complete them:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://www.youtube.com/playlist?list=PLGjWYNrNnSueSTiK-1skLWEf5Tg0lgq4W">PyConZA 2024 Playlist</mj-button>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Next PyConZA will be PyCon Africa in JHB</mj-text>
+    <mj-text>
+      We have the privilege of being selected as the hosts for <a href="https://africa.pycon.org/">PyCon Africa 2025</a>, and we have decided to host it in JHB, to make it easier for our fellow Africans to attend.
+    </mj-text>
+    <mj-text>
+      We're looking for organisers to help us out. While we need local organisers to fill certain roles on the ground, many tasks can be done remotely. We welcome volunteers from anywhere! Please contact us via email at <a href="mailto:team@za.pycon.org">team@za.pycon.org</a>, or please join our Discord server and let us know in the <a href="https://discord.gg/wjc4K9NUaX">#volunteers-request</a> channel.
+    </mj-text>
+    <mj-text>
+      We will announce the exact venue early next year once we have scouted the options. When PyConZA returns the following year, we will likely have it in Cape Town again, but that is yet to be confirmed.
+    </mj-text>
+    <mj-button mj-class="action-button" href="mailto:team@za.pycon.org">Email us!</mj-button>
+    <mj-spacer height="45px" />
+  </mj-column>
+
+  <mj-column>
+    <mj-text mj-class="heading-2">Photos and Talk slides</mj-text>
+
+    <mj-text>
+      You can now see all of our in-person photos taken at PyConZA 2024 in our new Flickr album:
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://www.flickr.com/photos/pyconza/albums/72177720321538562">Flickr Album</mj-button>
+    <mj-text>
+        Our photo album is looking a bit sparse, so if you have any pictures of your own, then we would love for you to contribute by joining our Flickr group and adding them there
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://www.flickr.com/groups/pyconza-2024/">
+        Flickr Group
+    </mj-button>
+    <mj-text>
+      We are currently collecting talk slides and adding them to their respective talk pages, which you can see here:
+    </mj-text>
+
+    <mj-button mj-class="action-button" href="https://za.pycon.org/talks/">Talk Pages</mj-button>
+  </mj-column>
+</mj-section>
+
+
 
     <!-- footer -->
     <mj-section background-color="#FF8C42">

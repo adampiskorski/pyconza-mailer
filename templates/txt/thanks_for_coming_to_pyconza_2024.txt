@@ -1,0 +1,32 @@
+{% extends "base.txt" %}
+
+{% block content %}
+PyConZA post-conference feedback
+===========================
+We are grateful to have hosted you at PyConZA 2024. Thanks to you, our conference was a success!
+The Python Software Foundation would like to learn more about our community and your experience with the conference and gauge their sponsorship's impact.
+Please help us out by responding to this brief survey: https://forms.gle/9r1RFD6ugMfwi81t7
+
+
+We are working on talk videos
+=======================
+We are busy editing our stream footage from the conference, cleaning up audio, and getting feedback from the speakers of the talks. This process is likely to take several weeks, but we'll be adding videos to this playlist as we complete them: https://www.youtube.com/playlist?list=PLGjWYNrNnSueSTiK-1skLWEf5Tg0lgq4W
+
+
+Next PyConZA will be PyCon Africa in JHB
+================================
+We have the privilege of being selected as the hosts for PyCon Africa 2025, and we have decided to host it in JHB, to make it easier for our fellow Africans to attend.
+
+We're looking for organisers to help us out. While we need local organisers to fill certain roles on the ground, many tasks can be done remotely. We welcome volunteers from anywhere! Please contact us via email at team@za.pycon.org, or please join our Discord server and let us know in the #volunteers-request channel: https://discord.gg/wjc4K9NUaX
+
+We will announce the exact venue early next year once we have scouted the options. When PyConZA returns the following year, we will likely have it in Cape Town again, but that is yet to be confirmed.
+
+
+Photos and Talk slides
+=================
+You can now see all of our in-person photos taken at PyConZA 2024  in our new Flickr album: https://www.flickr.com/photos/pyconza/albums/72177720321538562
+
+Our photo album is looking a bit sparse, so if you have any pictures of your own, then we would love for you to contribute by joining our Flickr group and adding them there: https://www.flickr.com/groups/pyconza-2024/
+
+We are currently collecting talk slides and adding them to their respective talk pages, which you can see here: https://za.pycon.org/talks/
+{% endblock content %}
