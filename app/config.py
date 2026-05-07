@@ -8,7 +8,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class GoogleKey(BaseModel):
     """Represent a google JSON Key."""
 
-    type: str = "service_account"  # noqa: A003
+    type: str = "service_account"
     project_id: str
     private_key_id: str
     private_key: str

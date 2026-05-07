@@ -8,8 +8,7 @@ from mimetypes import guess_type
 from pathlib import Path
 
 import httpx
-from mailtrap import Address, Attachment, Disposition, Mail, MailtrapClient
-from mailtrap.mail.base import BaseMail
+from mailtrap import Address, Attachment, BaseMail, Disposition, Mail, MailtrapClient
 
 from app.config import settings
 from app.helpers import get_media_path
