@@ -4,9 +4,9 @@ This is my version of a PyConZA mailer, which exists in order to work with a dif
 
 ## Installation
 
-Python 3.11 and [poetry](https://python-poetry.org/) is required, with the latter only required for installing dependencies and running the Python environment, so if you are familiar with managing those things yourself, then you can skip poetry.
+Python 3.13 and [UV](https://github.com/astral-sh/uv) is required.
 
-Run `poetry install` to install all dependencies.
+Run `uv sync` to install all dependencies.
 
 You will need 3 Google sheets (described below), a Google service account with access to all those sheets, a Mailtrap token and an MJML token and ID (all of these have generous free tiers).
 
@@ -27,7 +27,7 @@ Write your MJML template and put it in the `templates/pre_mjml` directory. You c
 Then to render it to HTML and make it ready to be sent, run:
 
 ```sh
-poetry run python mailer.py full_render example.mjml
+uv run python mailer.py full_render example.mjml
 ```
 
 Where `example.mjml` is the name of your template.
@@ -37,7 +37,7 @@ Where `example.mjml` is the name of your template.
 To send out an email with the html and plain text templates named `example` (no extension), with the subject `PyConZA 2023 is happening`, then run the following command.
 
 ```sh
-poetry run python mailer.py send_template example "PyConZA 2023 is happening"
+uv run python mailer.py send_template example "PyConZA 2023 is happening"
 ```
 
 The subject can also be a Jinja2 template string, with context variable `name` will be available containing the full name of the recipient, however it could be an empty string.

@@ -1,0 +1,16 @@
+{% block content %}
+{% endblock content %}
+
+
+Register
+========
+https://za.pycon.org/
+
+
+Socials
+=======
+Twitter: https://twitter.com/pyconza
+Mastodon: https://fosstodon.org/@pyconza
+
+
+Unsubscribe here: __unsubscribe_url__

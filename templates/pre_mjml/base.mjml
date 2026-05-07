@@ -1,0 +1,66 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" color="#1B2E4E" font-style="bold" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" color="#1B2E4E" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" color="#1B2E4E" font-style="bold" />
+      <mj-class name="action-button" background-color="#C32E66" color="#EDDDC4" />
+      <mj-class name="body-section" background-color="#EDDDC4" color="#1B2E4E"/>
+      <mj-class name="blurb" container-background-color="#E2BD90" font-style="italic" />
+    </mj-attributes>
+    <mj-style>
+      a {
+        color: #C32E66;
+      }
+      a:hover {
+        color: #FF8C42;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+
+    <!-- title header -->
+    <mj-section background-color="#EDDDC4">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1">
+          PYCONZA 2026
+        </mj-text>
+        <mj-text align="center" mj-class="heading-2">
+          Rondebosch, Cape Town, 14-16 October 2026
+        </mj-text>
+        <mj-image src="https://d33xevxtx8rl5e.cloudfront.net/email-header.png" alt="PyConZA logo" href="https://za.pycon.org/" />
+      </mj-column>
+    </mj-section>
+
+
+    <!-- body -->
+{% block content %}
+{% endblock content %}
+
+
+    <!-- footer -->
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-social>
+          <mj-social-element href="https://twitter.com/pyconza" src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png">
+          </mj-social-element>
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-button href="__unsubscribe_url__">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
