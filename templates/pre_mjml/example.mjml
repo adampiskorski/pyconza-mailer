@@ -1,0 +1,13 @@
+{% extends "base.mjml" %}
+{% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">!!Example Heading!!</mj-text>
+    <mj-text>
+      Example Text <a href="https://www.belmontsquare.co.za/">With Link</a>!!
+    </mj-text>
+    <mj-image fluid-on-mobile="true" href="https://www.belmontsquare.co.za/" src="https://d3q92ym5gvt1q6.cloudfront.net/belmont-square-conference-venue-cape-town-004.jpg" alt="Belmont Square" />
+  </mj-column>
+</mj-section>
+{% endblock content %}
