@@ -1,0 +1,41 @@
+## Tickets
+
+We're excited to announce that early bird tickets for PyConZA 2026 are now on sale!
+
+This year's conference runs from **14–18 October 2026** at J&J Conferences at Belmont Square in Rondebosch, Cape Town, and we have something for everyone:
+
+- **Beginner's Day** (14 Oct): A full-day introduction to Python for first-timers. No prior experience required. Bring a laptop. RSVP is essential as spaces are limited, and this is a **Separate ticket**, which is not for sale yet.</span>
+- **Main Conference** (15–16 Oct): Two days of keynotes, talks across three tracks, open spaces, and lightning talks to close.
+- **Sprints** (17–18 Oct): Two free days of open-source collaboration. Bring a project, join one, or pair with a maintainer. All welcome.
+
+Can't make it to Cape Town? The main conference will be streamed online and remote tickets are available too.
+
+**Early bird pricing ends midnight on 31 July**, so grab your ticket soon:
+
+👉 https://za.pycon.org/pages/tickets/buy-tickets/
+
+---
+
+## **Present at PyConZA**
+
+Have something worth sharing with the Python community? We're still accepting talk submissions. We have tracks covering Data Science, Web, Scientific Computing, Testing, Teaching and Learning with Python, and more.
+
+Submit your proposal at https://za.pycon.org/pages/speaking/how_to_apply/
+
+Submission deadline is **31 July 2026**.
+
+First-time speaker? We offer a mentorship programme! Simply email team@za.pycon.org with a rough draft and we'll match you with an experienced speaker.
+
+---
+
+## **We are still looking for Sponsors**
+
+We're delighted to welcome **Thinkst** as our Platinum sponsor for PyConZA 2026!
+
+Sponsorship is a great way to support the South African Python community and get your organisation in front of hundreds of Python developers. If your company would like to get involved, take a look at our packages at https://za.pycon.org/sponsors/packages/ or get in touch at sponsorship@za.pycon.org.
+
+---
+
+See you in October!
+
+The PyConZA Team
