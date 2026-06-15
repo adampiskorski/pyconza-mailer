@@ -2,9 +2,8 @@
 
 from pathlib import Path
 
-import httpx
+from mjml import mjml2html
 
-from app.config import settings
 from app.helpers import get_html_path, get_mjml_path, read_file, write_file
 
 
@@ -36,17 +35,7 @@ def _render_mjml_to_html(mjml: str) -> str:
         httpx.HTTPStatusError: If there is an error with the HTTP request to the MJML API render endpoint.
         MJMLError: If there is an error with the rendering of the MJML itself.
     """
-    payload = {"mjml": mjml}
-    r = httpx.post(
-        str(settings.mjml_endpoint),
-        auth=(settings.mjml_app_id, settings.mjml_secret_key),
-        json=payload,
-    )
-    r.raise_for_status()
-    data = r.json()
-    if errors := data.get("errors"):
-        raise MJMLError(errors)
-    return data["html"]
+    return mjml2html(mjml)
 
 
 def convert_file(path: str):
