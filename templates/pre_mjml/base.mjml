@@ -57,6 +57,12 @@
 
     <mj-section>
       <mj-column>
+        <mj-image width="250px" src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg" href="https://canary.tools/" alt="Thinkst Canary" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
         <mj-button href="__unsubscribe_url__">
           Unsubscribe
         </mj-button>

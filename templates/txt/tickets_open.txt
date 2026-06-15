@@ -4,7 +4,7 @@ We're excited to announce that early bird tickets for PyConZA 2026 are now on sa
 
 This year's conference runs from **14–18 October 2026** at J&J Conferences at Belmont Square in Rondebosch, Cape Town, and we have something for everyone:
 
-- **Beginner's Day** (14 Oct): A full-day introduction to Python for first-timers. No prior experience required. Bring a laptop. RSVP is essential as spaces are limited, and this is a **Separate ticket**, which is not for sale yet.</span>
+- **Beginner's Day** (14 Oct): A full-day introduction to Python for first-timers. No prior experience required. Bring a laptop. RSVP is essential as spaces are limited, and this is a **separate ticket**, which is not for sale yet.</span>
 - **Main Conference** (15–16 Oct): Two days of keynotes, talks across three tracks, open spaces, and lightning talks to close.
 - **Sprints** (17–18 Oct): Two free days of open-source collaboration. Bring a project, join one, or pair with a maintainer. All welcome.
 
