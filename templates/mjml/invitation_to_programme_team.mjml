@@ -1,0 +1,183 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald"></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class name="heading-1" font-family="Oswald, Trebuchet MS, Arial" font-size="40px" color="#1B2E4E" font-style="bold" />
+      <mj-class name="heading-2" font-family="Oswald, Trebuchet MS, Arial" font-size="30px" color="#1B2E4E" font-style="bold" />
+      <mj-class name="heading-3" font-family="Oswald, Trebuchet MS, Arial" font-size="20px" color="#1B2E4E" font-style="bold" />
+      <mj-class name="action-button" background-color="#C32E66" color="#EDDDC4" />
+      <mj-class name="body-section" background-color="#EDDDC4" color="#1B2E4E"/>
+      <mj-class name="blurb" container-background-color="#E2BD90" font-style="italic" />
+    </mj-attributes>
+    <mj-style>
+      a {
+        color: #C32E66;
+      }
+      a:hover {
+        color: #FF8C42;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+
+    <!-- title header -->
+    <mj-section background-color="#EDDDC4">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1">
+          PYCONZA 2026
+        </mj-text>
+        <mj-text align="center" mj-class="heading-2">
+          Rondebosch, Cape Town, 14-16 October 2026
+        </mj-text>
+        <mj-image src="https://d33xevxtx8rl5e.cloudfront.net/email-header.png" alt="PyConZA logo" href="https://za.pycon.org/" />
+      </mj-column>
+    </mj-section>
+
+
+    <!-- body -->
+
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Invitation to Programme Team</mj-text>
+    <mj-text>
+      You're getting this email because you did a talk at PyCon South Africa
+      over the past few years.
+    </mj-text>
+    <mj-text>
+      This year we are expanding our programme selection process to include more
+      people, and we would like to invite you to join the programme selection
+      team for PyConZA 2026.
+    </mj-text>
+    <mj-text> The time commitment will be fairly light: </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            role="list"
+            style
+            width="100%"
+          >
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul
+                    role="presentation"
+                    class="list-item-wrap"
+                    align="left"
+                    type="disc"
+                    style="
+                      font-family: Verdana, Aerial;
+                      margin-left: 25px;
+                      mso-line-height-rule: exactly;
+                      margin-top: 0;
+                      margin-bottom: 0;
+                      padding: 0;
+                      line-height:;
+                    "
+                  >
+                    <li
+                      role="list-item"
+                      class="list-item"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 3px;
+                        margin-bottom: 3px;
+                      "
+                    >
+                      <span class="list-item__text" style="text-align: left"
+                        >An introductory kick off meeting around the end of
+                        July</span
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul
+                    role="presentation"
+                    class="list-item-wrap"
+                    align="left"
+                    type="disc"
+                    style="
+                      font-family: Verdana, Aerial;
+                      margin-left: 25px;
+                      mso-line-height-rule: exactly;
+                      margin-top: 0;
+                      margin-bottom: 0;
+                      padding: 0;
+                      line-height:;
+                    "
+                  >
+                    <li
+                      role="list-item"
+                      class="list-item"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 3px;
+                        margin-bottom: 3px;
+                      "
+                    >
+                      <span class="list-item__text" style="text-align: left"
+                        >About 2-6 hours of reviewing submissions</span
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      If you are interested in joining this year's programme selection team,
+      please let us know before 17 July. We would love to have you on board!
+    </mj-text>
+    <mj-text></mj-text>
+    <mj-text>From</mj-text>
+
+    <mj-text>The PyConZA Organising Team</mj-text>
+  </mj-column>
+</mj-section>
+
+
+
+
+    <!-- footer -->
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-social>
+          <mj-social-element href="https://twitter.com/pyconza" src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png">
+          </mj-social-element>
+          <mj-social-element href="https://fosstodon.org/@pyconza" src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="250px" src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg" href="https://canary.tools/" alt="Thinkst Canary" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button href="__unsubscribe_url__">
+          Unsubscribe
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

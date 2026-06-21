@@ -1,0 +1,113 @@
+{% extends "base.mjml" %} {% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Invitation to Programme Team</mj-text>
+    <mj-text>
+      You're getting this email because you did a talk at PyCon South Africa
+      over the past few years.
+    </mj-text>
+    <mj-text>
+      This year we are expanding our programme selection process to include more
+      people, and we would like to invite you to join the programme selection
+      team for PyConZA 2026.
+    </mj-text>
+    <mj-text> The time commitment will be fairly light: </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            role="list"
+            style
+            width="100%"
+          >
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul
+                    role="presentation"
+                    class="list-item-wrap"
+                    align="left"
+                    type="disc"
+                    style="
+                      font-family: Verdana, Aerial;
+                      margin-left: 25px;
+                      mso-line-height-rule: exactly;
+                      margin-top: 0;
+                      margin-bottom: 0;
+                      padding: 0;
+                      line-height:;
+                    "
+                  >
+                    <li
+                      role="list-item"
+                      class="list-item"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 3px;
+                        margin-bottom: 3px;
+                      "
+                    >
+                      <span class="list-item__text" style="text-align: left"
+                        >An introductory kick off meeting around the end of
+                        July</span
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul
+                    role="presentation"
+                    class="list-item-wrap"
+                    align="left"
+                    type="disc"
+                    style="
+                      font-family: Verdana, Aerial;
+                      margin-left: 25px;
+                      mso-line-height-rule: exactly;
+                      margin-top: 0;
+                      margin-bottom: 0;
+                      padding: 0;
+                      line-height:;
+                    "
+                  >
+                    <li
+                      role="list-item"
+                      class="list-item"
+                      style="
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 3px;
+                        margin-bottom: 3px;
+                      "
+                    >
+                      <span class="list-item__text" style="text-align: left"
+                        >About 2-6 hours of reviewing submissions</span
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text>
+      If you are interested in joining this year's programme selection team,
+      please let us know before 17 July. We would love to have you on board!
+    </mj-text>
+    <mj-text></mj-text>
+    <mj-text>From</mj-text>
+
+    <mj-text>The PyConZA Organising Team</mj-text>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}
