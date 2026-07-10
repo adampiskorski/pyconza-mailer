@@ -1,23 +1,31 @@
 {
   description = "Python dev shell with uv + g++";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-python.url = "github:cachix/nixpkgs-python";
+  };
 
-  outputs = { self, nixpkgs }: let
-    pkgs = import nixpkgs { system = "x86_64-linux"; };
+  outputs = { self, nixpkgs, nixpkgs-python }:
+  let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
+    pythonVersion = "3.15";
+    myPython = pkgs.python315;
   in {
-    devShells.default = pkgs.mkShell {
+    devShells.${system}.default = pkgs.mkShell {
       buildInputs = [
-        pkgs.python315
+        myPython
         pkgs.uv
-        pkgs.gcc            # provides g++ and friends
-        pkgs.make
+        pkgs.gcc
+        pkgs.cmake
         pkgs.pkg-config
         pkgs.openssl
         pkgs.zlib
+        pkgs.libffi
       ];
       shellHook = ''
-        export UV_PYTHON=${pkgs.python315}/bin/python3.15
+        export UV_PYTHON=${myPython}/bin/python${pythonVersion}
         export UV_NO_MANAGED_PYTHON=1
       '';
     };
