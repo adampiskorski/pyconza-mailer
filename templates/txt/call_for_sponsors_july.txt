@@ -1,0 +1,62 @@
+{% extends "base.txt" %}
+{% block content %}
+
+Hi everyone,
+
+PyConZA is a nonprofit conference run by the community, organised by volunteers and the Python Software Society of South Africa. We don't have a corporate budget behind us, so sponsorship is what makes the event happen. This year we need your help finding it.
+
+## **What sponsorship pays for**
+
+Your support funds three things.
+
+- **Beginner's Day**, a 1-day workshop that runs the whole day before the main conference, introducing newcomers to Python. No experience needed.
+- **Bus Factor**, our initiative to build a deeper, more resilient Southern African Python community.
+- **General costs** of running the conference itself, including venue hire and the hybrid streaming that lets people join online from anywhere.  Ticket sales only cover some of the overall costs of running the event.
+
+**What is Bus Factor, and why does it matter?**
+
+"Bus factor" is a term from project management that means how many people would need to disappear before a project falls apart? A low bus factor for the Python community means a community depends on too few people, and that's risky.
+
+Our Bus Factor initiative raises that number. It supports more people across Southern Africa to get involved in Python, contribute, and grow into leaders, so our community doesn't rely on just a handful of people. The page is live now, and people can already apply.
+
+Learn more and apply at za.pycon.org/bus-factor
+
+## **How we add value to our sponsors**
+
+PyConZA is a well established conference and we've been going for around 15 years now, it's the cornerstone of the SA Python community. Generating goodwill in this community pays dividends. We shine a light on our sponsors and their contributions and we have special benefits for those who are trying to hire. Sponsoring PyConZA also a good way to feed the ecosystem - for companies that work with Python, a thriving Python ecosystem and community will benefit everyone in the long term, sponsorship helps water the garden we all rely on.
+
+## **Here's how you can help**
+
+**1. Ask your company**
+
+If your company might sponsor PyConZA, raise it with your manager or marketing team. Our packages page covers tiers and benefits, and our sponsorship team can answer questions directly.
+
+See our packages at za.pycon.org/sponsors/packages/  or email sponsorship@za.pycon.org
+
+**2. Help grow our reach on social media**
+
+Follow us on social media, and like, comment, and share our posts when you see them. A few extra shares from the community make a real difference. More engagement means more reach, which means more eyes on our sponsorship ask.
+
+**3. Sponsor individually**
+
+You can back Bus Factor or Beginner's Day directly through our ticket page. Buy as many as you like. Any amount helps.
+
+Get your ticket at za.pycon.org/pages/tickets/buy-tickets/
+
+**4. Help us find sponsors**
+
+Know someone at a company that might be a good fit? Want to help with outreach? Email us on sponsorship@za.pycon.org and we'll take it from there.
+
+## **Before you go**
+
+### Tickets
+
+Every ticket purchased helps cover the costs of the event! Early bird ticket pricing is still open, but it ends at midnight on 31 July 2026. Get yours at za.pycon.org/pages/tickets/buy-tickets/
+
+### Presentations
+
+We're also still accepting talk proposals until 31 July 2026. If you have something worth sharing with the Python community, submit your proposal at za.pycon.org/pages/speaking/how_to_apply/
+
+Thanks for helping us grow PyConZA. See you in Cape Town in October.
+
+{% endblock content %}
