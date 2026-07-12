@@ -23,6 +23,7 @@
         pkgs.openssl
         pkgs.zlib
         pkgs.libffi
+        pkgs.opencode
       ];
       shellHook = ''
         export UV_PYTHON=${myPython}/bin/python${pythonVersion}
