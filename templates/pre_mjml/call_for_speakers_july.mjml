@@ -1,0 +1,145 @@
+{% extends "base.mjml" %}
+{% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Why speak</mj-text>
+    <mj-text>
+      Hi everyone,
+    </mj-text>
+    <mj-text>
+      Ever thought about giving a talk but talked yourself out of it? We'd like to change your mind. Here's what's in it for you, and why it's less intimidating than it sounds.
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Sharpen the thing you talked about.</strong> Explaining something out loud is one of the fastest ways to actually master it.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Build your profile</strong> in a community that's been going for around 15 years and remembers its speakers.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Get in front of the exact audience</strong> most useful to you, from collaborators, open-source maintainers, and companies that work with Python every day.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Turn something you already know into a credential.</strong> A conference talk is one of the best lines you can add to a CV or LinkedIn profile.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-3">Something for every kind of Python work</mj-text>
+    <mj-text>
+      The programme covers the working range of Python in practice: web and app development, data engineering and analytics, scientific computing, DevOps and platform work, testing and tooling, the language itself, and recent developments such as agentic coding and AI. If your topic is relevant to Python in any way, there's a home for your talk.
+    </mj-text>
+    <mj-text mj-class="heading-3">You really don't need to be an expert</mj-text>
+    <mj-text>
+      You don't need years of experience or a novel research finding. You need one thing you've learned, built, broken, or figured out that would save someone else time or be interesting for the community to hear about. Some of the best PyConZA talks have come from first-time speakers talking about something small and specific, like a tool, a bug, a workflow, or a lesson learned the hard way.
+    </mj-text>
+    <mj-text mj-class="heading-3">It's a supportive process, start to finish</mj-text>
+    <mj-text>
+      Submitting isn't a one-shot, high-stakes thing. A short, plain-language description of your talk is enough to get started. You don't need a finished deck or a polished abstract. If you're unsure whether your idea is strong enough, email us before you submit and we'll help you shape it.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/pages/speaking/how_to_apply/">Submit your proposal</mj-button>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">The details</mj-text>
+    <mj-text>
+      <strong>Submission deadline:</strong> 31 July 2026
+    </mj-text>
+    <mj-text>
+      <strong>Dates:</strong> Main conference 15–16 October 2026
+    </mj-text>
+    <mj-text>
+      <strong>Venue:</strong> J&J Conferences at Belmont Square, Rondebosch, Cape Town.
+    </mj-text>
+    <mj-text>
+      We are looking for the following presentations:
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Keynotes:</strong> 45-minute talks on a subject of general interest</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Talks:</strong> 30-minute talks on more specific topics</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Remote Talks:</strong> 30-minute talks that will be delivered remotely. Note that the number of remote talk slots is more limited due to technical constraints.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Don't forget your ticket</mj-text>
+    <mj-text>
+      Everyone attending PyConZA, <strong>including speakers</strong> and organisers, must purchase a ticket for the conference. Python conferences have long had a policy of everyone pays. Early Bird pricing is live till 31 July.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/pages/tickets/buy-tickets/">Get your ticket</mj-button>
+    <mj-text mj-class="heading-3">Get started today</mj-text>
+    <mj-text>
+      Submit your proposal at <a href="https://za.pycon.org/pages/speaking/how_to_apply/">za.pycon.org/pages/speaking/how_to_apply/</a>
+    </mj-text>
+    <mj-text>
+      See you on the mic in Cape Town this October!
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}
