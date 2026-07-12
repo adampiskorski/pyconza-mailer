@@ -1,0 +1,55 @@
+{% extends "base.txt" %}
+{% block content %}
+
+Hi everyone,
+
+Ever thought about giving a talk but talked yourself out of it? We'd like to change your mind. Here's what's in it for you, and why it's less intimidating than it sounds.
+
+### **Why speak**
+
+- Sharpen the thing you talked about. Explaining something out loud is one of the fastest ways to actually master it.
+- Build your profile in a community that's been going for around 15 years and remembers its speakers.
+- Get in front of the exact audience most useful to you, from collaborators, open-source maintainers, and companies that work with Python every day.
+- Turn something you already know into a credential. A conference talk is one of the best lines you can add to a CV or LinkedIn profile.
+
+### **Something for every kind of Python work**
+
+The programme covers the working range of Python in practice: web and app development, data engineering and analytics, scientific computing, DevOps and platform work, testing and tooling, the language itself, and recent developments such as agentic coding and AI. If your topic is relevant to Python in any in way, there's a home for your talk.
+
+### **You really don't need to be an expert**
+
+You don't need years of experience or a novel research finding. You need one thing you've learned, built, broken, or figured out that would save someone else time or be interesting for the community to hear about. Some of the best PyConZA talks have come from first-time speakers talking about something small and specific, like a tool, a bug, a workflow, or a lesson learned the hard way.
+
+### **It's a supportive process, start to finish**
+
+Submitting isn't a one-shot, high-stakes thing. A short, plain-language description of your talk is enough to get started. You don't need a finished deck or a polished abstract. If you're unsure whether your idea is strong enough, email us before you submit and we'll help you shape it.
+
+Submit your proposal at za.pycon.org/pages/speaking/how_to_apply/
+
+### **The details**
+
+**Submission deadline: 31 July 2026**
+
+**Dates:** Main conference ****15–16 October 2026
+
+**Venue:** J&J Conferences at Belmont Square, Rondebosch, Cape Town.
+
+We are looking for the following presentations:
+
+- **Keynotes**: 45-minute talks on a subject of general interest
+- **Talks:** 30-minute talks on more specific topics
+- **Remote Talks:** 30-minute talks that will be delivered remotely. Note that the number of remote talk slots is more limited due to technical constraints.
+
+### Don’t forget your ticket
+
+Everyone attending PyConZA, **including speakers** and organisers, must purchase a ticket for the conference. Python conferences have long had a policy of everyone pays. Early Bird pricing is live till 31 July.
+
+Get your ticket at za.pycon.org/pages/tickets/buy-tickets/
+
+### Get started today
+
+Submit your proposal at za.pycon.org/pages/speaking/how_to_apply/
+
+See you on the mic in Cape Town this October!
+
+{% endblock content %}

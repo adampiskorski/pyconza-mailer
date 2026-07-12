@@ -9,6 +9,8 @@ https://za.pycon.org/
 Sponsors
 ========
 Thinkst Canary: https://canary.tools/
+Naughty Bean Coffee: https://naughtybean.coffee/
+SerpAPI: https://www.serpapi.com/?utm=pyconza
 
 
 Socials
