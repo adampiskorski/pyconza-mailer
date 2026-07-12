@@ -1,0 +1,237 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font
+      name="Oswald"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    ></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class
+        name="heading-1"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="40px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-2"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="30px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-3"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="20px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="action-button"
+        background-color="#C32E66"
+        color="#EDDDC4"
+      />
+      <mj-class
+        name="body-section"
+        background-color="#EDDDC4"
+        color="#1B2E4E"
+      />
+      <mj-class
+        name="blurb"
+        container-background-color="#E2BD90"
+        font-style="italic"
+      />
+    </mj-attributes>
+    <mj-style> a { color: #C32E66; } a:hover { color: #FF8C42; } </mj-style>
+  </mj-head>
+  <mj-body>
+    <!-- title header -->
+    <mj-section background-color="#EDDDC4">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1"> PYCONZA 2026 </mj-text>
+        <mj-text align="center" mj-class="heading-2">
+          Rondebosch, Cape Town, 14-16 October 2026
+        </mj-text>
+        <mj-image
+          src="https://d33xevxtx8rl5e.cloudfront.net/email-header.png"
+          alt="PyConZA logo"
+          href="https://za.pycon.org/"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">What sponsorship pays for</mj-text>
+    <mj-text>
+      Hi everyone,
+    </mj-text>
+    <mj-text>
+      PyConZA is a nonprofit conference run by the community, organised by volunteers and the Python Software Society of South Africa. We don't have a corporate budget behind us, so sponsorship is what makes the event happen. This year we need your help finding it.
+    </mj-text>
+    <mj-text>
+      Your support funds three things.
+    </mj-text>
+    <mj-table>
+      <tr>
+        <td style="">
+          <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+            <tbody role="presentation">
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Beginner's Day,</strong> a 1-day workshop that runs the whole day before the main conference, introducing newcomers to Python. No experience needed.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Bus Factor,</strong> our initiative to build a deeper, more resilient Southern African Python community.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td vertical-align="top">
+                  <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                    <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>General costs</strong> of running the conference itself, including venue hire and the hybrid streaming that lets people join online from anywhere. Ticket sales only cover some of the overall costs of running the event.</span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </mj-table>
+    <mj-text mj-class="heading-3">What is Bus Factor, and why does it matter?</mj-text>
+    <mj-text>
+      "Bus factor" is a term from project management that means how many people would need to disappear before a project falls apart? A low bus factor for the Python community means a community depends on too few people, and that's risky.
+    </mj-text>
+    <mj-text>
+      Our Bus Factor initiative raises that number. It supports more people across Southern Africa to get involved in Python, contribute, and grow into leaders, so our community doesn't rely on just a handful of people. The page is live now, and people can already apply.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/bus-factor">Learn more and apply</mj-button>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">How we add value to our sponsors</mj-text>
+    <mj-text>
+      PyConZA is a well established conference and we've been going for around 15 years now, it's the cornerstone of the SA Python community. Generating goodwill in this community pays dividends. We shine a light on our sponsors and their contributions and we have special benefits for those who are trying to hire. Sponsoring PyConZA is also a good way to feed the ecosystem &mdash; for companies that work with Python, a thriving Python ecosystem and community will benefit everyone in the long term, sponsorship helps water the garden we all rely on.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Here's how you can help</mj-text>
+    <mj-text mj-class="heading-3">1. Ask your company</mj-text>
+    <mj-text>
+      If your company might sponsor PyConZA, raise it with your manager or marketing team. Our packages page covers tiers and benefits, and our sponsorship team can answer questions directly.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sponsors/packages/">See our packages</mj-button>
+    <mj-button mj-class="action-button" href="mailto:sponsorship@za.pycon.org">Email sponsorship</mj-button>
+    <mj-text mj-class="heading-3">2. Help grow our reach on social media</mj-text>
+    <mj-text>
+      Follow us on social media, and like, comment, and share our posts when you see them. A few extra shares from the community make a real difference. More engagement means more reach, which means more eyes on our sponsorship ask.
+    </mj-text>
+    <mj-text mj-class="heading-3">3. Sponsor individually</mj-text>
+    <mj-text>
+      You can back Bus Factor or Beginner's Day directly through our ticket page. Buy as many as you like. Any amount helps.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/pages/tickets/buy-tickets/">Get your ticket</mj-button>
+    <mj-text mj-class="heading-3">4. Help us find sponsors</mj-text>
+    <mj-text>
+      Know someone at a company that might be a good fit? Want to help with outreach? Email us on <a href="mailto:sponsorship@za.pycon.org">sponsorship@za.pycon.org</a> and we'll take it from there.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Before you go</mj-text>
+    <mj-text mj-class="heading-3">Tickets</mj-text>
+    <mj-text>
+      Every ticket purchased helps cover the costs of the event! Early bird ticket pricing is still open, but it ends at midnight on 31 July 2026.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/pages/tickets/buy-tickets/">Get your ticket</mj-button>
+    <mj-text mj-class="heading-3">Presentations</mj-text>
+    <mj-text>
+      We're also still accepting talk proposals until 31 July 2026. If you have something worth sharing with the Python community, submit your proposal at <a href="https://za.pycon.org/pages/speaking/how_to_apply/">za.pycon.org/pages/speaking/how_to_apply/</a>
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/pages/speaking/how_to_apply/">Submit your proposal</mj-button>
+    <mj-text>
+      Thanks for helping us grow PyConZA. See you in Cape Town in October.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+
+    <!-- footer -->
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-social>
+          <mj-social-element
+            href="https://twitter.com/pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png"
+          >
+          </mj-social-element>
+          <mj-social-element
+            href="https://fosstodon.org/@pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png"
+          >
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg"
+          href="https://canary.tools/"
+          alt="Thinkst Canary"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Naughty_Bean_Coffee.webp"
+          href="https://naughtybean.coffee/"
+          alt="Naughty Bean Coffee"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/SerpApi_Logo_with_Wordmark_-_Dark.png"
+          href="https://www.serpapi.com/?utm=pyconza"
+          alt="SerpAPI"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button href="__unsubscribe_url__"> Unsubscribe </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
