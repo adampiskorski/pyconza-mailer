@@ -6,3 +6,4 @@ __pycache__/
 .venv/
 .disposable.py
 sent_emails.log
+.direnv/
