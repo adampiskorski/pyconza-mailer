@@ -24,7 +24,7 @@
         pkgs.zlib
         pkgs.libffi
         pkgs.opencode
-        pkgs.rnix-lsp
+        pkgs.nixpkgs-fmt
       ];
       shellHook = ''
         export UV_PYTHON=${myPython}/bin/python${pythonVersion}
