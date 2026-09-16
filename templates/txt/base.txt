@@ -9,6 +9,8 @@ https://za.pycon.org/
 Sponsors
 ========
 Thinkst Canary: https://canary.tools/
+OfferZen: https://www.offerzen.com/?utm_campaign=za-demand-engagement-community-all-demand-personas-oz-sponsored-conferences-q4&utm_content=pycon-za&utm_source=event
+ESP: https://esp.info/
 Naughty Bean Coffee: https://naughtybean.coffee/
 SerpAPI: https://www.serpapi.com/?utm=pyconza
 

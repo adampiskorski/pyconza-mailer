@@ -44,7 +44,7 @@
         font-style="italic"
       />
     </mj-attributes>
-    <mj-style> a { color: #C32E66; } a:hover { color: #FF8C42; } </mj-style>
+    <mj-style> a { color: #c32e66; } a:hover { color: #ff8c42; } </mj-style>
   </mj-head>
   <mj-body>
     <!-- title header -->
@@ -92,6 +92,26 @@
           src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg"
           href="https://canary.tools/"
           alt="Thinkst Canary"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/OfferZen_logo_Colour.png"
+          href="https://www.offerzen.com/?utm_campaign=za-demand-engagement-community-all-demand-personas-oz-sponsored-conferences-q4&utm_content=pycon-za&utm_source=event"
+          alt="OfferZen"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/esp.svg"
+          href="https://esp.info/"
+          alt="ESP"
         />
       </mj-column>
     </mj-section>
