@@ -1,0 +1,65 @@
+{% extends "base.mjml" %} {% block content %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2"
+      >Beginners day tutorial now available!</mj-text
+    >
+    <mj-text>
+      Thanks to Sheena O'Connell, we will be hosting a free* beginners day
+      tutorial, featuring the Humble Data Syllabus:
+      <a href="https://humbledata.org/">https://humbledata.org/</a>.
+    </mj-text>
+    <mj-text>
+      To attend, you will need to purchase a R50 refundable ticket. This
+      tutorial is designed for complete beginners in both Python and
+      programming, particularly those who could not learn programming before.
+      Please book soon, as we have limited capacity!
+    </mj-text>
+    <mj-button
+      mj-class="action-button"
+      href="https://za.pycon.org/pages/tickets/buy-tickets/"
+      >Get your ticket</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Keynote by Paul Everitt</mj-text>
+    <mj-text>
+      We are now finalizing all our talks, and our first Keynote has been locked
+      in! It is by Paul Everitt, titled
+      <strong
+        >"Was, Is, Will Be: Python History, Software Engineering, And AI Our
+        Way"</strong
+      >.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      JetBrains developer advocate, Zope Corporation co-founder, and one of the
+      people who got the #PSF started.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      AI fatigue? Paul will cover Python's story, our power, and a plan.
+    </mj-text>
+    <mj-image
+      src="https://d33xevxtx8rl5e.cloudfront.net/paul.jpg"
+      alt="PyConZA logo"
+      href="https://za.pycon.org/pages/tickets/buy-tickets/"
+    />
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Makers room!</mj-text>
+    <mj-text>
+      If you would like to show off something you've made, or use to make
+      things, we have a makers room available throughout the whole conference!
+    </mj-text>
+    <mj-text>
+      It will be available for anyone to bring their things, no registration
+      required. The room will be locked after hours for security.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}

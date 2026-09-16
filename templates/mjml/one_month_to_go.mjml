@@ -1,0 +1,209 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font
+      name="Oswald"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    ></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class
+        name="heading-1"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="40px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-2"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="30px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-3"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="20px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="action-button"
+        background-color="#C32E66"
+        color="#EDDDC4"
+      />
+      <mj-class
+        name="body-section"
+        background-color="#EDDDC4"
+        color="#1B2E4E"
+      />
+      <mj-class
+        name="blurb"
+        container-background-color="#E2BD90"
+        font-style="italic"
+      />
+    </mj-attributes>
+    <mj-style> a { color: #c32e66; } a:hover { color: #ff8c42; } </mj-style>
+  </mj-head>
+  <mj-body>
+    <!-- title header -->
+    <mj-section background-color="#EDDDC4">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1"> PYCONZA 2026 </mj-text>
+        <mj-text align="center" mj-class="heading-2">
+          Rondebosch, Cape Town, 14-16 October 2026
+        </mj-text>
+        <mj-image
+          src="https://d33xevxtx8rl5e.cloudfront.net/email-header.png"
+          alt="PyConZA logo"
+          href="https://za.pycon.org/"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2"
+      >Beginners day tutorial now available!</mj-text
+    >
+    <mj-text>
+      Thanks to Sheena O'Connell, we will be hosting a free* beginners day
+      tutorial, featuring the Humble Data Syllabus:
+      <a href="https://humbledata.org/">https://humbledata.org/</a>.
+    </mj-text>
+    <mj-text>
+      To attend, you will need to purchase a R50 refundable ticket. This
+      tutorial is designed for complete beginners in both Python and
+      programming, particularly those who could not learn programming before.
+      Please book soon, as we have limited capacity!
+    </mj-text>
+    <mj-button
+      mj-class="action-button"
+      href="https://za.pycon.org/pages/tickets/buy-tickets/"
+      >Get your ticket</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Keynote by Paul Everitt</mj-text>
+    <mj-text>
+      We are now finalizing all our talks, and our first Keynote has been locked
+      in! It is by Paul Everitt, titled
+      <strong
+        >"Was, Is, Will Be: Python History, Software Engineering, And AI Our
+        Way"</strong
+      >.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      JetBrains developer advocate, Zope Corporation co-founder, and one of the
+      people who got the #PSF started.
+    </mj-text>
+    <mj-text mj-class="blurb">
+      AI fatigue? Paul will cover Python's story, our power, and a plan.
+    </mj-text>
+    <mj-image
+      src="https://d33xevxtx8rl5e.cloudfront.net/paul.jpg"
+      alt="PyConZA logo"
+      href="https://za.pycon.org/pages/tickets/buy-tickets/"
+    />
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Makers room!</mj-text>
+    <mj-text>
+      If you would like to show off something you've made, or use to make
+      things, we have a makers room available throughout the whole conference!
+    </mj-text>
+    <mj-text>
+      It will be available for anyone to bring their things, no registration
+      required. The room will be locked after hours for security.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+
+    <!-- footer -->
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-social>
+          <mj-social-element
+            href="https://twitter.com/pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png"
+          >
+          </mj-social-element>
+          <mj-social-element
+            href="https://fosstodon.org/@pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png"
+          >
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg"
+          href="https://canary.tools/"
+          alt="Thinkst Canary"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/OfferZen_logo_Colour.png"
+          href="https://www.offerzen.com/?utm_campaign=za-demand-engagement-community-all-demand-personas-oz-sponsored-conferences-q4&utm_content=pycon-za&utm_source=event"
+          alt="OfferZen"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/esp.svg"
+          href="https://esp.info/"
+          alt="ESP"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Naughty_Bean_Coffee.webp"
+          href="https://naughtybean.coffee/"
+          alt="Naughty Bean Coffee"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/SerpApi_Logo_with_Wordmark_-_Dark.png"
+          href="https://www.serpapi.com/?utm=pyconza"
+          alt="SerpAPI"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button href="__unsubscribe_url__"> Unsubscribe </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
