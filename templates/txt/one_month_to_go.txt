@@ -1,0 +1,31 @@
+{% extends "base.txt" %}
+{% block content %}
+Beginners day tutorial now available!
+=====================================
+
+Thanks to Sheena O'Connell, we will be hosting a free* beginners day tutorial, featuring the Humble Data Syllabus: https://humbledata.org/.
+To attend, you will need to purchase a R50 refundable ticket here: https://za.pycon.org/pages/tickets/buy-tickets/.
+This tutorial is designed for complete beginners in both Python and programming, particularly those who could not learn programming before.
+Please book soon, as we have limited capacity!
+
+Keynote by Paul Everitt
+===========
+We are now finalizing all our talks, and our first Keynote has been locked in!
+It is by Paul Everitt, titled "Was, Is, Will Be: Python History, Software Engineering, And AI Our Way".
+```
+JetBrains developer advocate, Zope Corporation co-founder, and one of the people
+who got the #PSF started.
+
+Al fatigue? Paul will cover Python's story, our power, and a plan.
+```
+
+Makers room!
+============
+If you would like to show off something you've made, or use to make things, we have a makers room available throughout the whole conference!
+It will be available for anyone to bring their things, no registration required.
+The room will be locked after hours for security.
+
+
+Best regards,
+The PyConZA committee
+{% endblock content %}
