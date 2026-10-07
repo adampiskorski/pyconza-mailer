@@ -119,6 +119,16 @@
       <mj-column>
         <mj-image
           width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Isazi.ai_black_logo.png"
+          href="https://www.isazi.ai/"
+          alt="isazi.ai"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
           src="https://d33xevxtx8rl5e.cloudfront.net/Naughty_Bean_Coffee.webp"
           href="https://naughtybean.coffee/"
           alt="Naughty Bean Coffee"
