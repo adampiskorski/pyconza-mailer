@@ -23,12 +23,13 @@
         pkgs.openssl
         pkgs.zlib
         pkgs.libffi
-        pkgs.opencode
         pkgs.nixpkgs-fmt
       ];
       shellHook = ''
         export UV_PYTHON=${myPython}/bin/python${pythonVersion}
         export UV_NO_MANAGED_PYTHON=1
+        # manylinux wheels (pillow, lxml, ...) need these on NixOS
+        export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [ pkgs.stdenv.cc.cc.lib pkgs.zlib pkgs.openssl pkgs.libffi ]}''${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
       '';
     };
   };
