@@ -1,0 +1,420 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font
+      name="Oswald"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    ></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class
+        name="heading-1"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="40px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-2"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="30px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-3"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="20px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="action-button"
+        background-color="#C32E66"
+        color="#EDDDC4"
+      />
+      <mj-class
+        name="body-section"
+        background-color="#EDDDC4"
+        color="#1B2E4E"
+      />
+      <mj-class
+        name="blurb"
+        container-background-color="#E2BD90"
+        font-style="italic"
+      />
+    </mj-attributes>
+    <mj-style> a { color: #c32e66; } a:hover { color: #ff8c42; } </mj-style>
+  </mj-head>
+  <mj-body>
+    <!-- title header -->
+    <mj-section background-color="#EDDDC4">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1"> PYCONZA 2026 </mj-text>
+        <mj-text align="center" mj-class="heading-2">
+          Rondebosch, Cape Town, 14-16 October 2026
+        </mj-text>
+        <mj-image
+          src="https://d33xevxtx8rl5e.cloudfront.net/email-header.png"
+          alt="PyConZA logo"
+          href="https://za.pycon.org/"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+
+
+
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text>
+      PyConZA 2026 is only a week away. Here's everything you need to know
+      before we kick off.
+    </mj-text>
+    <mj-text mj-class="heading-2">Last call for tickets!</mj-text>
+    <mj-text>
+      If you haven't got your ticket yet, now's the time. Here's how the week
+      runs:
+    </mj-text>
+
+<mj-table>
+  <tr>
+    <td style="">
+      <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+        <tbody role="presentation">
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Wednesday 14 October:</strong> Beginners' Day</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Thursday 15 and Friday 16 October:</strong> Talks</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Saturday 17 and Sunday 18 October:</strong> Sprints</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</mj-table>
+
+    <mj-text>
+      <strong>A conference ticket gets you all four days of talks and
+      sprints.</strong> Beginners' Day needs its own ticket (see section 4).
+    </mj-text>
+    <mj-text>
+      Talks take place at
+      <a href="https://www.belmontsquare.co.za/">J&J Conferences</a> at Belmont
+      Square in Rondebosch, and you can also join online.
+    </mj-text>
+    <mj-text mj-class="heading-3">Why you won't want to miss it</mj-text>
+
+<mj-table>
+  <tr>
+    <td style="">
+      <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+        <tbody role="presentation">
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Three exciting keynotes,</strong> including a closing keynote from Paul Everitt, co-founder of the first Python company and one of the people who got the Python Software Foundation started. His talk is a rallying cry for the Python community in the age of AI.</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Two days of talks</strong> on everything from running AI on your own machine to coding rovers on Mars, plus tools to speed up your everyday workflow. Whether you work in web, data, science or infrastructure, you'll find something for you.</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>The hallway track,</strong> where you meet the people behind the talks, the packages you use and the jobs you might want next. Many attendees say the people they meet in the breaks are the best part of PyConZA.</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</mj-table>
+
+    <mj-text>
+      These are just three of our talks to whet your appetite:
+    </mj-text>
+
+<mj-table>
+  <tr>
+    <td style="">
+      <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+        <tbody role="presentation">
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Binjamin (Binyamin) Barsch:</strong> <a href="https://za.pycon.org/talks/35-python-ai-agents-and-the-future-of-infrastructure-automation/">Python, AI Agents, and the Future of Infrastructure Automation</a></span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Vuyolwethu Mfidi:</strong> <a href="https://za.pycon.org/talks/41-the-gap-between-tutorials-and-production-what-nobody-tells-developers/">The Gap Between Tutorials and Production: What Nobody Tells Developers</a></span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;"><strong>Kudzayi Bamhare:</strong> <a href="https://za.pycon.org/talks/36-super-effective-how-pokemon-explain-pythons-class-hierarchy/">Super Effective: How Pokémon Explain Python's Class Hierarchy</a></span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</mj-table>
+
+    <mj-button
+      mj-class="action-button"
+      href="https://za.pycon.org/pages/tickets/buy-tickets/"
+      >Get your ticket</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Volunteer with us</mj-text>
+    <mj-text>
+      PyConZA is run by the community, and we can't do it without volunteers.
+      As a volunteer you'll:
+    </mj-text>
+
+<mj-table>
+  <tr>
+    <td style="">
+      <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+        <tbody role="presentation">
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">See how a conference runs from behind the scenes</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Meet speakers, organisers and attendees</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">Help newcomers write their first lines of Python at Beginners' Day</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</mj-table>
+
+    <mj-text> If you'd like to help, fill in this form: </mj-text>
+    <mj-button mj-class="action-button" href="https://forms.gle/VPc54PdVsh9D7pvr9"
+      >Volunteer with us</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Sign up for sprints</mj-text>
+    <mj-text>
+      Sprints take place on Saturday 17 and Sunday 18 October. They're a chance
+      to work on open-source projects alongside other developers, and you don't
+      need to be an expert to join in. Please sign up so we know how many
+      people to expect.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/sprints"
+      >Sign up for sprints</mj-button
+    >
+    <mj-text>
+      <strong>Venue request:</strong> We're still finding a venue for Sprints.
+      If your Cape Town office could accommodate a group of 20-30 over the
+      weekend, please let us know.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2"
+      >Beginners' Day is free. Please share it.</mj-text
+    >
+    <mj-text>
+      Beginners' Day on Wednesday 14 October is free for anyone new to Python.
+      No experience needed. It runs in person in Cape Town, so please forward
+      this to any friends who have always wanted to learn to code, especially
+      if they're in Cape Town.
+    </mj-text>
+    <mj-text>
+      Spots require a refundable R50 ticket, which you can get below:
+    </mj-text>
+    <mj-button
+      mj-class="action-button"
+      href="https://za.pycon.org/pages/tickets/buy-tickets/"
+      >Get a Beginners' Day ticket</mj-button
+    >
+    <mj-text>
+      Best regards,
+      <br />
+      The PyConZA committee
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+
+    <!-- footer -->
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-social>
+          <mj-social-element
+            href="https://twitter.com/pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png"
+          >
+          </mj-social-element>
+          <mj-social-element
+            href="https://fosstodon.org/@pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png"
+          >
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg"
+          href="https://canary.tools/"
+          alt="Thinkst Canary"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/OfferZen_logo_Colour.png"
+          href="https://www.offerzen.com/?utm_campaign=za-demand-engagement-community-all-demand-personas-oz-sponsored-conferences-q4&utm_content=pycon-za&utm_source=event"
+          alt="OfferZen"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/esp.svg"
+          href="https://esp.info/"
+          alt="ESP"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Isazi.ai_black_logo.png"
+          href="https://www.isazi.ai/"
+          alt="isazi.ai"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Naughty_Bean_Coffee.webp"
+          href="https://naughtybean.coffee/"
+          alt="Naughty Bean Coffee"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/SerpApi_Logo_with_Wordmark_-_Dark.png"
+          href="https://www.serpapi.com/?utm=pyconza"
+          alt="SerpAPI"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-text color="#EDDDC4" font-size="12px">
+          {{company_info_name}}
+        </mj-text>
+        <mj-text color="#EDDDC4" font-size="12px">
+          {{company_info_address}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button href="__unsubscribe_url__"> Unsubscribe </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

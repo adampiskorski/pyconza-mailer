@@ -1,0 +1,71 @@
+{% extends "base.txt" %}
+{% block content %}
+
+Hi everyone,
+
+PyConZA 2026 is only a week away. Here's everything you need to know before we kick off.
+
+
+Last call for tickets!
+=====================
+
+If you haven't got your ticket yet, now's the time. Here's how the week runs:
+
+- **Wednesday 14 October:** Beginners' Day
+- **Thursday 15 and Friday 16 October:** Talks
+- **Saturday 17 and Sunday 18 October:** Sprints
+
+**A conference ticket gets you all four days of talks and sprints.** Beginners' Day needs its own ticket (see section 4).
+
+Talks take place at J&J Conferences (https://www.belmontsquare.co.za/) at Belmont Square in Rondebosch, and you can also join online.
+
+**Why you won't want to miss it**
+
+- **Three exciting keynotes,** including a closing keynote from Paul Everitt, co-founder of the first Python company and one of the people who got the Python Software Foundation started. His talk is a rallying cry for the Python community in the age of AI.
+- **Two days of talks** on everything from running AI on your own machine to coding rovers on Mars, plus tools to speed up your everyday workflow. Whether you work in web, data, science or infrastructure, you'll find something for you.
+- **The hallway track,** where you meet the people behind the talks, the packages you use and the jobs you might want next. Many attendees say the people they meet in the breaks are the best part of PyConZA.
+
+These are just three of our talks to whet your appetite:
+
+- Binjamin (Binyamin) Barsch: Python, AI Agents, and the Future of Infrastructure Automation
+  https://za.pycon.org/talks/35-python-ai-agents-and-the-future-of-infrastructure-automation/
+- Vuyolwethu Mfidi: The Gap Between Tutorials and Production: What Nobody Tells Developers
+  https://za.pycon.org/talks/41-the-gap-between-tutorials-and-production-what-nobody-tells-developers/
+- Kudzayi Bamhare: Super Effective: How Pokémon Explain Python's Class Hierarchy
+  https://za.pycon.org/talks/36-super-effective-how-pokemon-explain-pythons-class-hierarchy/
+
+Get your ticket at za.pycon.org/pages/tickets/buy-tickets/
+
+
+Volunteer with us
+=================
+
+PyConZA is run by the community, and we can't do it without volunteers. As a volunteer you'll:
+
+- See how a conference runs from behind the scenes
+- Meet speakers, organisers and attendees
+- Help newcomers write their first lines of Python at Beginners' Day
+
+If you'd like to help, fill in this form: https://forms.gle/VPc54PdVsh9D7pvr9
+
+
+Sign up for sprints
+===================
+
+Sprints take place on Saturday 17 and Sunday 18 October. They're a chance to work on open-source projects alongside other developers, and you don't need to be an expert to join in. Please sign up so we know how many people to expect.
+
+More info and sign-up: https://za.pycon.org/sprints
+
+Venue request: We're still finding a venue for Sprints. If your Cape Town office could accommodate a group of 20-30 over the weekend, please let us know.
+
+
+Beginners' Day is free. Please share it.
+========================================
+
+Beginners' Day on Wednesday 14 October is free for anyone new to Python. No experience needed. It runs in person in Cape Town, so please forward this to any friends who have always wanted to learn to code, especially if they're in Cape Town.
+
+Spots require a refundable R50 ticket, which you can get at za.pycon.org/pages/tickets/buy-tickets/
+
+Best regards,
+The PyConZA committee
+{% endblock content %}
