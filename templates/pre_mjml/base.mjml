@@ -98,10 +98,40 @@
     <mj-section>
       <mj-column>
         <mj-image
+          width="200px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/NITheCS_logo.png"
+          href="https://nithecs.ac.za/"
+          alt="NITheCS"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
           width="250px"
           src="https://d33xevxtx8rl5e.cloudfront.net/OfferZen_logo_Colour.png"
           href="https://www.offerzen.com/?utm_campaign=za-demand-engagement-community-all-demand-personas-oz-sponsored-conferences-q4&utm_content=pycon-za&utm_source=event"
           alt="OfferZen"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="100px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/afrolabs-logo-transparent.png"
+          href="https://afrolabs.co.za/"
+          alt="afrolabs"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/CoderLevelUp-group-dark.png"
+          href="https://coderlevelup.org/"
+          alt="CoderLevelUp"
         />
       </mj-column>
     </mj-section>
