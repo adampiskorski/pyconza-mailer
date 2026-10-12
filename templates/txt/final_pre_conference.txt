@@ -1,0 +1,81 @@
+{% extends "base.txt" %}
+{% block content %}
+PyConZA 2026 starts this Wednesday! Here's everything you need before you arrive.
+
+
+Getting there and parking
+=========================
+
+Beginners' Day (14 Oct) and the talks (15-16 Oct) take place at J&J Conferences (https://www.belmontsquare.co.za/) at Belmont Square in Rondebosch.
+
+Extra parking is available at the nearby **Rygersdal Sports Club**. On Thursday and Friday, a shuttle will run between the parking and the venue.
+
+Get directions: https://maps.app.goo.gl/oTSryhXFmbuY5xs86
+Venue details: https://za.pycon.org/pages/venue/in_person_venue/
+
+
+Register on Discord
+===================
+
+Discord is our home base for the conference, whether you're joining in person or online. This is where you'll find announcements, talk discussions and speaker Q&A, and where you'll register for the Meet and Greet (see below).
+
+1. **Join the PyConZA Discord** using the link below.
+2. **Register with the bot.** The bot will send you a direct message. Reply in that message with !register followed by your Quicket ticket barcode number. Send just the number.
+3. **You're in.** The bot checks your ticket, unlocks the conference channels, and sets your nickname to the name on your ticket.
+
+**Good to know:**
+
+- Register in the bot's direct message, not in a public channel, so your barcode stays private.
+- The PyConZA 2026 channels stay hidden until the conference opens, so don't worry if you can't see them yet.
+- If the bot can't find your ticket, ask for help in #helpdesk.
+- During talks, type !question followed by your question in that talk's channel to send it to the speaker.
+
+Join Discord: https://discord.gg/8R875rbS48
+Discord guide: https://za.pycon.org/pages/venue/remote_venue/
+
+
+Beginners' Day: Wednesday 14 October
+====================================
+
+We're planning to start at **9:00** (still tentative, so watch #announcements on Discord for updates).
+
+**Bring your laptop!** You don't need any experience or anything installed in advance. Our mentors will help you get set up on the day. Remember that your R50 is refunded when you attend.
+
+
+Meet and Greet: Wednesday evening
+=================================
+
+Join us on Wednesday evening (venue and time to be confirmed) to meet other attendees, speakers and organisers before the talks begin.
+
+If you'd like to come, register on Discord (see above) and join the **PyConZA Hallway → Outings → Meet-and-greet, 2026** forum post: https://discord.com/channels/738062950316900393/1559290011600551976
+You'll find the details there, and it's how you let us know you're coming so we can make the booking.
+
+
+The schedule is live
+====================
+
+The full schedule for Thursday and Friday is now up, so you can plan which talks you'd like to see. Registration opens at 08:30 on Thursday, and the welcome starts at 09:00. Some changes may still be made, so check the schedule on the day for the latest times and rooms.
+
+View the schedule: https://za.pycon.org/schedule/
+
+
+Sign up for sprints: Saturday 17 and Sunday 18 October
+======================================================
+
+We've found a sprint venue! The sprints will be held at UCT Department of Computer Science Senior Laboratory, from 08:30 to 17:00 each day.
+
+Sprints are a chance to work on open-source projects with other developers, and you don't need to be an expert to join in. Sprints are included with your conference ticket. Please sign up so we know how many people to expect.
+
+Sign up for sprints: https://forms.gle/LKtPJhNsX7wWoNbW6
+
+
+Bring something for the Maker's Room
+====================================
+
+Have you made something you'd like to show off, or do you have a tool you use to make things? Bring it along! The Maker's Room is open throughout the conference. Anyone can display their things there, and no registration is needed. The room is locked after hours for security.
+
+See you soon!
+
+Best regards,
+The PyConZA committee
+{% endblock content %}

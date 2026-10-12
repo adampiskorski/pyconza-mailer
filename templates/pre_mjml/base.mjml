@@ -44,7 +44,11 @@
         font-style="italic"
       />
     </mj-attributes>
-    <mj-style> a { color: #c32e66; } a:hover { color: #ff8c42; } </mj-style>
+    <mj-style>
+      a { color: #c32e66; }
+      a:hover { color: #ff8c42; }
+      code { color: #c32e66; }
+    </mj-style>
   </mj-head>
   <mj-body>
     <!-- title header -->

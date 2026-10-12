@@ -1,0 +1,195 @@
+{% extends "base.mjml" %}
+{% block content %}
+
+{% macro bullet_list(items) %}
+<mj-table>
+  <tr>
+    <td style="">
+      <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+        <tbody role="presentation">
+          {% for item in items %}
+          <tr>
+            <td vertical-align="top">
+              <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">{{ item }}</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</mj-table>
+{% endmacro %}
+
+{% macro numbered_list(items) %}
+<mj-table>
+  <tr>
+    <td style="">
+      <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+        <tbody role="presentation">
+          {% for item in items %}
+          <tr>
+            <td vertical-align="top">
+              <ol role="presentation" class="list-item-wrap" align="left" type="1" style="font-family:Verdana,Aerial; margin-left:25px;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;line-height:;">
+                <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:3px;"> <span class="list-item__text" style="text-align:left;">{{ item }}</span>
+                </li>
+              </ol>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</mj-table>
+{% endmacro %}
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text>
+      PyConZA 2026 starts this Wednesday! Here's everything you need before
+      you arrive.
+    </mj-text>
+    <mj-text mj-class="heading-2">Getting there and parking</mj-text>
+    <mj-text>
+      Beginners' Day (14 Oct) and the talks (15-16 Oct) take place at
+      <a href="https://www.belmontsquare.co.za/">J&J Conferences</a> at
+      Belmont Square in Rondebosch.
+    </mj-text>
+    <mj-text>
+      Extra parking is available at the nearby
+      <strong>Rygersdal Sports Club</strong>. On Thursday and Friday, a
+      shuttle will run between the parking and the venue.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://maps.app.goo.gl/oTSryhXFmbuY5xs86"
+      >Get directions</mj-button
+    >
+    <mj-button
+      mj-class="action-button"
+      href="https://za.pycon.org/pages/venue/in_person_venue/"
+      >Venue details</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Register on Discord</mj-text>
+    <mj-text>
+      Discord is our home base for the conference, whether you're joining in
+      person or online. This is where you'll find announcements, talk
+      discussions and speaker Q&A, and where you'll register for the Meet and
+      Greet (see below).
+    </mj-text>
+    {{ numbered_list([
+      "<strong>Join the PyConZA Discord</strong> using the button below.",
+      "<strong>Register with the bot.</strong> The bot will send you a direct message. Reply in that message with <code>!register</code> followed by your Quicket ticket barcode number. Send just the number.",
+      "<strong>You're in.</strong> The bot checks your ticket, unlocks the conference channels, and sets your nickname to the name on your ticket.",
+    ]) }}
+    <mj-text>
+      <strong>Good to know:</strong>
+    </mj-text>
+    {{ bullet_list([
+      "Register in the bot's direct message, not in a public channel, so your barcode stays private.",
+      "The PyConZA 2026 channels stay hidden until the conference opens, so don't worry if you can't see them yet.",
+      "If the bot can't find your ticket, ask for help in #helpdesk.",
+      "During talks, type <code>!question</code> followed by your question in that talk's channel to send it to the speaker.",
+    ]) }}
+    <mj-button mj-class="action-button" href="https://discord.gg/8R875rbS48"
+      >Join Discord</mj-button
+    >
+    <mj-button
+      mj-class="action-button"
+      href="https://za.pycon.org/pages/venue/remote_venue/"
+      >Discord guide</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Beginners' Day: Wednesday 14 October</mj-text>
+    <mj-text>
+      We're planning to start at <strong>9:00</strong> (still tentative, so
+      watch #announcements on Discord for updates).
+    </mj-text>
+    <mj-text>
+      <strong>Bring your laptop!</strong> You don't need any experience or
+      anything installed in advance. Our mentors will help you get set up on
+      the day. Remember that your R50 is refunded when you attend.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Meet and Greet: Wednesday evening</mj-text>
+    <mj-text>
+      Join us on Wednesday evening (venue and time to be confirmed) to meet
+      other attendees, speakers and organisers before the talks begin.
+    </mj-text>
+    <mj-text>
+      If you'd like to come, register on Discord (see above) and join the
+      <a href="https://discord.com/channels/738062950316900393/1559290011600551976"
+        ><strong>PyConZA Hallway → Outings → Meet-and-greet, 2026</strong></a
+      >
+      forum post. You'll find the details there, and it's how you let us know
+      you're coming so we can make the booking.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">The schedule is live</mj-text>
+    <mj-text>
+      The full schedule for Thursday and Friday is now up, so you can plan
+      which talks you'd like to see. Registration opens at 08:30 on Thursday,
+      and the welcome starts at 09:00. Some changes may still be made, so
+      check the schedule on the day for the latest times and rooms.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://za.pycon.org/schedule/"
+      >View the schedule</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2"
+      >Sign up for sprints: Saturday 17 and Sunday 18 October</mj-text
+    >
+    <mj-text>
+      We've found a sprint venue! The sprints will be held at UCT Department
+      of Computer Science Senior Laboratory, from 08:30 to 17:00 each day.
+    </mj-text>
+    <mj-text>
+      Sprints are a chance to work on open-source projects with other
+      developers, and you don't need to be an expert to join in. Sprints are
+      included with your conference ticket. Please sign up so we know how many
+      people to expect.
+    </mj-text>
+    <mj-button mj-class="action-button" href="https://forms.gle/LKtPJhNsX7wWoNbW6"
+      >Sign up for sprints</mj-button
+    >
+  </mj-column>
+</mj-section>
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2"
+      >Bring something for the Maker's Room</mj-text
+    >
+    <mj-text>
+      Have you made something you'd like to show off, or do you have a tool
+      you use to make things? Bring it along! The Maker's Room is open
+      throughout the conference. Anyone can display their things there, and no
+      registration is needed. The room is locked after hours for security.
+    </mj-text>
+    <mj-text> See you soon! </mj-text>
+    <mj-text>
+      Best regards,
+      <br />
+      The PyConZA committee
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+{% endblock content %}
