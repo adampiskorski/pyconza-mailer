@@ -133,6 +133,16 @@
       <mj-column>
         <mj-image
           width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/BPD_logo.png"
+          href="https://blackpythondevs.com/"
+          alt="Black Python Devs"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
           src="https://d33xevxtx8rl5e.cloudfront.net/CoderLevelUp-group-dark.png"
           href="https://coderlevelup.org/"
           alt="CoderLevelUp"
@@ -166,6 +176,16 @@
           src="https://d33xevxtx8rl5e.cloudfront.net/Naughty_Bean_Coffee.webp"
           href="https://naughtybean.coffee/"
           alt="Naughty Bean Coffee"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/jetbrains.png"
+          href="https://www.jetbrains.com/"
+          alt="JetBrains"
         />
       </mj-column>
     </mj-section>
