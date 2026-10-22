@@ -1,0 +1,279 @@
+<mjml>
+  <mj-head>
+    <mj-title>PyConZA</mj-title>
+    <mj-font
+      name="Oswald"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    ></mj-font>
+    <mj-attributes>
+      <mj-text font-family="Verdana, Aerial"></mj-text>
+      <mj-class
+        name="heading-1"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="40px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-2"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="30px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="heading-3"
+        font-family="Oswald, Trebuchet MS, Arial"
+        font-size="20px"
+        color="#1B2E4E"
+        font-style="bold"
+      />
+      <mj-class
+        name="action-button"
+        background-color="#C32E66"
+        color="#EDDDC4"
+      />
+      <mj-class
+        name="body-section"
+        background-color="#EDDDC4"
+        color="#1B2E4E"
+      />
+      <mj-class
+        name="blurb"
+        container-background-color="#E2BD90"
+        font-style="italic"
+      />
+    </mj-attributes>
+    <mj-style>
+      a { color: #c32e66; }
+      a:hover { color: #ff8c42; }
+      code { color: #c32e66; }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <!-- title header -->
+    <mj-section background-color="#EDDDC4">
+      <mj-column>
+        <mj-text align="center" mj-class="heading-1"> PYCONZA 2026 </mj-text>
+        <mj-text align="center" mj-class="heading-2">
+          Rondebosch, Cape Town, 14-16 October 2026
+        </mj-text>
+        <mj-image
+          src="https://d33xevxtx8rl5e.cloudfront.net/email-header.png"
+          alt="PyConZA logo"
+          href="https://za.pycon.org/"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- body -->
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text>Hi everyone,</mj-text>
+    <mj-text>
+      Thank you for being part of PyConZA 2026! Whether you came to
+      Beginners' Day, the talks, the sprints, or all of it, you helped make
+      this year's conference what it was. PyConZA is volunteer-run and
+      not-for-profit, so it only works because of the people who show up, and
+      we're grateful you did.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Tell us how we did</mj-text>
+    <mj-text>
+      We'd love to hear what worked, what didn't, and what you'd like to see
+      next year. The feedback form takes just a few minutes, and it shapes how
+      we plan future conferences.
+    </mj-text>
+    <mj-button
+      mj-class="action-button"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdXSEf3ryd4XremZWC5vvbda9SXn19wK-a09b4gD42b1glbAQ/viewform?usp=header"
+      >Share your feedback</mj-button
+    >
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Thank you to our sponsors</mj-text>
+    <mj-text>
+      A huge thank you to our sponsors, whose support makes PyConZA possible.
+      Because of them we can keep tickets affordable, run a free Beginners'
+      Day, and bring the South African Python community together each year.
+      Please take a moment to check out what they do. We couldn't do it
+      without them.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">See you in Cape Town in 2027</mj-text>
+    <mj-text>
+      We're excited to announce that PyConZA 2027 will take place in Cape Town
+      in October. Venue and dates are still to be confirmed, and we'll share
+      them as soon as they're locked in.
+    </mj-text>
+    <mj-text>Thanks again for a wonderful week. We hope to see you next year!</mj-text>
+    <mj-text>
+      Warm regards,
+      <br />
+      The PyConZA 2026 Team
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+    <!-- footer -->
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-social>
+          <mj-social-element
+            href="https://twitter.com/pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/twitter.png"
+          >
+          </mj-social-element>
+          <mj-social-element
+            href="https://fosstodon.org/@pyconza"
+            src="https://d3q92ym5gvt1q6.cloudfront.net/mastodon.png"
+          >
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- sub footer -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/thinkst_logo_footer.svg"
+          href="https://canary.tools/"
+          alt="Thinkst Canary"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="200px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/NITheCS_logo.png"
+          href="https://nithecs.ac.za/"
+          alt="NITheCS"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="250px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/OfferZen_logo_Colour.png"
+          href="https://www.offerzen.com/?utm_campaign=za-demand-engagement-community-all-demand-personas-oz-sponsored-conferences-q4&utm_content=pycon-za&utm_source=event"
+          alt="OfferZen"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="100px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/afrolabs-logo-transparent.png"
+          href="https://afrolabs.co.za/"
+          alt="afrolabs"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/BPD_logo.png"
+          href="https://blackpythondevs.com/"
+          alt="Black Python Devs"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/CoderLevelUp-group-dark.png"
+          href="https://coderlevelup.org/"
+          alt="CoderLevelUp"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/esp.svg"
+          href="https://esp.info/"
+          alt="ESP"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Isazi.ai_black_logo.png"
+          href="https://www.isazi.ai/"
+          alt="isazi.ai"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/Naughty_Bean_Coffee.webp"
+          href="https://naughtybean.coffee/"
+          alt="Naughty Bean Coffee"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/jetbrains.png"
+          href="https://www.jetbrains.com/"
+          alt="JetBrains"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="150px"
+          src="https://d33xevxtx8rl5e.cloudfront.net/SerpApi_Logo_with_Wordmark_-_Dark.png"
+          href="https://www.serpapi.com/?utm=pyconza"
+          alt="SerpAPI"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#1B2E4E">
+      <mj-column>
+        <mj-text color="#EDDDC4" font-size="12px">
+          {{company_info_name}}
+        </mj-text>
+        <mj-text color="#EDDDC4" font-size="12px">
+          {{company_info_address}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button href="__unsubscribe_url__"> Unsubscribe </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

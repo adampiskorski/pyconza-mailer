@@ -1,0 +1,61 @@
+{% extends "base.mjml" %}
+{% block content %}
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text>Hi everyone,</mj-text>
+    <mj-text>
+      Thank you for being part of PyConZA 2026! Whether you came to
+      Beginners' Day, the talks, the sprints, or all of it, you helped make
+      this year's conference what it was. PyConZA is volunteer-run and
+      not-for-profit, so it only works because of the people who show up, and
+      we're grateful you did.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Tell us how we did</mj-text>
+    <mj-text>
+      We'd love to hear what worked, what didn't, and what you'd like to see
+      next year. The feedback form takes just a few minutes, and it shapes how
+      we plan future conferences.
+    </mj-text>
+    <mj-button
+      mj-class="action-button"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdXSEf3ryd4XremZWC5vvbda9SXn19wK-a09b4gD42b1glbAQ/viewform?usp=header"
+      >Share your feedback</mj-button
+    >
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">Thank you to our sponsors</mj-text>
+    <mj-text>
+      A huge thank you to our sponsors, whose support makes PyConZA possible.
+      Because of them we can keep tickets affordable, run a free Beginners'
+      Day, and bring the South African Python community together each year.
+      Please take a moment to check out what they do. We couldn't do it
+      without them.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="body-section">
+  <mj-column>
+    <mj-text mj-class="heading-2">See you in Cape Town in 2027</mj-text>
+    <mj-text>
+      We're excited to announce that PyConZA 2027 will take place in Cape Town
+      in October. Venue and dates are still to be confirmed, and we'll share
+      them as soon as they're locked in.
+    </mj-text>
+    <mj-text>Thanks again for a wonderful week. We hope to see you next year!</mj-text>
+    <mj-text>
+      Warm regards,
+      <br />
+      The PyConZA 2026 Team
+    </mj-text>
+  </mj-column>
+</mj-section>
+{% endblock content %}
